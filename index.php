@@ -1,6 +1,0 @@
-<center><h1>
-
-<p></p>
-PAGINA EN MANTENIMIENTO.
-DISCULPE LAS MOLESTIAS.
-</h1></center>
