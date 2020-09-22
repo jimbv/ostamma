@@ -31,8 +31,13 @@ Route::get('/centros', function () {
 });
 
 Route::get('/farmacias', function () {
+    return view('farmacias');
+});
+
+Route::get('/prueba', function () {
     return 'sss';
 });
+
 
 Route::get('/localidades','SolicitarInformacionPlanes@getLocalidades');
 
