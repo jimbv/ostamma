@@ -2343,7 +2343,7 @@ p {
     .navbar-area.sticky .navbar .navbar-toggler .toggler-icon {
       background-color: #121212; }
     .navbar-area.sticky .navbar .navbar-nav .nav-item a {
-      color: white;
+      color: black;
       opacity: 1; }
       .navbar-area.sticky .navbar .navbar-nav .nav-item a::before {
         background: -webkit-linear-gradient(left, rgba(18, 18, 18, 0) 0%, white 100%);
