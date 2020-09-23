@@ -16,10 +16,11 @@ class Consulta extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($mensaje_enviar)
     {
-        //
+        $this->mensaje_enviar = $mensaje_enviar; 
     }
+
 
     /**
      * Build the message.
