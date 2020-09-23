@@ -176,9 +176,10 @@ Conocer Plan
                     </div> <!-- contact wrapper form -->
                 </div>
                 <div class="col-md-3">
-                <h4 style='color:white;'>Impresión de comprobantes</h4>
+                    <br>
+                <h4 style='color:white;'>Impresión de comprobantes</h4> <br> <br>
                 <a href="http://www.ammasalud.com.ar/autogestion/">
-                    <img src="imgs/autogestion.jpg" alt="Acceso a Autogestión" style='width:100%;'/>
+                    <img src="imgs/autogestion.jpg" alt="Acceso a Autogestión" style='width:100%;border-radius:10px;'/>
                 </a> 
                 </div>
             </div> <!-- row -->
