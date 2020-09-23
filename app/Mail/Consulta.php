@@ -11,6 +11,8 @@ class Consulta extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $subject = 'Consulta de plan';
+    public $mensaje_enviar;
     /**
      * Create a new message instance.
      *
