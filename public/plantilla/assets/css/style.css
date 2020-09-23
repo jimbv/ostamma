@@ -2343,7 +2343,7 @@ p {
     .navbar-area.sticky .navbar .navbar-toggler .toggler-icon {
       background-color: #121212; }
     .nav-item a {
-      color: black!important;
+      color: black;
       opacity: 1;  
     } 
 
