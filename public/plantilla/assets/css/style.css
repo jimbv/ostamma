@@ -2230,7 +2230,23 @@ p {
     .navbar-area .navbar .navbar-nav .nav-item {
       margin: 0 16px;
       position: relative; }
-      .navbar-area .navbar .navbar-nav .nav-item a {
+
+      .nav-item a {
+        font-size: 18px;
+        line-height: 24px; 
+        padding: 26px 0;
+        color: black;
+        text-transform: uppercase;
+        position: relative;
+        opacity: 0.8;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s; }
+
+
+      .navbar-area .navbar .navbar-nav  {
         font-size: 18px;
         line-height: 24px; 
         padding: 26px 0;
