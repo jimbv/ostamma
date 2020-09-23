@@ -2352,7 +2352,13 @@ p {
       } 
 
     }
+    @media only screen and (min-width: 792px) {
+      .navbar-area.sticky .navbar .navbar-nav .nav-item a {
+        color: white;
+        opacity: 1;  
+      } 
 
+    }
 
     .navbar-area.sticky .navbar .navbar-nav {
       color: white;
