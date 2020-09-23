@@ -16,7 +16,8 @@
     <meta property="og:description" content="Obra Social de los trabajadores asociados a AMMA - Grupo GESTA" />
     <meta property="og:image" content="http://www.ostamma.org.ar/fuentes/facebook.png" />      
     <meta property="og:url" content="http://www.ostamma.org.ar" />
-    
+
+    <meta name="keywords" content="OSTAMMA, Villa María, Obra social, AMMA, Mutual, AMMA SALUD, prestadores médicos, farmacias, clínicas, Córdoba"/>
     
     
     <!-- GOOGLE ANALYTICS -->
