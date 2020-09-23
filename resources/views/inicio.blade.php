@@ -124,7 +124,7 @@ Inicio
 
         <section id="promociones" class="features-area m-100 " style='background:#B8E2F1;'>
             <div class="container p-30">
-            <img src="imgs/lactancia2.jpg" alt="" style='width:100%;border-radius:12px;'>
+            <img src="imgs/lactancia2.jpg" alt="" style='width:100%;border-radius:14px;'>
 
             </div>
         </section>
