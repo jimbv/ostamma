@@ -224,7 +224,7 @@ Inicio
                         <div class="col-lg-9 col-sm-12 estatuto" >
                             <strong>Estatuto</strong> <br><br>
                             <a href="/fuente/estatuto_ostamma.pdf" download>
-                                Descargar Estatuto OSTAMMA .
+                                Descargar Estatuto OSTAMMA
                             </a>  
                         </div>
 
