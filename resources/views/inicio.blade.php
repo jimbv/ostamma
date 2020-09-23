@@ -222,7 +222,7 @@ Inicio
                         </div>  
                         
                         <div class="col-lg-9 col-sm-12 estatuto" >
-                            <strong>Estuto</strong> <br><br>
+                            <strong>Estatuto</strong> <br><br>
                             <a href="/fuente/estatuto_ostamma.pdf" download>
                                 Descargar Estatuto OSTAMMA
                             </a>  
