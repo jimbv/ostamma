@@ -27,7 +27,7 @@ class ControladorPagina extends Controller
 
         $localidades = $prov::find(6)->localidades;
  
-        return view('consulta',compact('localidades','provincias','plan'));
+        return view('consulta',compact('localidades','provincias'));
     }
 
     
