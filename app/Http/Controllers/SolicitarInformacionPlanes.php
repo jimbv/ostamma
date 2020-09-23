@@ -118,7 +118,7 @@ class SolicitarInformacionPlanes extends Controller
 
         //return view('emails.consultaplan',compact('mensaje_enviar'));
         //return $mensaje_enviar;
-        //return view ('conocerplan_enviado'); 
+        return view ('conocerplan_enviado'); 
 
     }
 

@@ -86,7 +86,7 @@ class ControladorPagina extends Controller
 
         //return view('emails.consulta',compact('mensaje_enviar'));
         //return $mensaje_enviar;
-        //return view ('consulta_enviado'); 
+        return view ('consulta_enviado'); 
 
     }
 
