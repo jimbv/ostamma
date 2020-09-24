@@ -31,16 +31,14 @@
 }
 
 
-@font-face {
-  font-family: "mplus";
-  src: url("../fonts/mplus/MPLUSRounded1c-Medium.ttf");
-}
 
 body {
-  font-family: Omnes,mplus,Varela,Poppins, sans-serif;
-  font-weight: normal;
+  font-family: Omnes,Varela,Poppins, sans-serif;
+  font-weight: 600;
   font-style: normal;
-  color: #121212; }
+  color: #121212; 
+  letter-spacing: 1px;
+}
 
 * {
   margin: 0;
@@ -74,7 +72,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "mplus","Varela","Poppins", sans-serif;
+  font-family: "Omnes","Varela","Poppins", sans-serif;
   /*font-weight: 600;*/
   color: #121212;
   margin: 0px; }
@@ -2270,7 +2268,7 @@ p {
           content: '';
           width: 32px;
           height: 4px;
-          font-family: 'mplus','Varela';
+          font-family: 'Omnes','Varela';
           background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.1) 0%, white 100%);
           background: -o-linear-gradient(left, rgba(255, 255, 255, 0.1) 0%, white 100%);
           background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, white 100%);
