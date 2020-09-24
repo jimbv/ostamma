@@ -2184,6 +2184,8 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  font-family:OmnesBold;
+  font-weight:500;
   width: 100%;
   padding: 10px 0;
   z-index: 99; }
