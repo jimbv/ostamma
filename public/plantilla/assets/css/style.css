@@ -27,7 +27,7 @@
 
 @font-face {
   font-family: "mplus";
-  src: url("../fonts/mplus/MPLUSRounded1c-Regular.ttf");
+  src: url("../fonts/mplus/MPLUSRounded1c-Medium.ttf");
 }
 body {
   font-family: mplus,Varela,Poppins, sans-serif;
@@ -68,7 +68,7 @@ h4,
 h5,
 h6 {
   font-family: "mplus","Varela","Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   color: #121212;
   margin: 0px; }
 
