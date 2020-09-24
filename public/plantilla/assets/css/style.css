@@ -26,8 +26,8 @@
 }
 
 @font-face {
-  font-family: "Dosis";
-  src: url("../fonts/Dosis/Dosis-VariableFont_wght.ttf");
+  font-family: "Omnes";
+  src: url("../fonts/Omnes/Omnes-Regular.otf");
 }
 
 
@@ -37,7 +37,7 @@
 }
 
 body {
-  font-family: Dosis,mplus,Varela,Poppins, sans-serif;
+  font-family: Omnes,mplus,Varela,Poppins, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #121212; }
