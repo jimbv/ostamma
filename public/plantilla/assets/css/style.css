@@ -68,7 +68,7 @@ h4,
 h5,
 h6 {
   font-family: "mplus","Varela","Poppins", sans-serif;
-  font-weight: 700;
+  /*font-weight: 600;*/
   color: #121212;
   margin: 0px; }
 
