@@ -30,6 +30,10 @@
   src: url("../fonts/Omnes/Omnes-Regular.otf");
 }
 
+@font-face {
+  font-family: "OmnesBold";
+  src: url("../fonts/Omnes/Omnes-Bold.otf");
+}
 
 
 body {
@@ -72,7 +76,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Omnes","Varela","Poppins", sans-serif;
+  font-family: "OmnesBold","Omnes","Poppins", sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
   color: #121212;
