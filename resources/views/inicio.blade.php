@@ -135,7 +135,7 @@ Inicio
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
                     <div class="section-title text-center pb-10">
-                        <h3 class="title" style='color:#0097CE;'>¿Quiénes somos?</h3>
+                        <h3 class="title" style='color:#0097CE;'>¿QUIÉNES SOMOS?</h3>
                     </div>  
                 </div>
             </div> <!-- row -->
@@ -159,7 +159,7 @@ Inicio
                 <div class="col-lg-9 col-md-9">
                     <div class="row no-gutters grid mt-50">
                         <div class="col-lg-9 col-sm-12 historia" >
-                        <strong> Nuestra historia </strong><br> <br>
+                        <h4 class='mb-2 mt-4'> Nuestra historia </h4><br> <br>
 
                         La Obra Social de los Trabajadores Asociados a la Asociación Mutual Mercantil Argentina (OSTAMMA) se inició el 1 de diciembre de 2004, como resultado del esfuerzo de la mutual AMMA que anhelaba erigirse y operar como Obra Social, siendo la primera en el interior del país en lograr esta inscripción.
                         OSTAMMA se desempeña como una entidad con autonomía financiera, respetando y potenciando su origen y, hoy, reafirmando de manera continua su compromiso con la salud de todos los trabajadores
@@ -167,13 +167,13 @@ Inicio
                         </div>
 
                         <div class="col-lg-9 col-sm-12 certificacion" >
-                            <strong>Certificación</strong> <br><br>
+                        <h4 class='mb-2 mt-4'>Certificación</h4> <br><br>
                             OSTAMMA, como Obra Social líder, certificó desde el año 2016 su Sistema de Gestión de la Calidad de acuerdo con los requisitos de la Norma Internacional ISO 9001:2015, siguiendo el propósito y la dirección estratégica para el crecimiento y el desarrollo y basados en el concepto fundamental de la mejora continua. <br><br>
                             Esta Norma de Calidad garantiza que OSTAMMA cumple con los requerimientos establecidos, ofreciéndole a la sociedad en su conjunto la mejor calidad de servicio.
                         </div>
 
                         <div class="col-lg-9 col-sm-12 calidad " >
-                            <strong>Política de la Calidad</strong> <br><br>
+                            <h4 class='mb-2 mt-4'>Política de la Calidad</h4> <br><br>
                             La Dirección de OSTAMMA establece, implementa, mantiene y comunica la siguiente Política de la Calidad, la cual es entendida y aplicada por los colaboradores de la organización y está disponible como información documentada para las partes interesadas pertinentes según corresponda:<br><br>
                             “Somos una Obra Social comprometida en asegurar el proceso de salud-enfermedad a nuestros beneficiarios y partes interesadas pertinentes, a través de un diagnóstico y tratamiento oportuno, implementando una administración ágil y efectiva, con la permanente competencia de nuestros profesionales, la innovación tecnológica y la gestión de los riesgos y las oportunidades, garantizando nuestra vocación de servicio para prevenir y detectar tempranamente las patologías.<br><br>
                             Trabajamos en mejorar continuamente la eficacia de nuestro sistema de gestión de la calidad, cumpliendo con los requisitos aplicables vigentes, controlando y monitoreando las prestaciones que reciben los beneficiarios en los centros del grupo y en los contratados, y con el objetivo final de brindar la mejor calidad y la mayor eficiencia de nuestros servicios en el cuidado de la salud.<br><br>
@@ -182,14 +182,14 @@ Inicio
                         </div>
 
                         <div class="col-lg-9 col-sm-12 alcance" >
-                            <strong>Alcance</strong> <br><br>
+                            <h4 class='mb-2 mt-4'>Alcance</h4> <br><br>
                             “Gestión de las prestaciones médico asistenciales para el servicio integral de salud a sus beneficiarios”. <br> <br>
                             OSTAMMA establece, implementa, mantiene y mejora continuamente su sistema de gestión de la calidad, incluyendo los procesos correspondientes y sus interacciones de acuerdo con los requisitos de la Norma ISO 9001:2015.
 
                         </div>
 
                         <div class="col-lg-9 col-sm-12 certificado" >
-                            <strong>Certificado</strong> <br><br>
+                            <h4 class='mb-2 mt-4'>Certificado</h4> <br><br>
                             <a href="/fuente/iqnet_9001.jpg" download>
                                 Descargar Certificado IQNET ISO 9001
                             </a> <br><br>
@@ -202,7 +202,7 @@ Inicio
 
 
                         <div class="col-lg-9 col-sm-12 consejo" >
-                            <strong>Consejo Directivo Período 2019-2023</strong> <br> <br>
+                            <h4 class='mb-2 mt-4'>Consejo Directivo Período 2019-2023</h4> <br> <br>
                             <strong>Presidente</strong><br>
                             Fernando Iván Pepicelli <br><br>
                             <strong>Vicepresidente</strong><br>
