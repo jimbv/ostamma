@@ -26,11 +26,18 @@
 }
 
 @font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis/Dosis-VariableFont_wght.ttf");
+}
+
+
+@font-face {
   font-family: "mplus";
   src: url("../fonts/mplus/MPLUSRounded1c-Medium.ttf");
 }
+
 body {
-  font-family: mplus,Varela,Poppins, sans-serif;
+  font-family: Dosis,mplus,Varela,Poppins, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #121212; }
