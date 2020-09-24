@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="/plantilla/assets/css/default.css">
     
     <!--====== Style CSS ======-->
-    <link rel="stylesheet" href="/plantilla/assets/css/style.css">
+    <link rel="stylesheet" href="/plantilla/assets/css/style.css?v=2">
     
 </head>
 
