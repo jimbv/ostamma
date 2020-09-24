@@ -78,11 +78,11 @@ Inicio
     
     <!--====== PORTFOLIO PART START ======-->
 
-    <section id="autogestion" class="portfolio-area portfolio-four pb-100">
+    <section id="autogestion" class="portfolio-area portfolio-four pb-50">
         <div class="container">
-            <div class="row justify-content-center pt-20">
+            <div class="row justify-content-center pt-10">
                 <div class="col-lg-12 col-md-10">
-                    <div class="section-title text-center pb-20">
+                    <div class="section-title text-center pb-10">
                         <a href="/consulta">
                             <img src="imgs/autogestion.jpg" alt="Acceso a Autogestión" style='width:100%;'/>
                         </a> 
