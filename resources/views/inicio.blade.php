@@ -78,11 +78,11 @@ Inicio
     
     <!--====== PORTFOLIO PART START ======-->
 
-    <section id="autogestion" class="portfolio-area portfolio-four pb-50">
+    <section id="autogestion" class="portfolio-area portfolio-four pb-40">
         <div class="container">
             <div class="row justify-content-center pt-10">
                 <div class="col-lg-12 col-md-10">
-                    <div class="section-title text-center pb-10">
+                    <div class="section-title text-center pb-0">
                         <a href="/consulta">
                             <img src="imgs/autogestion.jpg" alt="Acceso a Autogestión" style='width:100%;'/>
                         </a> 
@@ -91,13 +91,13 @@ Inicio
             </div> <!-- row -->
         </div>
     </section>
-    <section id="cartilla" class="portfolio-area portfolio-four pb-100">
+    <section id="cartilla" class="portfolio-area portfolio-four pb-70">
         <div class="container">
-            <div class="row justify-content-center pb-60">
-                <div class='mt-20 mb-20' style='width:100%;height:2px;background:#222;'></div>
+            <div class="row justify-content-center pb-50">
+                <div class='mt-20 mb-20' style='width:100%;height:2px;background:#333;'></div>
 
                 <div class="col-lg-8 col-md-10">
-                    <div class="section-title text-center pb-20 pt-30">
+                    <div class="section-title text-center pb-20 pt-20">
                         <h3 class="title" style='color:#0159A6;'>CARTILLA</h3>
                         
                     </div> <!-- row -->
