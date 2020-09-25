@@ -78,7 +78,7 @@ Inicio
     
     <!--====== PORTFOLIO PART START ======-->
 
-    <section id="autogestion" class="portfolio-area portfolio-four pb-40">
+    <section id="autogestion" class="portfolio-area portfolio-four pb-30">
         <div class="container">
             <div class="row justify-content-center pt-10">
                 <div class="col-lg-12 col-md-10">
