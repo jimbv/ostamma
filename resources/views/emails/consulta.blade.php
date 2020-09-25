@@ -289,7 +289,7 @@ ul.social li{
           	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
           		<tr>
           			<td class="logo" style="text-align: left;">
-			            <h1><a href="http://www.ostamma.org.ar"> <img src="http://ostamma.test/imgs/ostamma.png" alt="OSTAMMA" style='width: 60%;padding:10px 20%;' /></a></h1>
+			            <h1><a href="http://www.ostamma.org.ar"> <img src="/imgs/ostamma.png" alt="OSTAMMA" style='width: 60%;padding:10px 20%;' /></a></h1>
 			          </td>
           		</tr>
           	</table>
@@ -381,7 +381,7 @@ ul.social li{
                       <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
                       	<h3 class="heading">Contacto</h3>
                       	<ul>
-					                <li><span class="text">Catamarca 1173</span></li>
+					                <li><span class="text">Catamarca 1173, Villa María - Córdoba</span></li>
 					                <li><span class="text"> <a href="mailto:info@ammasalud.com.ar"> info@ammasalud.com.ar</a></span></a></li>
                                     <li><span class="text"> 0353 – 4536925 / 4536871 / 4524106 </span></a></li> 
 					              </ul>
