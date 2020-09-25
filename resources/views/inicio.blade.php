@@ -94,7 +94,7 @@ Inicio
     <section id="cartilla" class="portfolio-area portfolio-four pb-50">
         <div class="container">
             <div class="row justify-content-center pb-30">
-                <div class='mt-20 mb-20' style='width:100%;height:2px;background:#444;'></div>
+                <div class='mt-0 mb-20' style='width:100%;height:2px;background:#444;'></div>
 
                 <div class="col-lg-8 col-md-10">
                     <div class="section-title text-center pb-20 pt-20">
