@@ -36,6 +36,7 @@
 }
 
 
+
 body {
   font-family: Omnes,Varela,Poppins, sans-serif;
   font-weight: 600;
@@ -43,6 +44,22 @@ body {
   color: #121212; 
   letter-spacing: 1px;
 }
+
+
+
+@media (max-width: 767px) { 
+  .familia{
+    margin:auto;position:absolute;width:100%;max-width:900px;bottom:-20px;
+    left: -15%;
+  }
+}
+@media only screen and (min-width: 766px) {
+  .familia{
+    margin-left:10%;position:absolute;width:100%;max-width:900px;bottom:-20px;
+  }
+}
+
+
 
 * {
   margin: 0;

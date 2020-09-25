@@ -19,7 +19,7 @@ Inicio
                                 <img src="/imgs/ostamma.png" alt="OSTAMMA La obra social de todos" style='width:100%;max-width:250px;'/>
                             </div>
                         </div>
-                        <img src="/imgs/familia.png" alt="Familia OSTAMMA" style='margin-left:10%;position:absolute;width:100%;max-width:900px;bottom:-20px;'/>
+                        <img src="/imgs/familia.png" alt="Familia OSTAMMA" class='familia'/>
                         </div>
                      </div>
                 </div> <!-- carousel-item -->
