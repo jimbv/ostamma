@@ -89,10 +89,10 @@ Inicio
                     </div> <!-- row -->
                 </div>
             </div> <!-- row -->
-            </div>
-        </section>
-        <section id="cartilla" class="portfolio-area portfolio-four pb-100">
-            <div class="container">
+        </div>
+    </section>
+    <section id="cartilla" class="portfolio-area portfolio-four pb-100">
+        <div class="container">
             <div class="row justify-content-center pb-60">
                 <div class='mt-20 mb-20' style='width:100%;height:2px;background:#222;'></div>
 
@@ -120,18 +120,14 @@ Inicio
                     </a>
                 </div>
             </div> <!-- row -->
-            </div>
-        </section>
-
-        <section id="promociones" class="features-area m-100 " style='background:#B8E2F1;'>
+        </div>
+    </section>
+    <section id="promociones" class="features-area m-100 " style='background:#B8E2F1;'>
             <div class="container p-30">
-            <img src="imgs/lactancia2.jpg" alt="" style='width:100%;border-radius:14px;'>
-
+                <img src="imgs/lactancia2.jpg" alt="" style='width:100%;border-radius:14px;'>
             </div>
-        </section>
-
-
-        <section id='nosotros'  class="portfolio-area portfolio-four pb-100">
+    </section>
+    <section id='nosotros' class="portfolio-area portfolio-four pb-100">
             <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
@@ -155,7 +151,7 @@ Inicio
                             <li data-filter=".consejo" style='background:#0097CE;border-radius:10px;color:white;'>CONSEJO DIRECTIVO</li>
                             <li data-filter=".estatuto" style='background:#0097CE;border-radius:10px;color:white;'>ESTATUTO</li> 
                         </ul>
-                    </div> <!-- portfolio menu -->
+                    </div>  
                 </div>
                 <div class="col-lg-9 col-md-9">
                     <div class="row no-gutters grid mt-50">
@@ -258,11 +254,7 @@ Inicio
             </div>
 
         </div> <!-- container -->
-    </section>
- 
-     
-    <!--====== CONTACT PART START ======-->
-
+    </section> 
     <section id="contacto" class="contact-area" style='background:#0097CE;padding-bottom:0px;'>
         <div class="container">
             <div class="row justify-content-center">
