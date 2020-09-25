@@ -11,7 +11,7 @@ Inicio
         <div id="carouselThree" class="carousel slide" data-ride="carousel">
         
                 <div class="carousel-inner">
-                    <div class="carousel-item active"  style='background: url(/imgs/fondo.png) no-repeat;'>
+                    <div class="carousel-item active"  style='background: url(/imgs/fondo.png) 0 -1px no-repeat;'>
                      <div class="container">
                         <div class="row" style='text-align:center;'>
                         <div class="col-lg-6">
