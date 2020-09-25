@@ -2453,7 +2453,7 @@ p {
   @media (max-width: 767px) {
     .slider-content {
       padding-top: 190px;
-      padding-bottom: 150px; } }
+      padding-bottom: 0px; } }
   .slider-content .title {
     font-size: 88px;
     line-height: 96px;
