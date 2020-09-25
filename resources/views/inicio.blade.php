@@ -89,6 +89,7 @@ Inicio
                     </div> <!-- row -->
                 </div>
             </div> <!-- row -->
+            </div>
         </section>
         <section id="cartilla" class="portfolio-area portfolio-four pb-100">
             <div class="container">
