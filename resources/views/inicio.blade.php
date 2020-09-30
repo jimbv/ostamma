@@ -262,7 +262,7 @@ Inicio
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-md-10" style='color:white;font-size:18px;line-height:22px;text-align:center;'>
                     <div class="section-title text-center pb-30" style=''>
-                        <h3 class="title">CONTACTO</h3> 
+                        <h3 class="title">NUESTRAS OFICINAS</h3> 
                         <a href="http://www.ammasalud.com.ar">
                         <img src="/imgs/pie.png" alt="OSTAMMA AMMA Salud" style='padding-top:50px;'>
                         </a>
