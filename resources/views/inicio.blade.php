@@ -147,7 +147,7 @@ Inicio
                             <li data-filter=".alcance" style='background:#B8E2F1;border-radius:10px;color:white;line-height:30px;text-transform:none;'>
                             Alcance</li>
                             <li data-filter=".certificado" style='background:#B8E2F1;border-radius:10px;color:white;line-height:30px;text-transform:none;'>
-                            Certificado</li>
+                            Certificados</li>
                             <li data-filter=".consejo" style='background:#0097CE;border-radius:10px;color:white;'>CONSEJO DIRECTIVO</li>
                             <li data-filter=".estatuto" style='background:#0097CE;border-radius:10px;color:white;'>ESTATUTO</li> 
                         </ul>
@@ -188,9 +188,11 @@ Inicio
                         <div class="col-lg-9 col-sm-12 certificado" >
                             <h4 class='mb-2 mt-4'>Certificado</h4> <br><br>
                             <a href="/fuente/iqnet_9001.jpg" download>
+                            <img src="/fuente/iqnet_9001.jpg" style='width=100%;' /> <br>
                                 Descargar Certificado IQNET ISO 9001
-                            </a> <br><br>
+                            </a> <br><br><br>
                             <a href="/fuente/iram_9001.jpg" download>
+                            <img src="/fuente/iram_9001.jpg" style='width=100%;' /> <br>
                                 Descargar Certificado IRAM ISO 9001
                             </a>
                         </div>
