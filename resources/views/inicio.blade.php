@@ -187,14 +187,26 @@ Inicio
 
                         <div class="col-lg-9 col-sm-12 certificado" >
                             <h4 class='mb-2 mt-4'>Certificados</h4> <br><br>
-                            <a href="/fuente/iqnet_9001.JPG" download>
-                            <img src="/fuente/iqnet_9001.JPG" style='width:50%;' /> <br>
-                                Descargar Certificado IQNET ISO 9001
-                            </a> <br><br><br>
-                            <a href="/fuente/iram_9001.JPG" download>
-                            <img src="/fuente/iram_9001.JPG" style='width:50%;' /> <br>
-                                Descargar Certificado IRAM ISO 9001
-                            </a>
+                            
+                            <div class="container">
+                            <div class="row pb-20">
+                            <div class="col-6">
+                                <a href="/fuente/iqnet_9001.JPG" download>
+                                <img src="/fuente/iqnet_9001.JPG" style='width:100%;' /> <br>
+                                    Descargar Certificado IQNET ISO 9001
+                                </a> 
+                            </div>
+                            <div class="col-6">
+                                <a href="/fuente/iram_9001.JPG" download> 
+                                <img src="/fuente/iram_9001.JPG" style='width:100%;' /> <br>
+                                    Descargar Certificado IRAM ISO 9001
+                                </a>
+                            </div>
+                            </div>
+                            </div>
+
+
+                           
                         </div>
 
                         
