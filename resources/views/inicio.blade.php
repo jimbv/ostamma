@@ -190,16 +190,18 @@ Inicio
                             
                             <div class="container">
                             <div class="row pb-20">
-                            <div class="col-6">
+                            <div class="col-6 text-center">
                                 <a href="/fuente/iqnet_9001.JPG" download>
                                 <img src="/fuente/iqnet_9001.JPG" style='width:100%;' /> <br>
-                                    Descargar Certificado IQNET ISO 9001
+                                    Descargar Certificado <br>
+                                    IQNET ISO 9001
                                 </a> 
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 text-center">
                                 <a href="/fuente/iram_9001.JPG" download> 
                                 <img src="/fuente/iram_9001.JPG" style='width:100%;' /> <br>
-                                    Descargar Certificado IRAM ISO 9001
+                                    Descargar Certificado <br> 
+                                    IRAM ISO 9001
                                 </a>
                             </div>
                             </div>
