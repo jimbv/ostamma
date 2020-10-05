@@ -160,7 +160,24 @@ Inicio
 
                         La Obra Social de los Trabajadores Asociados a la Asociación Mutual Mercantil Argentina (OSTAMMA) se inició el 1 de diciembre de 2004, como resultado del esfuerzo de la mutual AMMA que anhelaba erigirse y operar como Obra Social, siendo la primera en el interior del país en lograr esta inscripción.
                         OSTAMMA se desempeña como una entidad con autonomía financiera, respetando y potenciando su origen y, hoy, reafirmando de manera continua su compromiso con la salud de todos los trabajadores
+                        <p></p>
 
+                        <h4 class='mb-2 mt-4'>Misión</h4>  <p></p>
+                        “Proporcionar a la sociedad, con un concepto universal e integral, desde un modelo biopsicosocial y con promoción y prevención de la salud, los mejores servicios médicos para el cuidado y la mejora continua de su calidad de vida”.
+                        <p></p> <br>
+                        <h4  class='mb-2 mt-3' >Visión</h4><p></p>
+                        “Ser reconocidos como una Obra Social líder, con innovación, vocación de servicio, avanzada tecnología y la más alta calidad profesional”.
+                        <p></p> <br>
+                        <h4  class='mb-2 mt-3' >Valores</h4><p></p>
+                        <ul style='  list-style-type: disc; margin-left:25px;list-style-position: outside; list-style-image: none; color:blue;'>
+                        <li style='color:black;'>Liderazgo y compromiso social anticipando las necesidades de los beneficiarios y la comunidad en general.</li>
+                        <li style='color:black;'>Accesibilidad y eficiencia para los beneficiarios en prestaciones de calidad basadas en la sustentabilidad.</li>
+                        <li style='color:black;'>Transparencia y honestidad en la administración de los recursos.</li>
+                        <li style='color:black;'>Integridad y ética en el desarrollo de los negocios.</li>
+                        <li style='color:black;'>Cooperación y trabajo en equipo en las acciones.</li>
+                        <li style='color:black;'>Solidaridad y equidad con los beneficiarios y con todas nuestras partes interesadas pertinentes.</li>
+                        <li style='color:black;'>Democracia en la elección de sus directivos.</li>
+                        </ul>
                         </div>
 
                         <div class="col-lg-9 col-sm-12 certificacion" >
@@ -244,30 +261,7 @@ Inicio
                         
                         </div>
                     </div> <!-- row -->
-                </div>
-            <div class="row">
-                <div class="col-12 mt-40 mb-20 "> 
-                    <h4 class='mb-2 mt-4'>Misión</h4>  <p></p>
-                    “Proporcionar a la sociedad, con un concepto universal e integral, desde un modelo biopsicosocial y con promoción y prevención de la salud, los mejores servicios médicos para el cuidado y la mejora continua de su calidad de vida”.
-                    <p></p> <br>
-                    <h4  class='mb-2 mt-3' >Visión</h4><p></p>
-                    “Ser reconocidos como una Obra Social líder, con innovación, vocación de servicio, avanzada tecnología y la más alta calidad profesional”.
-                    <p></p> <br>
-                    <h4  class='mb-2 mt-3' >Valores</h4><p></p>
-                    <ul style='  list-style-type: disc; margin-left:25px;list-style-position: outside; list-style-image: none; color:blue;'>
-                        <li style='color:black;'>Liderazgo y compromiso social anticipando las necesidades de los beneficiarios y la comunidad en general.</li>
-                        <li style='color:black;'>Accesibilidad y eficiencia para los beneficiarios en prestaciones de calidad basadas en la sustentabilidad.</li>
-                        <li style='color:black;'>Transparencia y honestidad en la administración de los recursos.</li>
-                        <li style='color:black;'>Integridad y ética en el desarrollo de los negocios.</li>
-                        <li style='color:black;'>Cooperación y trabajo en equipo en las acciones.</li>
-                        <li style='color:black;'>Solidaridad y equidad con los beneficiarios y con todas nuestras partes interesadas pertinentes.</li>
-                        <li style='color:black;'>Democracia en la elección de sus directivos.</li>
-                    </ul>
-
-                </div>
-            
-            
-            </div>
+                </div> 
 
         </div> <!-- container -->
     </section> 
