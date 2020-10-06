@@ -294,13 +294,13 @@ Inicio
                 <div class="col-1"></div>
                     <div class="col-10" style='text-align:center;'>
                         <a href="https://www.facebook.com/OSTAMMA/" style='border-radius:25px;background:white;text-align:center;height:50px;width:50px;margin:5px;'>
-                            <i class="lni lni-facebook-filled" style='color:#0097CE;font-size:32px;line-height:60px;'></i>
+                            <i class="lni lni-facebook-filled" style='color:#0097CE;font-size:32px;line-height:50px;'></i>
                         </a> 
                         <a href="https://www.instagram.com/o.s.t.a.m.m.a?r=nametag" style='border-radius:25px;background:white;text-align:center;height:50px;width:50px;margin:5px;'>
-                            <i class="lni lni-instagram-original" style='color:#0097CE;font-size:32px;line-height:60px;'></i>
+                            <i class="lni lni-instagram-original" style='color:#0097CE;font-size:32px;line-height:50px;'></i>
                             </a>
                         <a href="https://wa.me/5493535629113" style='border-radius:25px;background:white;text-align:center;height:50px;width:50px;margin:5px;'>
-                            <i class="lni lni-whatsapp" style='color:#0097CE;font-size:32px;line-height:60px;'></i>   
+                            <i class="lni lni-whatsapp" style='color:#0097CE;font-size:32px;line-height:50px;'></i>   
                         </a> 
                         <p></p><p></p><br/>
                         <a href="http://www.gesta.org.ar" target='_blank'>
