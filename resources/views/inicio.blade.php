@@ -299,7 +299,10 @@ Inicio
                         </a> 
                         <a href="https://www.instagram.com/o.s.t.a.m.m.a?r=nametag" style='border-radius:30px;background:white;text-align:center;height:60px;width:60px;margin:5px;'>
                             <i class="lni lni-instagram-original" style='color:#0097CE;font-size:40px;line-height:60px;'></i>
-                            </a> 
+                            </a>
+                        <a href="https://wa.me/5493535629113" style='border-radius:30px;background:white;text-align:center;height:60px;width:60px;margin:5px;'>
+                            <i class="lni lni-whatsapp" style='color:#0097CE;font-size:40px;line-height:60px;'></i>   
+                        </a> 
                         <p></p><p></p><br/>
                         <a href="http://www.gesta.org.ar" target='_blank'>
                             <img src="/imgs/gesta.png" alt="Entidad perteneciente al Grupo GESTA" /> <br/><br/>
@@ -307,9 +310,7 @@ Inicio
                         <img src="/imgs/sss.png" alt="Super Intendencia de Salud de la Nación" />  
                     </div>
                     <div class="col-4" style='vertical-align:top;' > 
-                        <a href="https://wa.me/5493535629113" style='width:100%;text-align:right;'>
-                            <img src="/fuente/whatsapp.png" alt="Whatsapp" style='width:60px;max-width:100%;'>
-                        </a>
+                        
                     </div>
                 </div> <!-- row -->
                 </div>
