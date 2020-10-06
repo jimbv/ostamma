@@ -290,10 +290,8 @@ Inicio
             </div> <!-- row -->
             <div class="contact-info pt-30 pb-0 mb-0">
              <div class="container">
-                <div class="row">
-                    <div class="col-4 "> 
-                    </div>
-                    <div class="col-4" style='text-align:center;'>
+                <div class="row"> 
+                    <div class="col-12" style='text-align:center;'>
                         <a href="https://www.facebook.com/OSTAMMA/" style='border-radius:30px;background:white;text-align:center;height:60px;width:60px;margin:5px;'>
                             <i class="lni lni-facebook-filled" style='color:#0097CE;font-size:40px;line-height:60px;'></i>
                         </a> 
@@ -308,10 +306,7 @@ Inicio
                             <img src="/imgs/gesta.png" alt="Entidad perteneciente al Grupo GESTA" /> <br/><br/>
                         </a> <br>
                         <img src="/imgs/sss.png" alt="Super Intendencia de Salud de la Nación" />  
-                    </div>
-                    <div class="col-4" style='vertical-align:top;' > 
-                        
-                    </div>
+                    </div> 
                 </div> <!-- row -->
                 </div>
             </div> <!-- contact info --> 
