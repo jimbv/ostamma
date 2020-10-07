@@ -292,7 +292,7 @@ Inicio
                         </a>
                         <p></p>
                         <br>
-                   <P style='color:white;font-size:14px;'>
+                   <P style='color:white;font-size:16px;'>
 
                     Catamarca 1173, Villa María. 5900. Córdoba | 0353-4536925  0353-155629113 <br>
                     RNOS -0270-9
