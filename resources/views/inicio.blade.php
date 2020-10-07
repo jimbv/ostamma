@@ -271,14 +271,7 @@ Inicio
                 <div class="col-lg-7 col-md-10" style='color:white;font-size:18px;line-height:22px;text-align:center;'>
                     <div class="section-title text-center pb-30" style=''>
                         <h3 class="title">NUESTRAS OFICINAS</h3> 
-                        <a href="http://www.ammasalud.com.ar">
-                        <img src="/imgs/pie.png" alt="OSTAMMA AMMA Salud" style='padding-top:50px;'>
-                        </a>
-                        <p></p>
-                        
-                    </div> <!-- section title -->
-
-                    La Obra Social de los Trabajadores Asociados a la Asociación Mutual Mercantil Argentina (OSTAMMA) se inició el 1 de diciembre de 2004, un año después que se presentara el expediente, solicitando la incorporación de la mutual al régimen de agentes de seguro de salud. 
+                        </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
             <div class="row">
@@ -293,6 +286,19 @@ Inicio
                 <div class="row"> 
                 <div class="col-1"></div>
                     <div class="col-10" style='text-align:center;'>
+
+                    <a href="http://www.ammasalud.com.ar">
+                        <img src="/imgs/pie.png" alt="OSTAMMA AMMA Salud" style='padding-top:50px;'>
+                        </a>
+                        <p></p>
+                        
+                   
+
+                    Catamarca 1173, Villa María. 5900. Córdoba | 0353-4536925  0353-155629113 <br>
+                    RNOS -0270-9
+
+
+<P></P> <BR></BR>
                         <a href="https://www.facebook.com/OSTAMMA/" style='border-radius:25px;background:white;text-align:center;height:50px;width:50px;margin:5px;'>
                             <i class="lni lni-facebook-filled" style='color:#0097CE;font-size:32px;line-height:50px;'></i>
                         </a> 
