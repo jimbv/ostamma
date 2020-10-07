@@ -70,6 +70,14 @@ Inicio
                         </a>
                     </div> <!-- row -->
                 </div>
+            <col-12>
+                        <br>
+            <img src="imgs/saludvirtual.jpg" alt="Amma Salud Virtual" style='width:100%;border-radius:5px;overflow:hidden;'/>
+                         
+                        <br>
+                        
+            </col-12>
+
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
@@ -83,10 +91,7 @@ Inicio
             <div class="row justify-content-center pt-10">
                 <div class="col-lg-12 col-md-10">
                     <div class="section-title text-center pb-0"> 
-                            <img src="imgs/saludvirtual.jpg" alt="Amma Salud Virtual" style='width:100%;border-radius:5px;overflow:hidden;'/>
-                         
-                        
-                        <p><br></p>
+                            
                         <a href="/consulta">
                             <img src="imgs/autogestion.jpg" alt="Acceso a Autogestión" style='width:100%;border-radius:5px;overflow:hidden;'/>
                         </a> 
