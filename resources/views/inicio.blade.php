@@ -291,12 +291,12 @@ Inicio
                         <img src="/imgs/pie.png" alt="OSTAMMA AMMA Salud" style='padding-top:50px;'>
                         </a>
                         <p></p>
-                        
-                   
+                        <br>
+                   <P style='color:white;font-size:14px;'>
 
                     Catamarca 1173, Villa María. 5900. Córdoba | 0353-4536925  0353-155629113 <br>
                     RNOS -0270-9
-
+                    </P>
 
 <P></P> <BR></BR>
                         <a href="https://www.facebook.com/OSTAMMA/" style='border-radius:25px;background:white;text-align:center;height:50px;width:50px;margin:5px;'>
