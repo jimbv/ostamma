@@ -71,7 +71,7 @@ Inicio
                     </div> <!-- row -->
                 </div>
             <col-12>
-                        <br>
+                        <br> <p></p>
             <img src="imgs/saludvirtual.jpg" alt="Amma Salud Virtual" style='width:100%;border-radius:15px;overflow:hidden;box-shadow:0px 0px 2px white;'/>
                           
                         
