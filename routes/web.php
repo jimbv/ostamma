@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () { 
-    return view('inicio');
+    return view('web.inicio');
 }); 
 
 
@@ -27,11 +27,11 @@ Route::post('/consulta','ControladorPagina@enviar_consulta');
 
 
 Route::get('/centros', function () {
-    return view('centros');
+    return view('web.centros');
 });
 
 Route::get('/farmacias', function () {
-    return view('farmacias');
+    return view('web.farmacias');
 });
 
 Route::get('/prueba', function () {
@@ -46,7 +46,7 @@ Auth::routes();
 
 Route::get('/plan/{plan}', 'ControladorPagina@plan', ['plan' => '$plan']);
 Route::get('/prestadores', function () {
-    return view('prestadores');
+    return view('web.prestadores');
 });
 
 
