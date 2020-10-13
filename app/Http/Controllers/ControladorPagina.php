@@ -27,7 +27,7 @@ class ControladorPagina extends Controller
 
         $localidades = $prov::find(6)->localidades;
  
-        return view('consulta',compact('localidades','provincias'));
+        return view('web.consulta',compact('localidades','provincias'));
     }
 
     
@@ -86,7 +86,7 @@ class ControladorPagina extends Controller
 
         //return view('emails.consulta',compact('mensaje_enviar'));
         //return $mensaje_enviar;
-        return view ('consulta_enviado'); 
+        return view ('web.consulta_enviado'); 
 
     }
 
@@ -282,7 +282,7 @@ class ControladorPagina extends Controller
 
         }
 
-        return view('plan', compact('nombre_plan','imagen_plan','consultas',
+        return view('web.plan', compact('nombre_plan','imagen_plan','consultas',
                     'practicas_bioquimicas','practicas_diagnostico','fonoaudiologia','fisioterapia',
                     'medicamentos_ambulatorios','medicamentos_internacion','internacion_clinica_quirurgica',
                     'intervenciones_quirurgicas','internacion_psiquiatrica','material_radioactivo',

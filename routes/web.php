@@ -48,3 +48,6 @@ Route::get('/plan/{plan}', 'ControladorPagina@plan', ['plan' => '$plan']);
 Route::get('/prestadores', function () {
     return view('prestadores');
 });
+
+
+Route::get('/admin','Administracion@inicio'); 

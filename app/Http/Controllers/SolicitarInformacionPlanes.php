@@ -21,7 +21,7 @@ class SolicitarInformacionPlanes extends Controller
  
         $localidades = $prov::find(6)->localidades;
  
-        return view('conocerplan',compact('localidades','provincias','plan'));
+        return view('web.conocerplan',compact('localidades','provincias','plan'));
     }
 
     public function getLocalidades(Request $request)
@@ -118,7 +118,7 @@ class SolicitarInformacionPlanes extends Controller
 
         //return view('emails.consultaplan',compact('mensaje_enviar'));
         //return $mensaje_enviar;
-        return view ('conocerplan_enviado'); 
+        return view ('web.conocerplan_enviado'); 
 
     }
 
