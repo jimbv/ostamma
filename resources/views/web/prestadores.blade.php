@@ -32,7 +32,7 @@ Prestadores
                 <img src="/img/pdf.ico" alt="Descargar Cartilla de Prestadores" style='width:100%;max-width:150px;'>
                 <br> <br>
 
-                Cartilla de Prestadores y Establecimientos 
+                Cartilla de  Establecimientos 
             </a>
             </center>
             <!--<iframe src="http://www.solucionesaludables.com.ar//gproapp/index.jsp?eligioConvenio=false&conv=461&statusLogin=false&menu=prestadores" frameborder="0"
