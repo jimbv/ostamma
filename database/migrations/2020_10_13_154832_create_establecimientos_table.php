@@ -16,6 +16,11 @@ class CreateEstablecimientosTable extends Migration
         Schema::create('establecimientos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('nombre',100)->unique();
+            $table->string('slug',100)->unique();
+
+            $table->integer('localidad_id'); 
+            $table->foreign('localidad_id')->references('id')->on('localidades');
         });
     }
 

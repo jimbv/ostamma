@@ -25,11 +25,17 @@ Prestadores
         <br><p></p>  
         <div class="container">
         <div class="row" style='background:white;padding:20px;'>
-            <div class="col-md-12 pt-10">
+            <div class="col-md-12 pt-10 center">
             <br>
-            <iframe src="http://www.solucionesaludables.com.ar//gproapp/index.jsp?eligioConvenio=false&conv=461&statusLogin=false&menu=prestadores" frameborder="0"
+
+            <a href="/fuente/Establecimientos_Cartilla_10-2020.pdf" rel="noopener noreferrer" download>
+                <img src="/img/pdf.ico" alt="Descargar Cartilla de Prestadores">
+                <br>
+                Cartilla de Prestadores y Establecimientos 
+            </a>
+            <!--<iframe src="http://www.solucionesaludables.com.ar//gproapp/index.jsp?eligioConvenio=false&conv=461&statusLogin=false&menu=prestadores" frameborder="0"
             style='width:100%;height:900px;'>
-            </iframe>
+            </iframe>-->
             <br>
             </div>
             </div>

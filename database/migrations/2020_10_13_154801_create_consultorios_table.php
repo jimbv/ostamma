@@ -16,6 +16,12 @@ class CreateConsultoriosTable extends Migration
         Schema::create('consultorios', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+             
+
+            $table->string('direccion',200);
+            
+            $table->unsignedBigInteger('localidad_id'); 
+            $table->foreign('localidad_id')->references('id')->on('localidades');
         });
     }
 

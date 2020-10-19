@@ -33,14 +33,8 @@ Route::get('/centros', function () {
 Route::get('/farmacias', function () {
     return view('web.farmacias');
 });
-
-Route::get('/prueba', function () {
-    return 'sss';
-});
-
-
-Route::get('/localidades','SolicitarInformacionPlanes@getLocalidades');
-
+  
+Route::get('/localidades','SolicitarInformacionPlanes@getLocalidades'); 
 
 Auth::routes();
 
