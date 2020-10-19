@@ -29,7 +29,7 @@ Prestadores
             <br>
             <center>
             <a href="/fuente/Establecimientos_Cartilla_10-2020.pdf" rel="noopener noreferrer" download style='color:black;'>
-                <img src="/img/pdf.ico" alt="Descargar Cartilla de Prestadores">
+                <img src="/img/pdf.ico" alt="Descargar Cartilla de Prestadores" style='width:100%;max-width:150px;'>
                 <br> <br>
 
                 Cartilla de Prestadores y Establecimientos 
