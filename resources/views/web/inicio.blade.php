@@ -178,13 +178,13 @@ Inicio
                         <p></p> <br>
                         <h4  class='mb-2 mt-3' >Valores</h4><p></p>
                         <ul style='  list-style-type: disc; margin-left:25px;list-style-position: outside; list-style-image: none; color:blue;'>
-                        <li style='color:black;'> <div style='font-family:OmnesBold;'>Liderazgo y compromiso</div>  social anticipando las necesidades de los beneficiarios y la comunidad en general.</li>
-                        <li style='color:black;'> <div style='font-family:OmnesBold;'>Accesibilidad y eficiencia</div>  para los beneficiarios en prestaciones de calidad basadas en la sustentabilidad.</li>
-                        <li style='color:black;'> <div style='font-family:OmnesBold;'>Transparencia y honestidad </div> en la administración de los recursos.</li>
-                        <li style='color:black;'> <div style='font-family:OmnesBold;'> Integridad y ética</div> en el desarrollo de los negocios.</li>
-                        <li style='color:black;'> <div style='font-family:OmnesBold;'>Cooperación y trabajo</div>  en equipo en las acciones.</li>
-                        <li style='color:black;'> <div style='font-family:OmnesBold;'>Solidaridad y equidad</div>  con los beneficiarios y con todas nuestras partes interesadas pertinentes.</li>
-                        <li style='color:black;'> <div style='font-family:OmnesBold;'>Democracia</div>  en la elección de sus directivos.</li>
+                        <li style='color:black;'> <div style='font-family:OmnesBold;display:inline;'>Liderazgo y compromiso</div>  social anticipando las necesidades de los beneficiarios y la comunidad en general.</li>
+                        <li style='color:black;'> <div style='font-family:OmnesBold;display:inline;'>Accesibilidad y eficiencia</div>  para los beneficiarios en prestaciones de calidad basadas en la sustentabilidad.</li>
+                        <li style='color:black;'> <div style='font-family:OmnesBold;display:inline;'>Transparencia y honestidad </div> en la administración de los recursos.</li>
+                        <li style='color:black;'> <div style='font-family:OmnesBold;display:inline;'> Integridad y ética</div> en el desarrollo de los negocios.</li>
+                        <li style='color:black;'> <div style='font-family:OmnesBold;display:inline;'>Cooperación y trabajo</div>  en equipo en las acciones.</li>
+                        <li style='color:black;'> <div style='font-family:OmnesBold;display:inline;'>Solidaridad y equidad</div>  con los beneficiarios y con todas nuestras partes interesadas pertinentes.</li>
+                        <li style='color:black;'> <div style='font-family:OmnesBold;display:inline;'>Democracia</div>  en la elección de sus directivos.</li>
                         </ul>
                         </div>
 
