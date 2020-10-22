@@ -1,357 +1,488 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <base href="./admin">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="CoreUI - Laravel">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+<html>
 
-    <title>CoreUI Integration with Laravel</title>
+<head>
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app_admin.css') }}" rel="stylesheet">
+  <meta charset="utf-8">
 
-  </head>
-  <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
-   @include('common.header')
-   
-    <div class="app-body">
-  
-    <div class="sidebar"> 
-    @include('common.sidebar')
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
-    </div>
-    <main class="main" style='background:#C8CED3;'>
-    
-    <ol class="breadcrumb">
-    <li class="breadcrumb-item">Home</li>
-    <li class="breadcrumb-item">
-    <a href="#">Admin</a>
-    </li>
-    <li class="breadcrumb-item active">Dashboard</li>
-    
-    <li class="breadcrumb-menu d-md-down-none">
-    <div class="btn-group" role="group" aria-label="Button group">
-    <a class="btn" href="#">
-    <i class="icon-speech"></i>
-    </a>
-    <a class="btn" href="./">
-    <i class="icon-graph"></i> &nbsp;Dashboard</a>
-    <a class="btn" href="#">
-    <i class="icon-settings"></i> &nbsp;Settings</a>
-    </div>
-    </li>
-    </ol>
-    <div class="container-fluid" style='padding-top:20px;' >
-      
-    @yield('content')
-    <div id="ui-view">
-      
-    </div>
-    </div>
-    </main>
-    <aside class="aside-menu">
-    <ul class="nav nav-tabs" role="tablist">
-    <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#timeline" role="tab">
-    <i class="icon-list"></i>
-    </a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">
-    <i class="icon-speech"></i>
-    </a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#settings" role="tab">
-    <i class="icon-settings"></i>
-    </a>
-    </li>
+  <title>@yield('titulo')</title>
+
+  <!-- Tell the browser to be responsive to screen width -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  @yield('estilos')
+
+  <!-- Font Awesome -->
+
+  <link rel="stylesheet" href="/adminlte/plugins/fontawesome-free/css/all.min.css">
+
+  <!-- Ionicons -->
+
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+  <!-- overlayScrollbars -->
+
+  <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">
+
+  <!-- Google Font: Source Sans Pro -->
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+</head>
+
+<body class="hold-transition sidebar-mini">
+
+<!-- Site wrapper -->
+
+<div class="wrapper">
+
+  <!-- Navbar -->
+
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+
+    <!-- Left navbar links -->
+
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+
+      </li>
+
+      <li class="nav-item d-none d-sm-inline-block">
+
+        <a href="/admin" class="nav-link">Inicio</a>
+
+      </li>
+
+       
+
     </ul>
+
+
+
+    <!-- SEARCH FORM 
+
+    <form class="form-inline ml-3">
+
+      <div class="input-group input-group-sm">
+
+        <input class="form-control form-control-navbar" type="search" placeholder="Buscar" aria-label="Search">
+
+        <div class="input-group-append">
+
+          <button class="btn btn-navbar" type="submit">
+
+            <i class="fas fa-search"></i>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </form>
+
+-->
+
+    <!-- Right navbar links -->
+
+    <ul class="navbar-nav ml-auto">
+
+       
+
+      
+
+      </li>
+
+      <li class="nav-item">
+
+        <form action="/logout" method='POST'>
+
+        @csrf
+
+        @method('POST')
+
+        <input type='submit' value="Cerrar sesión" class='btn btn-light' />
+
+        </form>
+
+        
+
+        <!--
+
+          Barra para editar los colores del menu
+
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
+
+          <i class="fas fa-th-large"></i>
+
+        </a>
+
+
+
+        -->
+
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <!-- /.navbar -->
+
+
+
+  <!-- Main Sidebar Container (le quite estilo elevation-4 de sombra)-->
+
+  <aside class="main-sidebar sidebar-dark-primary ">
+
+    <!-- Brand Logo -->
+
+    <a href="/admin/" class="brand-link">
+
+      <img src="/img/icono.png"
+
+           alt="bellnet"
+
+           class="brand-image img-circle elevation-3" >
+
+      <span class="brand-text font-weight-light">&nbsp;bellnet</span>
+
+    </a>
+
+
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+       
+
+      <!-- Sidebar Menu -->
+
+      <nav class="mt-2">
+
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+          <!-- Add icons to the links using the .nav-icon class
+
+               with font-awesome or any other icon font library -->
+
+           
+
+
+
+
+
+          <!-- Categorias -->
+
+          <li class="nav-item has-treeview">
+
+            <a href="#" class="nav-link">
+
+              <i class="nav-icon fas fa-list-alt"></i>
+
+              <p>
+
+                Especialidades
+
+                <i class="right fas fa-angle-left"></i>
+
+              </p>
+
+            </a>
+
+            <ul class="nav nav-treeview">
+
+              <li class="nav-item">
+
+                <a href="{{route('admin.especialidad.index')}}" class="nav-link">
+
+                  <i class="far fa-circle nav-icon"></i>
+
+                  <p>Listado de Especialidades</p>
+
+                </a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a href="{{route('admin.especialidad.create')}}" class="nav-link">
+
+                  <i class="far fa-circle nav-icon"></i>
+
+                  <p>Nueva Especialidad</p>
+
+                </a>
+
+              </li> 
+
+            </ul>
+
+          </li>
+
+          <!-- Productos -->
+
+               <li class="nav-item has-treeview">
+
+            <a href="#" class="nav-link">
+
+              <i class="nav-icon fas fa-list-alt"></i>
+
+              <p>
+
+                Prestadores
+
+                <i class="right fas fa-angle-left"></i>
+
+              </p>
+
+            </a>
+
+            <ul class="nav nav-treeview">
+
+              <li class="nav-item">
+
+                <a href="{{route('admin.prestador.index')}}" class="nav-link">
+
+                  <i class="far fa-circle nav-icon"></i>
+
+                  <p>Listado de prestadores</p>
+
+                </a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a href="{{route('admin.prestador.create')}}" class="nav-link">
+
+                  <i class="far fa-circle nav-icon"></i>
+
+                  <p>Nuevo prestador</p>
+
+                </a>
+
+              </li> 
+
+            </ul>
+
+          </li>
+
+
+
+            
+
+      </nav>
+
+      <!-- /.sidebar-menu -->
+
+    </div>
+
+    <!-- /.sidebar -->
+
+  </aside>
+
+
+
+  <!-- Content Wrapper. Contains page content -->
+
+  <div class="content-wrapper" style='background:#FEF8F5;'> 
+
+    <!-- Content Header (Page header) -->
+
+    <section class="content-header">
+
+      <div class="container-fluid">
+
+        <div class="row mb-2">
+
+          <div class="col-sm-6">
+
+            <h1>@yield('titulo')</h1>
+
+          </div>
+
+          <div class="col-sm-6">
+
+            <ol class="breadcrumb float-sm-right">
+
+              <li class="breadcrumb-item"><a href="/admin">Inicio</a></li>
+
+              @yield('breadcrumb')
+
+              
+
+            </ol>
+
+          </div>
+
+        </div>
+
+      </div><!-- /.container-fluid -->
+
+    </section>
+
+    <!-- Main content -->
+
+    <section class="content">
+
+
+
+
+
+    @if(session('cancelar'))
+
+   
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+
+      {{session('cancelar')}}
+
+      <button type="button" class="close" data-dismiss='alert' aria-label='close'>
+
+        <span aria-hidden='true'>&times;</span>
+
+      </button>
+
+    </div>
+
+
+
+    @endif
+
+
+
+    @if($errors->any())
+
+      <div class="alert alert-danger">
+
+      <ul>
+
+      @foreach($errors->all() as $error)
+
+        <li>{{$error}}</li>
+
+      @endforeach
+
+      </ul>
+
+      </div>
+
+    @endif
+
+
+
+    @if(session('datos'))
+
+   
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+
+      {{session('datos')}}
+
+      <button type="button" class="close" data-dismiss='alert' aria-label='close'>
+
+        <span aria-hidden='true'>&times;</span>
+
+      </button>
+
+    </div>
+
+
+
+    @endif
+
+
+
+    @yield('contenido')
+
+
+
+
+
+
+
+    </section>
+
+    <!-- /.content -->
+
+  </div>
+
+  <!-- /.content-wrapper -->
+
+
+
+  <footer class="main-footer">
+
     
 
+    <strong>&copy; <a href="http://www.bellnet.com.ar">Bellnet</a>.</strong>
 
-    <div class="tab-content">
-    <div class="tab-pane active" id="timeline" role="tabpanel">
-    <div class="list-group list-group-accent">
-    <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">Today</div>
-    <div class="list-group-item list-group-item-accent-warning list-group-item-divider">
-    <div class="avatar float-right">
-    <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    <div>Meeting with
-    <strong>Lucas</strong>
-    </div>
-    <small class="text-muted mr-3">
-    <i class="icon-calendar"></i>&nbsp; 1 - 3pm</small>
-    <small class="text-muted">
-    <i class="icon-location-pin"></i>&nbsp; Palo Alto, CA</small>
-    </div>
-    <div class="list-group-item list-group-item-accent-info">
-    <div class="avatar float-right">
-    <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    <div>Skype with
-    <strong>Megan</strong>
-    </div>
-    <small class="text-muted mr-3">
-    <i class="icon-calendar"></i>&nbsp; 4 - 5pm</small>
-    <small class="text-muted">
-    <i class="icon-social-skype"></i>&nbsp; On-line</small>
-    </div>
-    <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">Tomorrow</div>
-    <div class="list-group-item list-group-item-accent-danger list-group-item-divider">
-    <div>New UI Project -
-    <strong>deadline</strong>
-    </div>
-    <small class="text-muted mr-3">
-    <i class="icon-calendar"></i>&nbsp; 10 - 11pm</small>
-    <small class="text-muted">
-    <i class="icon-home"></i>&nbsp; creativeLabs HQ</small>
-    <div class="avatars-stack mt-2">
-    <div class="avatar avatar-xs">
-    <img class="img-avatar" src="img/avatars/2.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    <div class="avatar avatar-xs">
-    <img class="img-avatar" src="img/avatars/3.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    <div class="avatar avatar-xs">
-    <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    <div class="avatar avatar-xs">
-    <img class="img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    <div class="avatar avatar-xs">
-     <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    </div>
-    </div>
-    <div class="list-group-item list-group-item-accent-success list-group-item-divider">
-    <div>
-    <strong>#10 Startups.Garden</strong> Meetup</div>
-    <small class="text-muted mr-3">
-    <i class="icon-calendar"></i>&nbsp; 1 - 3pm</small>
-    <small class="text-muted">
-    <i class="icon-location-pin"></i>&nbsp; Palo Alto, CA</small>
-    </div>
-    <div class="list-group-item list-group-item-accent-primary list-group-item-divider">
-    <div>
-    <strong>Team meeting</strong>
-    </div>
-    <small class="text-muted mr-3">
-    <i class="icon-calendar"></i>&nbsp; 4 - 6pm</small>
-    <small class="text-muted">
-    <i class="icon-home"></i>&nbsp; creativeLabs HQ</small>
-    <div class="avatars-stack mt-2">
-    <div class="avatar avatar-xs">
-    <img class="img-avatar" src="img/avatars/2.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    <div class="avatar avatar-xs">
-    <img class="img-avatar" src="img/avatars/3.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    <div class="avatar avatar-xs">
-    <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    <div class="avatar avatar-xs">
-    <img class="img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    <div class="avatar avatar-xs">
-    <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    <div class="avatar avatar-xs">
-    <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    <div class="avatar avatar-xs">
-    <img class="img-avatar" src="img/avatars/8.jpg" alt="admin@bootstrapmaster.com">
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="tab-pane p-3" id="messages" role="tabpanel">
-    <div class="message">
-    <div class="py-3 pb-5 mr-3 float-left">
-    <div class="avatar">
-    <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-    <span class="avatar-status badge-success"></span>
-    </div>
-    </div>
-    <div>
-    <small class="text-muted">Lukasz Holeczek</small>
-    <small class="text-muted float-right mt-1">1:52 PM</small>
-    </div>
-    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-    <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-    </div>
-    <hr>
-    <div class="message">
-    <div class="py-3 pb-5 mr-3 float-left">
-    <div class="avatar">
-    <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-    <span class="avatar-status badge-success"></span>
-    </div>
-    </div>
-    <div>
-    <small class="text-muted">Lukasz Holeczek</small>
-    <small class="text-muted float-right mt-1">1:52 PM</small>
-    </div>
-    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-    <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-    </div>
-    <hr>
-    <div class="message">
-    <div class="py-3 pb-5 mr-3 float-left">
-    <div class="avatar">
-    <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-     <span class="avatar-status badge-success"></span>
-    </div>
-    </div>
-    <div>
-    <small class="text-muted">Lukasz Holeczek</small>
-    <small class="text-muted float-right mt-1">1:52 PM</small>
-    </div>
-    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-    <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-    </div>
-    <hr>
-    <div class="message">
-    <div class="py-3 pb-5 mr-3 float-left">
-    <div class="avatar">
-    <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-    <span class="avatar-status badge-success"></span>
-    </div>
-    </div>
-    <div>
-    <small class="text-muted">Lukasz Holeczek</small>
-    <small class="text-muted float-right mt-1">1:52 PM</small>
-    </div>
-    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-    <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-    </div>
-    <hr>
-    <div class="message">
-    <div class="py-3 pb-5 mr-3 float-left">
-    <div class="avatar">
-    <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
-    <span class="avatar-status badge-success"></span>
-    </div>
-    </div>
-    <div>
-    <small class="text-muted">Lukasz Holeczek</small>
-    <small class="text-muted float-right mt-1">1:52 PM</small>
-    </div>
-    <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-    <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
-    </div>
-    </div>
-    <div class="tab-pane p-3" id="settings" role="tabpanel">
-    <h6>Settings</h6>
-    <div class="aside-options">
-    <div class="clearfix mt-4">
-    <small>
-    <b>Option 1</b>
-    </small>
-    <label class="switch switch-label switch-pill switch-success switch-sm float-right">
-    <input class="switch-input" type="checkbox" checked="">
-    <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
-    </label>
-    </div>
-    <div>
-    <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-    </div>
-    </div>
-    <div class="aside-options">
-    <div class="clearfix mt-3">
-    <small>
-    <b>Option 2</b>
-    </small>
-    <label class="switch switch-label switch-pill switch-success switch-sm float-right">
-    <input class="switch-input" type="checkbox">
-    <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
-    </label>
-    </div>
-    <div>
-    <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-    </div>
-    </div>
-    <div class="aside-options">
-    <div class="clearfix mt-3">
-    <small>
-    <b>Option 3</b>
-    </small>
-    <label class="switch switch-label switch-pill switch-success switch-sm float-right">
-    <input class="switch-input" type="checkbox">
-    <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
-    </label>
-    </div>
-    </div>
-    <div class="aside-options">
-    <div class="clearfix mt-3">
-    <small>
-    <b>Option 4</b>
-    </small>
-    <label class="switch switch-label switch-pill switch-success switch-sm float-right">
-    <input class="switch-input" type="checkbox" checked="">
-    <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
-    </label>
-    </div>
-    </div>
-    <hr>
-    <h6>System Utilization</h6>
-    <div class="text-uppercase mb-1 mt-4">
-    <small>
-    <b>CPU Usage</b>
-    </small>
-    </div>
-    <div class="progress progress-xs">
-    <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <small class="text-muted">348 Processes. 1/4 Cores.</small>
-    <div class="text-uppercase mb-1 mt-2">
-    <small>
-    <b>Memory Usage</b>
-    </small>
-    </div>
-    <div class="progress progress-xs">
-    <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <small class="text-muted">11444GB/16384MB</small>
-    <div class="text-uppercase mb-1 mt-2">
-    <small>
-    <b>SSD 1 Usage</b>
-    </small>
-    </div>
-    <div class="progress progress-xs">
-    <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <small class="text-muted">243GB/256GB</small>
-    <div class="text-uppercase mb-1 mt-2">
-    <small>
-    <b>SSD 2 Usage</b>
-    </small>
-    </div>
-    <div class="progress progress-xs">
-    <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <small class="text-muted">25GB/256GB</small>
-    </div>
-    </div>
-    </aside>
-    </div>
-   @include('common.footer')
-     <!-- Scripts -->
-     <script src="{{ asset('js/app_admin.js') }}"></script>
+  </footer>
 
-  {{-- <script>
-        $('#ui-view').ajaxLoad();
-        $(document).ajaxComplete(function() {
-          Pace.restart()
-        });
-      </script>  --}}
-    </body>
+
+
+  <!-- Control Sidebar -->
+
+  <aside class="control-sidebar control-sidebar-dark">
+
+    <!-- Control sidebar content goes here -->
+
+  </aside>
+
+  <!-- /.control-sidebar -->
+
+</div>
+
+<!-- ./wrapper -->
+
+
+
+<!-- jQuery -->
+
+<script src="/adminlte/plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap 4 -->
+
+<script src="/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- AdminLTE App -->
+
+<script src="/adminlte/dist/js/adminlte.min.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+
+<script src="/adminlte/dist/js/demo.js"></script>
+
+
+
+
+
+<!-- SweetAlert -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+
+
+<!-- Scripts -->
+
+<script src="{{ asset('js/app_admin.js') }}" defer></script> 
+
+
+
+@yield('scripts')
+
+
+
+</body>
+
 </html>
+

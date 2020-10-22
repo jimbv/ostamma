@@ -14,7 +14,7 @@ class CreatePrestadoresTable extends Migration
     public function up()
     {
         Schema::create('prestadores', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             $table->string('matricula')->nullable(); 
             $table->integer('especialidad_id'); 
             $table->integer('personas_id');  

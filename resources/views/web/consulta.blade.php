@@ -19,7 +19,7 @@ Conocer Plan
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
                     <div class="section-title text-center pb-30">
-                        <h3 class="title">Autogestión</h3>
+                        <h3 class="title">Envianos tu consulta y te asesoramos</h3>
 
                         <hr style="color:white;border: 1px solid white;"></hr>
                         <!--<p class="text">Completá el formulario para conocer los valores del plan que elijas.</p>-->

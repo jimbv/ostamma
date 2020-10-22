@@ -43,5 +43,16 @@ Route::get('/prestadores', function () {
     return view('web.prestadores');
 });
 
-
+Route::get('/prueba','Administracion@prueba'); 
+ 
 Route::get('/admin','Administracion@inicio'); 
+
+
+
+Route::resource('admin/especialidad','Admin\AdminEspecialidadController')->names('admin.especialidad');
+Route::resource('admin/prestador','Admin\AdminPrestadorController')->names('admin.prestador');
+
+
+Route::get('cancelar/{ruta}',function($ruta){
+    return redirect()->route($ruta)->with('cancelar','Acción cancelada');
+})->name('cancelar');

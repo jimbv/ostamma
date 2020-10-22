@@ -119,7 +119,7 @@ Inicio
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9 pt-40" style='height:100%;text-align:center;'> 
                     <a href="/centros">
-                    <img src="imgs/centros.png" alt="Centros Médicos" style='bottom:0px;' />
+                    <img src="imgs/centros.png" alt="Centros Médicos Propios" style='bottom:0px;' />
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9 pt-40" style='height:100%;text-align:center;'>
@@ -178,13 +178,13 @@ Inicio
                         <p></p> <br>
                         <h4  class='mb-2 mt-3' >Valores</h4><p></p>
                         <ul style='  list-style-type: disc; margin-left:25px;list-style-position: outside; list-style-image: none; color:blue;'>
-                        <li style='color:black;'>Liderazgo y compromiso social anticipando las necesidades de los beneficiarios y la comunidad en general.</li>
-                        <li style='color:black;'>Accesibilidad y eficiencia para los beneficiarios en prestaciones de calidad basadas en la sustentabilidad.</li>
-                        <li style='color:black;'>Transparencia y honestidad en la administración de los recursos.</li>
-                        <li style='color:black;'>Integridad y ética en el desarrollo de los negocios.</li>
-                        <li style='color:black;'>Cooperación y trabajo en equipo en las acciones.</li>
-                        <li style='color:black;'>Solidaridad y equidad con los beneficiarios y con todas nuestras partes interesadas pertinentes.</li>
-                        <li style='color:black;'>Democracia en la elección de sus directivos.</li>
+                        <li style='color:black;'> <strong>Liderazgo y compromiso</strong>  social anticipando las necesidades de los beneficiarios y la comunidad en general.</li>
+                        <li style='color:black;'> <strong>Accesibilidad y eficiencia</strong>  para los beneficiarios en prestaciones de calidad basadas en la sustentabilidad.</li>
+                        <li style='color:black;'> <strong>Transparencia y honestidad </strong> en la administración de los recursos.</li>
+                        <li style='color:black;'> <strong> Integridad y ética</strong> en el desarrollo de los negocios.</li>
+                        <li style='color:black;'> <strong>Cooperación y trabajo</strong>  en equipo en las acciones.</li>
+                        <li style='color:black;'> <strong>Solidaridad y equidad</strong>  con los beneficiarios y con todas nuestras partes interesadas pertinentes.</li>
+                        <li style='color:black;'> <strong>Democracia</strong>  en la elección de sus directivos.</li>
                         </ul>
                         </div>
 

@@ -2,39 +2,17 @@
     <ul class="nav">
     <li class="nav-item">
     <a class="nav-link" href="main.html">
-    <i class="nav-icon icon-speedometer"></i> Dashboard
-    <span class="badge badge-info">NEW</span>
+    <i class="nav-icon icon-speedometer"></i> Tablero 
     </a>
     </li>
-    <li class="nav-title">Theme</li>
-    <li class="nav-item">
-    <a class="nav-link" href="colors.html">
-    <i class="nav-icon icon-drop"></i> Colors</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="typography.html">
-    <i class="nav-icon icon-pencil"></i> Typography</a>
-    </li>
-    <li class="nav-title">Components</li>
+    <li class="nav-title">ADMINISTRAR</li>
     <li class="nav-item nav-dropdown">
     <a class="nav-link nav-dropdown-toggle" href="#">
-    <i class="nav-icon icon-puzzle"></i> Base</a>
+    <i class="nav-icon icon-people"></i> Prestadores</a>
     <ul class="nav-dropdown-items">
     <li class="nav-item">
     <a class="nav-link" href="base/breadcrumb.html">
     <i class="nav-icon icon-puzzle"></i> Breadcrumb</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="base/cards.html">
-    <i class="nav-icon icon-puzzle"></i> Cards</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="base/carousel.html">
-    <i class="nav-icon icon-puzzle"></i> Carousel</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="base/collapse.html">
-    <i class="nav-icon icon-puzzle"></i> Collapse</a>
     </li>
     <li class="nav-item">
     <a class="nav-link" href="base/jumbotron.html">
@@ -68,17 +46,23 @@
     <a class="nav-link" href="base/switches.html">
     <i class="nav-icon icon-puzzle"></i> Switches</a>
     </li>
-    <li class="nav-item">
-    <a class="nav-link" href="base/tabs.html">
-    <i class="nav-icon icon-puzzle"></i> Tabs</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="base/tooltips.html">
-    <i class="nav-icon icon-puzzle"></i> Tooltips</a>
-    </li>
+    </ul>
+    </li>  
+    <li class="nav-item nav-dropdown">
+    <a class="nav-link nav-dropdown-toggle" href="#">
+    <i class="nav-icon icon-people"></i> Especialidades</a>
+    <ul class="nav-dropdown-items">
+        <li class="nav-item">
+        <a class="nav-link" href="/admin/especialidad/">
+        <i class="nav-icon icon-puzzle"></i> Listado</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="base/jumbotron.html">
+        <i class="nav-icon icon-puzzle"></i> Jumbotron</a>
+        </li>
     </ul>
     </li>
-    <li class="nav-item nav-dropdown">
+    <!--<li class="nav-item nav-dropdown">
     <a class="nav-link nav-dropdown-toggle" href="#">
     <i class="nav-icon icon-cursor"></i> Buttons</a>
     <ul class="nav-dropdown-items">
@@ -263,7 +247,7 @@
     <i class="nav-icon icon-calculator"></i> Widgets
     <span class="badge badge-info">NEW</span>
     </a>
-    </li>
+    </li> 
     <li class="nav-divider"></li>
     <li class="nav-title">Extras</li>
     <li class="nav-item nav-dropdown">
@@ -330,6 +314,9 @@
     </li>
     </ul>
     </li>
+
+    -->
+    <!--
     <li class="nav-divider"></li>
     <li class="nav-title">Labels</li>
     <li class="nav-item d-compact-none d-minimized-none">
@@ -379,5 +366,6 @@
     </div>
     <small class="text-muted">243GB/256GB</small>
     </li>
+    -->
     </ul>
     </nav>
