@@ -146,13 +146,13 @@
 
     <a href="/admin/" class="brand-link">
 
-      <img src="/img/icono.png"
+      <img src="/imgs/logo.png"
 
-           alt="bellnet"
+           alt="OSTAMMA"
 
            class="brand-image img-circle elevation-3" >
 
-      <span class="brand-text font-weight-light">&nbsp;bellnet</span>
+      <span class="brand-text font-weight-light">&nbsp;OSTAMMA</span>
 
     </a>
 
