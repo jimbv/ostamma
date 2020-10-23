@@ -17,7 +17,7 @@ Centros Médicos
                     <div class="section-title text-center pb-30">
                         <h3 class="title">CENTROS MÉDICOS PROPIOS</h3>
                         <p class="text">
-                        Los Centros Médicos, brindan excelente cobertura médica que se integran a las atenciones de nuestros PRESTADORES EXTERNOS.
+                        Los Centros Médicos brindan excelente cobertura médica que se integran a las atenciones de nuestros PRESTADORES EXTERNOS.
                         <br>
                         Consultá aquí por el Centro Médico Propio más cercano a tu domicilio.
 
