@@ -1,10 +1,10 @@
 @extends ('layouts.admin')
 
-@section('titulo','Crear especialidad')
+@section('titulo','Crear categoría')
 
 @section('breadcrumb')
 
-  <li class="breadcrumb-item"><a href="{{route('admin.especialidad.index')}}">Especialidad</a></li>
+  <li class="breadcrumb-item"><a href="{{route('admin.category.index')}}">Categorías</a></li>
 
   <li class="breadcrumb-item active">@yield('titulo')</li>
 
@@ -18,15 +18,15 @@
 
         
 
-      <form action="{{ route('admin.especialidad.store') }}" method='POST'>
+      <form action="{{ route('admin.category.store') }}" method='POST'>
 
         @csrf
 
-      <div id="apiespecialidad">
+      <div id="apicategory">
 
         <div class="card-header">
 
-          <h3 class="card-title">Administración de Especialidades</h3>
+          <h3 class="card-title">Administración de Categorías</h3>
 
 
 
@@ -54,7 +54,7 @@
 
                       <input v-model='nombre' 
 
-                      @blur='getEspecialidad' 
+                      @blur='getCategory' 
 
                       @focus='div_aparecer=false' 
 
@@ -114,7 +114,7 @@
 
         <div class="card-footer">
 
-        <a href="{{ route('cancelar','admin.especialidad.index')}}" class='btn btn-danger'>Cancelar</a>
+        <a href="{{ route('cancelar','admin.category.index')}}" class='btn btn-danger'>Cancelar</a>
 
 
 

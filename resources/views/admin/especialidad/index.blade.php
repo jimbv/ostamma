@@ -99,7 +99,7 @@
 
                       <td> {{$especialidad->nombre}}</td>
 
-                      <td> {{$eespecialidadoria->slug}}</td>
+                      <td> {{$especialidad->slug}}</td>
 
                       <td style ="max-width:300px;overflow:hidden;"> {{$especialidad->descripcion}}</td>
 

@@ -48,7 +48,7 @@ Route::get('/prueba','Administracion@prueba');
 Route::get('/admin','Administracion@inicio'); 
 
 
-
+Route::resource('admin/category','Admin\AdminCategoryController')->names('admin.category');
 Route::resource('admin/especialidad','Admin\AdminEspecialidadController')->names('admin.especialidad');
 Route::resource('admin/prestador','Admin\AdminPrestadorController')->names('admin.prestador');
 

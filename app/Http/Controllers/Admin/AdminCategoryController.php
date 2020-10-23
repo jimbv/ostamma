@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Especialidad;
+use App\Category;
 
-class AdminEspecialidadController extends Controller
+class AdminCategoryController extends Controller
 {
     public function __construct(){
 
@@ -19,9 +19,10 @@ class AdminEspecialidadController extends Controller
      */
     public function index(Request $request)
     {
-        $nombre = $request->get('nombre'); 
-        $especialidades = Especialidad::where('nombre','like',"%$nombre%")->orderBy('nombre')->paginate(5);
-        return view('admin.especialidad.index',compact('especialidades'));
+        $nombre = $request->get('nombre');
+        //dd($nombre);
+        $categorias = Category::where('nombre','like',"%$nombre%")->orderBy('nombre')->paginate(5);
+        return view('admin.category.index',compact('categorias'));
     }
 
     /**
@@ -31,7 +32,7 @@ class AdminEspecialidadController extends Controller
      */
     public function create()
     {
-        return view('admin.especialidad.create');
+        return view('admin.category.create');
     }
 
     /**
@@ -53,12 +54,12 @@ class AdminEspecialidadController extends Controller
         //return Category::create($request->all());
 
         $request->validate([
-            'nombre'=> 'required|max:50|unique:especialidades,nombre',
-            'slug'=> 'required|max:50|unique:especialidades,slug' 
+            'nombre'=> 'required|max:50|unique:categories,nombre',
+            'slug'=> 'required|max:50|unique:categories,slug' 
         ]);
 
-        Especialidad::create($request->all());
-        return redirect()->route('admin.especialidad.index')->with('datos','Registro creado correctamente');
+        Category::create($request->all());
+        return redirect()->route('admin.category.index')->with('datos','Registro creado correctamente');
     }
 
     /**
@@ -69,10 +70,10 @@ class AdminEspecialidadController extends Controller
      */
     public function show($slug)
     {
-        $esp = Especialidad::where('slug',$slug)->firstOrFail();
+        $cat = Category::where('slug',$slug)->firstOrFail();
         $editar = "Si";
 
-        return view('admin.especialidad.show',compact('esp','editar'));
+        return view('admin.category.show',compact('cat','editar'));
     }
 
     /**
@@ -83,10 +84,10 @@ class AdminEspecialidadController extends Controller
      */
     public function edit($slug)
     {
-        $esp = Especialidad::where('slug',$slug)->firstOrFail();
+        $cat = Category::where('slug',$slug)->firstOrFail();
         $editar = "Si";
 
-        return view('admin.especialidad.edit',compact('esp','editar'));
+        return view('admin.category.edit',compact('cat','editar'));
     }
 
     /**
@@ -98,14 +99,14 @@ class AdminEspecialidadController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $esp = Especialidad::findOrFail($id); 
+        $cat = Category::findOrFail($id); 
 
 
         
         $request->validate([
             // Con eel $cat->id del final ignora el del mismo id
-            'nombre'=> 'required|max:50|unique:especialidades,nombre,'.$esp->id,
-            'slug'=> 'required|max:50|unique:especialidades,slug,'.$esp->id 
+            'nombre'=> 'required|max:50|unique:categories,nombre,'.$cat->id,
+            'slug'=> 'required|max:50|unique:categories,slug,'.$cat->id 
         ]);
         /*$cat->nombre = $request->nombre;
         $cat->slug = $request->slug;
@@ -115,7 +116,7 @@ class AdminEspecialidadController extends Controller
         */
         $cat->fill($request->all())->save();
         //return $cat;
-        return redirect()->route('admin.especialidad.index')->with('datos','Registro actualizado correctamente');
+        return redirect()->route('admin.category.index')->with('datos','Registro actualizado correctamente');
     }
 
     /**
@@ -126,8 +127,8 @@ class AdminEspecialidadController extends Controller
      */
     public function destroy($id)
     {
-        $esp = Especialidad::findOrFail($id); 
-        $esp->delete();
-        return redirect()->route('admin.especialidad.index')->with('datos','Registro eliminado correctamente');
+        $cat = Category::findOrFail($id); 
+        $cat->delete();
+        return redirect()->route('admin.category.index')->with('datos','Registro eliminado correctamente');
     }
 }
