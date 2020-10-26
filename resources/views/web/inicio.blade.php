@@ -46,7 +46,7 @@ Inicio
                 </div>
             </div> <!-- row -->
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-7 col-sm-9 pt-10">
+                <!--<div class="col-lg-4 col-md-7 col-sm-9 pt-10">
                     <a href="/plan/plan_clasico">
                     <img src="imgs/clasico.png" alt="Plan Clásico" style='width:100%;'>
                     </a>
@@ -59,6 +59,12 @@ Inicio
                 <div class="col-lg-4 col-md-7 col-sm-9 pt-10">
                     <a href="/plan/plan_joven">
                     <img src="imgs/joven.png" alt="Plan Jóven" style='width:100%;padding-left:11px;'>
+                    </a>
+                </div>-->
+
+            <div class="col-lg-12 col-md-7 col-sm-9 pt-10">
+                    <a href="/plan/plan_superior">
+                    <img src="imgs/planes_ostamma.png" alt="Nuestros planes" style='width:100%;'>
                     </a>
                 </div>
             </div> <!-- row -->
