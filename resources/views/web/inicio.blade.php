@@ -72,7 +72,7 @@ Inicio
                 </div>
             <col-12>
             <br>     <br> <p></p> <br>
-            <img src="imgs/saludvirtual.jpg" alt="Amma Salud Virtual" style='width:100%;border-radius:15px;overflow:hidden;box-shadow:0px 0px 2px white;'/>
+            <img src="imgs/saludvirtual.png" alt="Amma Salud Virtual" style='width:100%;border-radius:15px;overflow:hidden;box-shadow:0px 0px 2px white;'/>
                           
                         
             </col-12>
@@ -119,7 +119,7 @@ Inicio
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9 pt-40" style='height:100%;text-align:center;'> 
                     <a href="/centros">
-                    <img src="imgs/centros.png" alt="Centros Médicos Propios" style='bottom:0px;' />
+                    <img src="imgs/centrosmedicos.png" alt="Centros Médicos Propios" style='bottom:0px;' />
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9 pt-40" style='height:100%;text-align:center;'>
@@ -132,7 +132,7 @@ Inicio
     </section>
     <section id="promociones" class="features-area m-100 " style='background:#B8E2F1;'>
             <div class="container p-30">
-                <img src="imgs/lactancia2.jpg" alt="" style='width:100%;border-radius:14px;'>
+                <img src="imgs/publicidad.png" alt="" style='width:100%;border-radius:14px;'>
             </div>
     </section>
     <section id='nosotros' class="portfolio-area portfolio-four pb-100">
