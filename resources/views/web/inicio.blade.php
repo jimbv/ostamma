@@ -38,10 +38,10 @@ Inicio
             <div class="row justify-content-center pb-60">
                 <div class="col-lg-8 col-md-10">
                     <div class="section-title text-center pb-10">
-                        <h3 class="title">PLANES</h3>
+                        <!--<h3 class="title">PLANES</h3>
                         <p class="text">Nuestros planes de salud brindan una amplia cobertura. Con tu aporte mensual o un pago adicional son ideales para grupos familiares  o personas solas que buscan cobertura social sin pagar de más.
                         
-                        </p>
+                        </p>-->
                     </div> <!-- row -->
                 </div>
             </div> <!-- row -->
