@@ -100,7 +100,7 @@
 
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
                             <ul class="navbar-nav m-auto"> 
-                                <li class="nav-item"><a class="page-scroll" href="/#planes">PLANES</a></li>
+                                <!--<li class="nav-item"><a class="page-scroll" href="/#planes">PLANES</a></li>-->
                                 <li class="nav-item"><a class="page-scroll" href="/#cartilla">CARTILLA</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="/#nosotros">¿QUIÉNES SOMOS?</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="/#autogestion">AUTOGESTIÓN</a></li> 
