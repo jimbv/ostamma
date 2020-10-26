@@ -68,14 +68,14 @@ Inicio
                     </a>
                 </div>
             </div> <!-- row -->
-            <div class="row justify-content-center pt-50">
-                <div class="col-lg-8 col-md-10">
+         <div class="row justify-content-center pt-50">
+                <!--<div class="col-lg-8 col-md-10">
                     <div class="section-title text-center pt-20">
                         <a href="/conocer_plan/todos">
                         <img src="imgs/planes.png" alt="Conocé nuestros planes" style='width:100%;'>
                         </a>
-                    </div> <!-- row -->
-                </div>
+                    </div> 
+                </div>-->
             <col-12>
             <br>     <br> <p></p> <br>
             <img src="imgs/saludvirtual.png" alt="Amma Salud Virtual" style='width:100%;border-radius:15px;overflow:hidden;box-shadow:0px 0px 2px white;'/>
