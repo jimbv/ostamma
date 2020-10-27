@@ -147,9 +147,7 @@
 
           </div>
 
-        </div>
-
-        <ul class="pagination">
+          <ul class="pagination">
             <li class="paginate_button page-item previous 
             @if ($especialidades->currentPage() === 1)
               disabled 
@@ -174,5 +172,7 @@
                 </a>
             </li>
         </ul>    
+
+        </div>
         
 @endsection
