@@ -299,10 +299,10 @@ Plan {{$nombre_plan}}
             <div class="col-md-12 text-center">
                 <br>
                 <a href="/conocer_plan/{{$nombre_plan}}" style='display:inline-block;'>
-                <img src="/imgs/conocer_planes.png" alt="Conocé nuestros planes" style='width:100%;display:inline-block;'>
+                <img src="/imgs/consultaplan.png" alt="Conocé nuestros planes" style='width:100%;display:inline-block;'>
                 </a> 
                 <a href="https://www.sssalud.gob.ar/misssalud/" target='_blank' style='display:inline-block;'>
-                <img src="/imgs/sss_planes.png" alt="Conocé nuestros planes" style='width:100%;display:inline-block;'>
+                <img src="/imgs/misss.png" alt="Conocé nuestros planes" style='width:100%;display:inline-block;'>
                 </a> 
             
             

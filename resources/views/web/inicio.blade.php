@@ -64,7 +64,7 @@ Inicio
 
             <div class="col-lg-12 col-md-7 col-sm-9 pt-10">
                     <a href="/plan/plan_superior">
-                    <img src="imgs/planes_ostamma.png" alt="Nuestros planes" style='width:100%;'>
+                    <img src="imgs/plansuperior.png" alt="Nuestros planes" style='width:100%;'>
                     </a>
                 </div>
             </div> <!-- row -->
@@ -125,7 +125,7 @@ Inicio
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9 pt-40" style='height:100%;text-align:center;'> 
                     <a href="/centros">
-                    <img src="imgs/centrosmedicos.png" alt="Centros Médicos Propios" style='bottom:0px;' />
+                    <img src="imgs/centros_medicos.png" alt="Centros Médicos Propios" style='bottom:0px;' />
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9 pt-40" style='height:100%;text-align:center;'>
