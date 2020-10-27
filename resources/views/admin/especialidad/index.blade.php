@@ -149,6 +149,22 @@
 
         </div>
 
-        {{ $especialidades->appends($_GET)->links()}} 
+        <ul class="pagination">
+                <li class="paginate_button page-item previous disabled" id="anterior">
+                  <a href="{{$especialidades->previousPageUrl()}}" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">
+                    Anterior
+                  </a>
+                </li>
+                <li class="paginate_button page-item active">
+                    <a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0" class="page-link">
+                    {{$especialidades->currentPage()}}
+                    </a>
+                </li>
+                <li class="paginate_button page-item next" id="siguiente">
+                    <a href="{{$especialidades->nextPageUrl()}}" aria-controls="example2" data-dt-idx="7" 
+                      tabindex="0" class="page-link">Siguiente
+                    </a>
+                </li>
+              </ul> 
         
 @endsection
