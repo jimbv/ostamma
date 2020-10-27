@@ -138,9 +138,9 @@
                 </table>
 
 <div class="container">
-<div class="col-12">
-<div class="row center">
 
+<div class="row center">
+<div class="col-12 center">
 <ul class="pagination">
                   <li class="paginate_button page-item previous 
                   @if ($especialidades->currentPage() === 1)
