@@ -137,34 +137,41 @@
 
                 </table>
 
+<div class="container">
+<div class="col-12">
+<div class="row center">
+
+<ul class="pagination">
+                  <li class="paginate_button page-item previous 
+                  @if ($especialidades->currentPage() === 1)
+                    disabled 
+                  @endif
+                  " id="anterior">
+                    <a href="{{$especialidades->previousPageUrl()}}" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">
+                      Anterior
+                    </a>
+                  </li>
+                  <li class="paginate_button page-item active">
+                      <a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0" class="page-link">
+                      {{$especialidades->currentPage()}}
+                      </a>
+                  </li>
+                  <li class="paginate_button page-item next
+                  @if ($especialidades->currentPage() === $especialidades->lastPage())
+                    disabled 
+                  @endif
+                  " id="siguiente">
+                      <a href="{{$especialidades->nextPageUrl()}}" aria-controls="example2" data-dt-idx="7" 
+                        tabindex="0" class="page-link">Siguiente
+                      </a>
+                  </li>
+              </ul>
+</div>
+</div>
+</div>
+                    
+
               </div>
-
-
-              <ul class="pagination">
-            <li class="paginate_button page-item previous 
-            @if ($especialidades->currentPage() === 1)
-              disabled 
-            @endif
-            " id="anterior">
-              <a href="{{$especialidades->previousPageUrl()}}" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">
-                Anterior
-              </a>
-            </li>
-            <li class="paginate_button page-item active">
-                <a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0" class="page-link">
-                {{$especialidades->currentPage()}}
-                </a>
-            </li>
-            <li class="paginate_button page-item next
-            @if ($especialidades->currentPage() === $especialidades->lastPage())
-              disabled 
-            @endif
-            " id="siguiente">
-                <a href="{{$especialidades->nextPageUrl()}}" aria-controls="example2" data-dt-idx="7" 
-                  tabindex="0" class="page-link">Siguiente
-                </a>
-            </li>
-        </ul>    
 
               <!-- /.card-body -->
 
