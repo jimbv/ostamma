@@ -139,9 +139,9 @@
 
 <div class="container">
 
-<div class="row ">
-<div class="col-12 pt-10">
-<ul class="pagination" style="width:200px;margin:auto;">
+<div class="row">
+<div class="col-12">
+<ul class="pagination" style="padding-top:15px;width:200px;margin:auto;">
                   <li class="paginate_button page-item previous 
                   @if ($especialidades->currentPage() === 1)
                     disabled 
