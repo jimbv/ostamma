@@ -150,7 +150,7 @@
         </div>
 
         <ul class="pagination">
-            <li class="paginate_button page-item previous disabled" id="anterior">
+            <li class="paginate_button page-item previous" id="anterior">
               <a href="{{$especialidades->previousPageUrl()}}" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">
                 Anterior
               </a>
