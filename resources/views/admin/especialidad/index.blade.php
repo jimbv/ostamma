@@ -137,11 +137,9 @@
 
                 </table>
 
-<div class="container">
-
-<div class="row">
-<div class="col-12">
-<ul class="pagination" style="padding-top:15px;width:200px;margin:auto;">
+<div style='bottom:0px;position:absolute;width:100%;'>
+ 
+<ul class="pagination" style="padding-bottom:15px;width:200px;margin:auto;">
                   <li class="paginate_button page-item previous 
                   @if ($especialidades->currentPage() === 1)
                     disabled 
@@ -165,9 +163,7 @@
                         tabindex="0" class="page-link">Siguiente
                       </a>
                   </li>
-              </ul>
-</div>
-</div>
+              </ul> 
 </div>
                     
 

@@ -103,7 +103,7 @@
                                 <li class="nav-item"><a class="page-scroll" href="/#planes">PLANES</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="/#cartilla">CARTILLA</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="/#nosotros">¿QUIÉNES SOMOS?</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="/#autogestion">AUTOGESTIÓN</a></li> 
+                                <li class="nav-item"><a class="page-scroll" href="/consulta">AUTOGESTIÓN</a></li> 
                                 <li class="nav-item"><a class="page-scroll" href="/#contacto">NUESTRAS OFICINAS</a></li>
                             </ul>
                         </div>

@@ -97,7 +97,7 @@ Inicio
                 <div class="col-lg-12 col-md-10">
                     <div class="section-title text-center pb-0"> 
                             
-                        <a href="/consulta">
+                        <a href="http://www.ammasalud.com.ar/autogestion/">
                             <img src="imgs/autogestion.jpg" alt="Acceso a Autogestión" style='width:100%;border-radius:5px;overflow:hidden;'/>
                         </a> 
                     </div> <!-- row -->

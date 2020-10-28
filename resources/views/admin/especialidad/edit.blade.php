@@ -4,7 +4,7 @@
 
 @section('breadcrumb')
 
-  <li class="breadcrumb-item"><a href="{{route('admin.category.index')}}">Categorías</a></li>
+  <li class="breadcrumb-item"><a href="{{route('admin.especialidad.index')}}">Especialidades</a></li>
 
   <li class="breadcrumb-item active">@yield('titulo')</li>
 
@@ -18,7 +18,7 @@
 
         
 
-      <form action="{{route('admin.category.update',$cat->id)}}" method='POST'>
+      <form action="{{route('admin.especialidad.update',$esp->id)}}" method='POST'>
 
         @csrf
 
@@ -30,13 +30,13 @@
 
         <span style='display:none;' id='editar'>{{$editar}}</span>
 
-        <span style='display:none;' id='nombretemp'>{{$cat->nombre}}</span>
+        <span style='display:none;' id='nombretemp'>{{$esp->nombre}}</span>
 
-      <div id="apicategory">
+      <div id="apiespecialidad">
 
         <div class="card-header">
 
-          <h3 class="card-title">Administración de Categorías</h3>
+          <h3 class="card-title">Administración de Especialidades</h3>
 
 
 
@@ -64,11 +64,11 @@
 
                       <input v-model='nombre' 
 
-                      @blur='getCategory' 
+                      @blur='getEspecialidad' 
 
                       @focus='div_aparecer=false' 
 
-                      class="form-control" type="text" name="nombre" id="nombre" value="{{$cat->nombre}}">
+                      class="form-control" type="text" name="nombre" id="nombre" value="{{$esp->nombre}}">
 
 
 
@@ -76,7 +76,7 @@
 
                       <input readonly v-model='generarSlug' class="form-control" type="text" name="slug" id="slug">
 
-                      <div v-if="div_aparecer" v-bind:class="div_clase_slug" value="{{$cat->slug}}">
+                      <div v-if="div_aparecer" v-bind:class="div_clase_slug" value="{{$esp->slug}}">
 
                           @{{div_mensajeslug}}
 
@@ -86,7 +86,7 @@
 
                       <label for="nombre">Descripción</label>
 
-                      <textarea class="form-control" name="descripcion" id="descripcion" cols='30' rows='5'>{{$cat->descripcion}}
+                      <textarea class="form-control" name="descripcion" id="descripcion" cols='30' rows='5'>{{$esp->descripcion}}
 
                       </textarea>
 
@@ -120,7 +120,7 @@
 
 
 
-        <a href="{{ route('cancelar','admin.category.index')}}" class='btn btn-danger'>Cancelar</a>
+        <a href="{{ route('cancelar','admin.especialidad.index')}}" class='btn btn-danger'>Cancelar</a>
 
 
 
