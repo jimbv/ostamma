@@ -30,6 +30,11 @@ Route::get('/centros', function () {
     return view('web.centros');
 });
 
+
+Route::get('/saludvirtual', function () {
+    return view('web.saludvirtual');
+});
+
 Route::get('/farmacias', function () {
     return view('web.farmacias');
 });

@@ -78,8 +78,9 @@ Inicio
                 </div>-->
             <col-12>
             <br>     <br> <p></p> <br>
+            <a href="/saludvirtual">
             <img src="imgs/saludvirtual.png" alt="Amma Salud Virtual" style='width:100%;border-radius:15px;overflow:hidden;box-shadow:0px 0px 2px white;'/>
-                          
+            </a>
                         
             </col-12>
 
