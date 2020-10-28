@@ -24,6 +24,20 @@ Plan {{$nombre_plan}}
         <div class="col-md-12">
         <br><p></p> <br> <br>
         <div class="container">
+
+        <div class="row center">
+            <div class="col-md-12 text-center">
+                <br>
+                <a href="/conocer_plan/{{$nombre_plan}}" style='display:inline-block;'>
+                <img src="/imgs/consultaplan.png" alt="Conocé nuestros planes" style='width:100%;display:inline-block;'>
+                </a> 
+                <a href="https://www.sssalud.gob.ar/misssalud/" target='_blank' style='display:inline-block;'>
+                <img src="/imgs/misss.png" alt="Conocé nuestros planes" style='width:100%;display:inline-block;'>
+                </a> 
+                <br> <br>
+            </div>
+        </div>
+        <br>
         <div class="row" style='background:#D7EEF6;padding:20px;'>
             <div class="col-md-12 pt-10">
             <H4>PRESTACIONES AMBULATORIAS</H4> <p></p><br> <br>
@@ -295,20 +309,7 @@ Plan {{$nombre_plan}}
             <div class="col-md-12"><hr>
         <p><br></p><br></div>
         </div>
-        <div class="row center">
-            <div class="col-md-12 text-center">
-                <br>
-                <a href="/conocer_plan/{{$nombre_plan}}" style='display:inline-block;'>
-                <img src="/imgs/consultaplan.png" alt="Conocé nuestros planes" style='width:100%;display:inline-block;'>
-                </a> 
-                <a href="https://www.sssalud.gob.ar/misssalud/" target='_blank' style='display:inline-block;'>
-                <img src="/imgs/misss.png" alt="Conocé nuestros planes" style='width:100%;display:inline-block;'>
-                </a> 
-            
-            
-            <br> <br>
-            </div>
-            </div>
+        
 
         @if($observaciones!='')
         <div class="row" style='padding:20px;background:#DDD;border-radius:6px;'>
