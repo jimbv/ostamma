@@ -36,7 +36,7 @@ Centros Médicos
                             <div style='font-family:OmnesBold;font-size:20px;font-weight:500;text-align:center;width:100%;'>
                                 
                             Recuerde si presenta síntomas compatibles con COVID-19 debe
-                                permanecer en su domicilio y comunicarse de inmediato al 0800-888-7468
+                                permanecer en su domicilio.
 
                             </div>
                         </div>
