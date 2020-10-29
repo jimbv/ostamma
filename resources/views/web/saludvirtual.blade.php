@@ -24,8 +24,8 @@ Centros Médicos
                             <br>
                             <ul style='list-style-type: circle;' >
                                 <li>Envíe un mensaje al número &nbsp; <a href="https://wa.me/5493534181993" style='font-family:OmnesBold;font-weight:500;color:white;'>
-                            <i class="lni lni-whatsapp"></i>  353 4181993
-                        </a>&nbsp;  solicitando un turno de atención.</li>
+                                <i class="lni lni-whatsapp"></i>  353 4181993
+                                </a>&nbsp; solicitando un turno de atención.</li>
                                 <li>Indique cuáles son los síntomas por los que consulta.</li>
                                 <li>Solicitaremos estos datos: correo electrónico, teléfono de contacto, foto de DNI y de la credencial de OSTAMMA.</li>
                                 <li>Realice el pago del coseguro por Mercado Pago y envíe el comprobante.</li>
