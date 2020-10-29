@@ -48,6 +48,16 @@ Route::get('/prestadores', function () {
     return view('web.prestadores');
 });
 
+Route::get('/archivo/{archivo}', function ($archivo) {
+    $public_path = public_path();
+    $url = $public_path.'/fuente/'.$archivo.'.pdf';
+     
+      return response()->download($url);
+     
+
+});
+
+
 Route::get('/prueba','Administracion@prueba'); 
  
 Route::get('/admin','Administracion@inicio'); 
