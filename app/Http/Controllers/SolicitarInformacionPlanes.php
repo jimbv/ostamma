@@ -112,7 +112,7 @@ class SolicitarInformacionPlanes extends Controller
 
         // Enviar el email, el metodo send envia un MAILABLE que es una clase de laravel para armar un email
 
-        Mail::to('joseignaciomartin@gmail.com')->send(new ConsultaPlan($mensaje_enviar));
+        Mail::to('info@ammasalud.com.ar')->send(new ConsultaPlan($mensaje_enviar));
 
          
 
