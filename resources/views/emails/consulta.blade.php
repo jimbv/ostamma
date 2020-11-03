@@ -308,7 +308,13 @@ ul.social li{
                         <td valign="middle" width="70%" style="text-align:left; padding: 1em;">
                         {{$mensaje_enviar['apellido']}}, {{$mensaje_enviar['nombres']}}
                         </td>
-                    
+                    </tr><tr>
+                        <td valign="middle" width="30%" style="text-align:right; padding: 1em;">
+                            Nro. Documento
+                        </td>
+                        <td valign="middle" width="70%" style="text-align:left; padding: 1em;">
+                            {{$mensaje_enviar['nrodocumento']}}
+                        </td>
                     </tr><tr>
                         <td valign="middle" width="30%" style="text-align:right; padding: 1em;">
                             Provincia
