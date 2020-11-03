@@ -1,5 +1,5 @@
 
-@extends('layouts.layouts.plantilla')
+@extends('layouts.plantilla')
 
 @section('scripts') 
 @endsection
