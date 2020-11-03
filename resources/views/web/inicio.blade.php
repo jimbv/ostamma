@@ -64,7 +64,7 @@ Inicio
 
             <div class="col-lg-12 col-md-7 col-sm-9 pt-10">
                     <a href="/plan/plan_superior">
-                    <img src="imgs/plan_superior.png" alt="Nuestros planes" style='width:100%;'>
+                    <img src="imgs/ver_plan_superior.png" alt="Nuestros planes" style='width:100%;'>
                     </a>
                 </div>
             </div> <!-- row -->
