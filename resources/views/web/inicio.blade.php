@@ -101,7 +101,7 @@ Inicio
                     <div class="section-title text-center pb-0"> 
                             
                         <a href="http://www.ammasalud.com.ar/autogestion/">
-                            <img src="imgs/autogestion.jpg" alt="Acceso a Autogestión" style='width:100%;border-radius:5px;overflow:hidden;'/>
+                            <img src="imgs/autogestion.jpg" alt="Acceso a Autogestión" style='width:100%;max-width:550px;border-radius:5px;overflow:hidden;'/>
                         </a> 
                     </div> <!-- row -->
                 </div>
@@ -123,18 +123,17 @@ Inicio
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-7 col-sm-9 pt-40" style='height:100%;text-align:center;'>
                     <a href="/prestadores">
-                    <img src="imgs/prestadores.png" alt="Prestadores" style='bottom:0px;'/>
+                    <img src="imgs/prestadores.png" alt="Prestadores" style='bottom:0px;width:100%;max-width:150px;'/>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9 pt-40" style='height:100%;text-align:center;'> 
                     <a href="/centros">
-                    <img src="imgs/centros_medicos.png" alt="Centros Médicos Propios" style='bottom:0px;' />
+                    <img src="imgs/centros_medicos.png" alt="Centros Médicos Propios" style='bottom:0px;width:100%;max-width:210px;' />
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9 pt-40" style='height:100%;text-align:center;'>
                     <a href="/farmacias">
-                    <img src="imgs/farmacias.png" alt="Farmacias"  style='bottom:0px;' />
-                    </a>
+                    <img src="imgs/farmacias.png" alt="Farmacias"  style='bottom:0px;width:100%;max-width:120px;' />                    </a>
                 </div>
             </div> <!-- row -->
         </div>
