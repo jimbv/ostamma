@@ -12,6 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         //$this->call(LocalidadSeeder::class);
+         $this->call(TipoPrestadoresSeeder::class);
     }
 }

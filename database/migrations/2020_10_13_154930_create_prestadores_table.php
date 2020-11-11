@@ -10,7 +10,7 @@ class CreatePrestadoresTable extends Migration
      * Run the migrations.
      *
      * @return void
-     */
+     */ 
     public function up()
     {
         Schema::create('prestadores', function (Blueprint $table) {

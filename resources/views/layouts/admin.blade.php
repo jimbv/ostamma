@@ -474,7 +474,7 @@
 
 <!-- Scripts -->
 
-<script src="{{ asset('js/app_admin.js') }}" defer></script> 
+<script src="{{ asset('js/app_admin.js') }}?v=3" defer></script> 
 
 
 

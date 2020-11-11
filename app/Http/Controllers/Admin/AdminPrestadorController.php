@@ -4,10 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Product;
+use App\Prestador;
 use App\especialidad;
 
-class AdminProductController extends Controller
+class AdminPrestadorController extends Controller
 {
     public function __construct(){
 
@@ -20,10 +20,23 @@ class AdminProductController extends Controller
      */
     public function index(Request $request)
     {
-        $nombre = $request->get('nombre');
-        //dd($nombre);
-        $prestadores = Product::with('images','especialidad')->where('nombre','like',"%$nombre%")->orderBy('nombre')->paginate(5);
-        return view('admin.product.index',compact('prestadores'));
+
+        /*$table->id();
+            $table->string('matricula')->nullable(); 
+            $table->integer('especialidad_id'); 
+            $table->integer('personas_id');  
+            $table->integer('tipo_prestadores_id'); 
+            $table->timestamps();
+
+            $table->foreign('personas_id')->references('id')->on('personas');
+            $table->foreign('especialidad_id')->references('id')->on('categories'); 
+            $table->foreign('tipo_prestadores_id')->references('id')->on('tipo_prestadores');*/
+
+       // $nombre = $request->get('nombre');
+       // dd($nombre);
+        $prestadores = Prestador::all();
+        return $prestadores;
+       // return view('admin.Prestador.index',compact('prestadores'));
     }
 
     /**
@@ -33,11 +46,9 @@ class AdminProductController extends Controller
      */
     public function create()
     {
-        $categorias = especialidad::orderBy('nombre')->get();
-        
-        $estados_prestadores = $this->estados_prestadores();
+        $especialidades = especialidad::orderBy('nombre')->get(); 
 
-        return view('admin.product.create',compact('categorias','estados_prestadores'));
+        return view('admin.prestador.create',compact('especialidades'));
 
     }
 
@@ -52,8 +63,8 @@ class AdminProductController extends Controller
 
         
         $request->validate([
-            'nombre'=> 'required|max:255|unique:products,nombre',
-            'slug'=> 'required|max:255|unique:products,slug',
+            'nombre'=> 'required|max:255|unique:prestadores,nombre',
+            'slug'=> 'required|max:255|unique:prestadores,slug',
             'imagenes.*' => 'image|mimes:jpg,png,jpeg,gif,svg|max:2048'
         ]);
 
@@ -78,7 +89,7 @@ class AdminProductController extends Controller
         
 
         
-        $prod = new Product;
+        $prod = new Prestador;
 
 
         $prod->nombre = $request->nombre;	 
@@ -111,7 +122,7 @@ class AdminProductController extends Controller
         $prod->images()->createMany($urlimagenes);
 
        // return $prod->images;
-       return redirect()->route('admin.product.index')->with('datos','Registro creado correctamente');
+       return redirect()->route('admin.Prestador.index')->with('datos','Registro creado correctamente');
 
         
     }
@@ -135,11 +146,11 @@ class AdminProductController extends Controller
      */
     public function edit($slug)
     {
-        $prestador = Product::with('images','especialidad')->where('slug',$slug)->firstOrFail();
+        $prestador = Prestador::with('images','especialidad')->where('slug',$slug)->firstOrFail();
         $categorias = especialidad::orderBy('nombre')->get();
 
         $estados_prestadores = $this->estados_prestadores();
-        return view('admin.product.edit',compact('categorias','prestador','estados_prestadores'));
+        return view('admin.Prestador.edit',compact('categorias','prestador','estados_prestadores'));
 
     }
 
@@ -153,8 +164,8 @@ class AdminProductController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'nombre'=> 'required|max:255|unique:products,nombre,'.$id,
-            'slug'=> 'required|max:255|unique:products,slug,'.$id,
+            'nombre'=> 'required|max:255|unique:prestadores,nombre,'.$id,
+            'slug'=> 'required|max:255|unique:prestadores,slug,'.$id,
             'imagenes.*' => 'image|mimes:jpg,png,jpeg,gif,svg|max:2048'
         ]);
 
@@ -179,7 +190,7 @@ class AdminProductController extends Controller
         
 
         
-        $prod = Product::findOrFail($id);
+        $prod = Prestador::findOrFail($id);
 
 
         $prod->nombre = $request->nombre;	 
@@ -212,7 +223,7 @@ class AdminProductController extends Controller
         $prod->images()->createMany($urlimagenes);
 
        // return $prod->images;
-       return redirect()->route('admin.product.edit',$prod->slug)->with('datos','Registro actualizado correctamente');
+       return redirect()->route('admin.Prestador.edit',$prod->slug)->with('datos','Registro actualizado correctamente');
 
         
     }
@@ -225,9 +236,9 @@ class AdminProductController extends Controller
      */
     public function destroy($id)
     {
-        $prod = Product::findOrFail($id); 
+        $prod = Prestador::findOrFail($id); 
         $prod->delete();
-        return redirect()->route('admin.product.index')->with('datos','Registro eliminado correctamente');
+        return redirect()->route('admin.Prestador.index')->with('datos','Registro eliminado correctamente');
     }
 
 

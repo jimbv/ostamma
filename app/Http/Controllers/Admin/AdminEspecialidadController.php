@@ -113,7 +113,7 @@ class AdminEspecialidadController extends Controller
         $cat->save();
         return $cat;
         */
-        $cat->fill($request->all())->save();
+        $esp->fill($request->all())->save();
         //return $cat;
         return redirect()->route('admin.especialidad.index')->with('datos','Registro actualizado correctamente');
     }

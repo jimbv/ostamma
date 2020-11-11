@@ -30,7 +30,7 @@
 
         <span style='display:none;' id='editar'>{{$editar}}</span>
 
-        <span style='display:none;' id='nombretemp'>{{$esp->nombre}}</span>
+        <span style='display:none;' id='nombretemp'>{{$esp->nombre}}</span> 
 
       <div id="apiespecialidad">
 

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Prestador extends Model
 {
+    protected $table = 'prestadores';
     use HasFactory;
 
     public function especialidad(){

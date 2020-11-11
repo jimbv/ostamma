@@ -1,13 +1,13 @@
-@extends('plantilla.admin')
+@extends('layouts.admin')
  
 
-@section('titulo', 'Crear Producto')
+@section('titulo', 'Nuevo prestador')
 
 
 
 @section('breadcrumb')
 
-  <li class="breadcrumb-item"><a href="{{route('admin.product.index')}}">Productos</a></li>
+  <li class="breadcrumb-item"><a href="{{route('admin.prestador.index')}}">Prestadores</a></li>
 
   <li class="breadcrumb-item active">@yield('titulo')</li>
 
@@ -49,7 +49,7 @@
 
     //Initialize Select2 Elements
 
-    $('#category_id').select2()
+    $('#especialidad_id').select2()
 
 
 
@@ -71,9 +71,9 @@
 
 
 
-<div id="apiproduct">
+<div id="apiprestador">
 
-<form action="{{ route('admin.product.store') }}" method="POST" enctype="multipart/form-data" >
+<form action="{{ route('admin.prestador.store') }}" method="POST" enctype="multipart/form-data" >
 
 @csrf
 
@@ -225,7 +225,7 @@
 
           <div class="card-header">
 
-            <h3 class="card-title">Datos del producto</h3>
+            <h3 class="card-title">Datos personales</h3>
 
 
 
@@ -262,29 +262,7 @@
                   class="form-control" type="text" id="nombre" name="nombre">
 
 
-
-                  <label>Slug</label>
-
-                  <input 
-
-                  readonly 
-
-                  v-model='generarSlug' 
-
-                  class="form-control" type="text" id="slug" name="slug" >
-
-
-
-                  <div v-if="div_aparecer" v-bind:class="div_clase_slug">
-
-                      @{{div_mensajeslug}}
-
-                  </div>
-
-                  <br v-if="div_aparecer">
-
-                 
-
+ 
                 </div>
 
                 <!-- /.form-group -->
@@ -307,21 +285,21 @@
 
 
 
-                  <label>Categoria</label>
+                  <label>Especialidad</label>
 
-                  <select name="category_id" id="category_id" class="form-control" style="width: 100%;">
+                  <select name="especialidad_id" id="especialidad_id" class="form-control" style="width: 100%;">
 
-                    @foreach($categorias as $categoria)
+                    @foreach($especialidades as $especialidad)
 
                     
 
                      @if ($loop->first)
 
-                        <option value="{{ $categoria->id }}" selected="selected">{{ $categoria->nombre }}</option>
+                        <option value="{{ $especialidad->id }}" selected="selected">{{ $especialidad->nombre }}</option>
 
                      @else
 
-                        <option value="{{ $categoria->id }}">{{ $categoria->nombre }}</option>
+                        <option value="{{ $especialidad->id }}">{{ $especialidad->nombre }}</option>
 
                      @endif
 
@@ -827,26 +805,7 @@
 
                 <label>Estado</label> 
 
-                  <select name="estado" id="estado" class="form-control" style="width: 100%;">
-
-                    @foreach($estados_productos as $estado)
-
-                    
-
-                     @if ($estado == '')
-
-                        <option value="{{ $estado }}" selected="selected">{{ $estado }}</option>
-
-                     @else
-
-                        <option value="{{ $estado }}">{{ $estado }}</option>
-
-                     @endif
-
-                    @endforeach
-
-                  </select>
-
+                   
 
 
                 </div>

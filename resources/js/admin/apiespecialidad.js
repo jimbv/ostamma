@@ -43,6 +43,7 @@ const apiespecialidad = new Vue({
                 return char[e]
 
             }).toLowerCase();
+ 
 
             return this.slug;
 
@@ -104,9 +105,9 @@ const apiespecialidad = new Vue({
 
         if(document.getElementById('editar')){
 
-            this.nombre = document.getElementById('nombretemp').innerHTML;
+            this.nombre = document.getElementById('nombretemp').innerHTML; 
 
-            this.deshabilitar_boton = 1;
+            this.deshabilitar_boton = 0;
 
         }
 
