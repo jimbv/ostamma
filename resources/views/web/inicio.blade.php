@@ -148,7 +148,7 @@ Inicio
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
                     <div class="section-title text-center pb-10">
-                        <h3 class="title" style='color:#0097CE;'>¿QUIÉNES SOMOS?</h3>
+                        <h3 class="title" style='color:#0097CE;font-size:38px;'>¿QUIÉNES SOMOS?</h3>
                     </div>  
                 </div>
             </div> <!-- row -->
@@ -286,7 +286,7 @@ Inicio
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-md-10" style='color:white;font-size:18px;line-height:22px;text-align:center;'>
                     <div class="section-title text-center pb-30" style=''>
-                        <h3 class="title">NUESTRAS OFICINAS</h3> 
+                        <h3 class="title" style='font-size:38px;'>NUESTRAS OFICINAS</h3> 
                         </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
