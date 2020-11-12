@@ -22,7 +22,7 @@ class CreatePrestadoresTable extends Migration
             $table->timestamps();
 
             $table->foreign('personas_id')->references('id')->on('personas');
-            $table->foreign('especialidad_id')->references('id')->on('categories'); 
+            $table->foreign('especialidad_id')->references('id')->on('especialidades'); 
             $table->foreign('tipo_prestadores_id')->references('id')->on('tipo_prestadores');
         });
     }
