@@ -497,6 +497,14 @@ Conocer Plan
                                             <i class="lni lni-card"></i>
                                         </div></div> <!-- form input -->
                                 </div>
+                                
+                                <div class="col-md-12 pt-15">
+                                
+                                
+                                {!! htmlFormSnippet() !!}
+                                
+                                </div>
+                                
                                 <div class="col-md-12">
                                     <div class="form-input light-rounded-buttons mt-30">
                                         <input type='submit' class="main-btn light-rounded-two" value= 'Realizar consulta de plan' />

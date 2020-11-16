@@ -76,7 +76,8 @@ class SolicitarInformacionPlanes extends Controller
                 'apellido_conyuge'=> 'required',
                 'sexo_conyuge'=> 'required', 
                 'fecha_nacimiento_conyuge'=> 'required', 
-                'nrodocumento_conyuge'=> 'required'
+                'nrodocumento_conyuge'=> 'required',
+                'g-recaptcha-response' => 'recaptcha'
             ]); 
         }else{
             $mensaje_enviar = $request->validate([
@@ -88,7 +89,8 @@ class SolicitarInformacionPlanes extends Controller
                 'email'=> 'required|email',
                 'nrodocumento'=> 'required',
                 'prefijo'=> 'required',
-                'telefono'=> 'required'
+                'telefono'=> 'required',
+                'g-recaptcha-response' => 'recaptcha'
             ]); 
         }
 
