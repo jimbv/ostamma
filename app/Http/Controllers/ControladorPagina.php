@@ -53,61 +53,40 @@ class ControladorPagina extends Controller
         $telefono = $request->telefono; 
         $consulta = $request->consulta; 
           
-
-        $recaptcha = $request["g-recaptcha-response"];
-
-        $url = 'https://www.google.com/recaptcha/api/siteverify';
-        $data = array(
-            'secret' => '6Lej81kUAAAAAD5t_yVOOS8FMd7ns8LWbDV8pRC_',
-            'response' => $recaptcha
-        );
-        $options = array(
-            'http' => array (
-                'method' => 'POST',
-                'content' => http_build_query($data)
-            )
-        );
-        $context  = stream_context_create($options);
-        $verify = file_get_contents($url, false, $context);
-        $captcha_success = json_decode($verify);
-        if ($captcha_success->success) {
  
-            
-            
-            $mensaje_enviar = $request->validate([
-                'nombres'=> 'required',
-                'apellido'=> 'required', 
-                'localidad'=> 'required', 
-                'email'=> 'required|email',
-                'nrodocumento'=> 'required',
-                'prefijo'=> 'required',
-                'telefono'=> 'required',
-                'consulta'=> 'required'
-            ]); 
-            
+        
+        
+        $mensaje_enviar = $request->validate([
+            'nombres'=> 'required',
+            'apellido'=> 'required', 
+            'localidad'=> 'required', 
+            'email'=> 'required|email',
+            'nrodocumento'=> 'required',
+            'prefijo'=> 'required',
+            'telefono'=> 'required',
+            'consulta'=> 'required'
+        ]); 
+         
 
-            $prov  =  new Provincia();
-    
-            $mensaje_enviar["nombre_localidad"]=$loc::find($localidad)->nombre;
-            $mensaje_enviar["nombre_provincia"]=$prov::find($provincia)->nombre; 
-            
-            
-            /*
-            $prov  =  new Provincia();
-            $provincias =  $prov->all()->sortBy('nombre');*/
+        $prov  =  new Provincia();
+ 
+        $mensaje_enviar["nombre_localidad"]=$loc::find($localidad)->nombre;
+        $mensaje_enviar["nombre_provincia"]=$prov::find($provincia)->nombre; 
+         
+        
+        /*
+        $prov  =  new Provincia();
+        $provincias =  $prov->all()->sortBy('nombre');*/
 
-            // Enviar el email, el metodo send envia un MAILABLE que es una clase de laravel para armar un email
+        // Enviar el email, el metodo send envia un MAILABLE que es una clase de laravel para armar un email
 
-            Mail::to('info@ammasalud.com.ar')->send(new Consulta($mensaje_enviar));
+        Mail::to('info@ammasalud.com.ar')->send(new Consulta($mensaje_enviar));
 
-            
+         
 
-            //return view('emails.consulta',compact('mensaje_enviar'));
-            //return $mensaje_enviar;
-            return view ('web.consulta_enviado'); 
-        }else{
-            return false;
-        }
+        //return view('emails.consulta',compact('mensaje_enviar'));
+        //return $mensaje_enviar;
+        return view ('web.consulta_enviado'); 
 
     }
 
