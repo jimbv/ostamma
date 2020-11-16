@@ -167,8 +167,7 @@ Conocer Plan
                                 <div class="col-md-12 pt-15">
                                 
                                 
-                                <script src='https://www.google.com/recaptcha/api.js'></script>
-                                <div class="g-recaptcha" data-sitekey="6Lej81kUAAAAAF6lPIYkCOguEn8AIW3LtgZkrzgV" style="margin-bottom:15px;"></div> 
+                                {!! htmlFormSnippet() !!}
                                 
                                 </div>
 

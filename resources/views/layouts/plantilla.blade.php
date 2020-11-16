@@ -8,6 +8,10 @@
     @yield('ubicacion')
     </title>
     
+    <!-- Recaptcha -->
+    {!! htmlScriptTagJsApi($configuration) !!}
+
+
     <meta name="description" content="Obra Social de los trabajadores asociados a AMMA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

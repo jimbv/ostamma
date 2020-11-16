@@ -64,7 +64,8 @@ class ControladorPagina extends Controller
             'nrodocumento'=> 'required',
             'prefijo'=> 'required',
             'telefono'=> 'required',
-            'consulta'=> 'required'
+            'consulta'=> 'required',
+            'g-recaptcha-response' => 'recaptcha'
         ]); 
          
 
