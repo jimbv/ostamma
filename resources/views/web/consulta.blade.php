@@ -164,7 +164,7 @@ Conocer Plan
                                     </div> <!-- form input -->
                                 </div>
 
-                                <div class="col-md-12">
+                                <div class="col-md-12 pt-10">
                                 
                                 
                             <script src='https://www.google.com/recaptcha/api.js'></script>
