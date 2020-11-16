@@ -164,6 +164,16 @@ Conocer Plan
                                     </div> <!-- form input -->
                                 </div>
 
+                                <div class="col-md-12">
+                                
+                                
+                            <script src='https://www.google.com/recaptcha/api.js'></script>
+                            <div class="g-recaptcha" data-sitekey="6Lej81kUAAAAAF6lPIYkCOguEn8AIW3LtgZkrzgV" style="margin-bottom:15px;"></div> 
+                            <input type="hidden" name="enviado" id="enviado" value="ok" />
+                            <input class="submit-btn" type="submit" value="ENVIAR" style="padding: 10px 20px;border-radius:3px;" />
+                            
+                                </div>
+
 
                                 <div class="col-md-12">
                                     <div class="form-input light-rounded-buttons mt-30">
