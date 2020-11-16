@@ -9,7 +9,7 @@
     </title>
     
     <!-- Recaptcha -->
-    {!! htmlScriptTagJsApi($configuration) !!}
+    {!! htmlScriptTagJsApi() !!}
 
 
     <meta name="description" content="Obra Social de los trabajadores asociados a AMMA">
