@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Prestador;
 use App\especialidad;
+use App\tipoPrestador;
 
 class AdminPrestadorController extends Controller
 {
@@ -46,9 +47,10 @@ class AdminPrestadorController extends Controller
      */
     public function create()
     {
-        $especialidades = especialidad::orderBy('nombre')->get(); 
+        $especialidades = Especialidad::orderBy('nombre')->get(); 
+        $tiposprestadores = TipoPrestador::orderBy('nombre')->get(); 
 
-        return view('admin.prestador.create',compact('especialidades'));
+        return view('admin.prestador.create',compact('especialidades','tiposprestadores'));
 
     }
 

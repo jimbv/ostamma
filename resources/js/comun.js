@@ -53,6 +53,12 @@ if(document.getElementById('apiespecialidad')){
 }
 
 
+if(document.getElementById('apiprestador')){
+
+    require('./admin/apiprestador');   
+
+}
+
 
 
 if(document.getElementById('confirmareliminar')){

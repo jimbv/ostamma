@@ -139,9 +139,20 @@ Inicio
         </div>
     </section>
     <section id="promociones" class="features-area m-100 " style='background:#B8E2F1;'>
-            <div class="container p-30">
-                <img src="imgs/publicidad.png" alt="" style='width:100%;border-radius:14px;'>
+    <div class="container p-30">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner"  style='border-radius:20px;'>
+                <div class="carousel-item active">
+                <img class="d-block w-100" src="imgs/banner1.jpg" alt="Consultá a tu odontólogo"  style='border-radius:20px;' />
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="imgs/banner2.jpg" alt="Noviembre salud bucal" style='border-radius:20px;' />
+                </div>  
             </div>
+            
+        </div>
+             
+    </div>
     </section>
     <section id='nosotros' class="portfolio-area portfolio-four pb-100">
             <div class="container">
