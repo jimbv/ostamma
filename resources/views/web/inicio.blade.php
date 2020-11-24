@@ -139,6 +139,7 @@ Inicio
         </div>
     </section>
     <section id="promociones" class="features-area m-100 " style='background:#B8E2F1;'>
+    <a href="https://www.facebook.com/ammasalud/" target="_blank" rel="noopener noreferrer"></a>
     <div class="container p-30">
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner"  style='border-radius:20px;'>
