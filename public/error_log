@@ -1,0 +1,616 @@
+[16-Nov-2020 02:08:52 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 02:08:53 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[16-Nov-2020 02:08:53 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 02:08:53 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[16-Nov-2020 02:08:53 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 02:08:53 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[16-Nov-2020 02:09:04 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 02:09:04 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[16-Nov-2020 02:09:05 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 02:09:05 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[16-Nov-2020 02:45:33 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 02:45:33 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[16-Nov-2020 02:45:33 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 02:45:33 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[16-Nov-2020 08:04:11 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 08:04:12 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[16-Nov-2020 08:45:44 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 08:45:44 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[16-Nov-2020 08:46:07 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 08:46:07 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[16-Nov-2020 08:48:39 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 08:48:39 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[16-Nov-2020 08:48:45 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 08:48:45 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[16-Nov-2020 08:48:47 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[16-Nov-2020 08:48:47 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:45:47 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:45:48 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:45:52 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:45:52 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:47:14 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:47:14 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:47:16 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:47:16 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:47:24 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:47:24 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:47:34 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:47:34 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:47:41 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:47:41 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:49:09 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:49:09 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:49:19 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:49:19 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:49:24 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:49:24 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:50:09 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:50:09 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:50:12 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:50:12 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:50:17 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:50:17 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:50:23 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:50:23 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:50:36 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:50:36 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:50:46 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:50:46 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:55:48 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:55:48 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:55:59 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:55:59 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:56:07 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:56:07 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:59:06 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:59:06 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 08:59:24 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 08:59:24 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:03:28 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:03:28 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:03:31 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:03:31 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:03:39 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:03:39 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:21:06 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:21:06 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:21:08 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:21:08 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:21:08 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:21:08 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:21:08 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:21:08 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:21:09 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:21:09 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:21:09 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:21:09 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:21:17 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:21:17 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:21:24 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:21:24 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:23:40 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:23:40 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:26:05 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:26:05 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:26:22 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:26:22 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:26:24 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:26:24 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 09:26:26 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 09:26:26 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:19:09 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:19:09 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:21:36 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:21:36 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:21:42 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:21:42 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:31:41 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:31:41 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:31:48 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:31:48 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:33:27 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:33:27 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:33:29 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:33:29 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:34:52 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:34:52 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:34:56 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:34:56 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:34:57 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:34:57 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:34:57 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:34:57 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:34:58 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:34:58 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:34:58 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:34:58 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:34:58 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:34:58 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:34:58 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:34:58 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:34:58 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:34:58 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:35:03 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:35:03 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:37:43 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:37:43 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:38:02 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:38:02 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:38:11 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:38:11 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:38:12 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:38:12 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:38:12 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:38:12 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:38:12 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:38:12 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:38:15 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:38:15 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:38:52 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:38:52 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:38:57 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:38:57 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
+[24-Nov-2020 10:39:01 America/Argentina/Cordoba] PHP Fatal error:  Interface 'JsonSerializable' not found in /home/solares/public_html/ventas/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
+[24-Nov-2020 10:39:01 America/Argentina/Cordoba] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:162
+Stack trace:
+#0 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(968): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(568): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/CliDumper.php(259): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(815): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /home/solares/public_html/ventas/vendor/symfony/var-dumper/Cloner/Data.php(401): Symfony\Compone in /home/solares/public_html/ventas/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 162
