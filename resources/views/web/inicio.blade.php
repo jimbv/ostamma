@@ -139,8 +139,9 @@ Inicio
         </div>
     </section>
     <section id="promociones" class="features-area m-100 " style='background:#B8E2F1;'>
-    <a href="https://www.facebook.com/ammasalud/" target="_blank" rel="noopener noreferrer">
+    
     <div class="container p-30">
+    <a href="https://www.facebook.com/ammasalud/" target="_blank" rel="noopener noreferrer">
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner"  style='border-radius:20px;'>
                 <div class="carousel-item active" data-interval="4000">
@@ -150,9 +151,9 @@ Inicio
                 <img class="d-block w-100" src="imgs/banner2.jpg" alt="Noviembre salud bucal" style='border-radius:20px;' />
                 </div>  
             </div>
-        </div>     
+        </div>   
+    </a>  
     </div>
-    </a>
     </section>
     <section id='nosotros' class="portfolio-area portfolio-four pb-100">
             <div class="container">
