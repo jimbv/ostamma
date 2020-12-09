@@ -147,9 +147,9 @@ Inicio
                 <div class="carousel-item active" data-interval="4000">
                 <img class="d-block w-100" src="imgs/banner1.jpg" alt="Consultá a tu odontólogo"  style='border-radius:20px;' />
                 </div>
-                <div class="carousel-item" data-interval="4000">
+                <!--<div class="carousel-item" data-interval="4000">
                 <img class="d-block w-100" src="imgs/banner2.jpg" alt="Noviembre salud bucal" style='border-radius:20px;' />
-                </div>  
+                </div>  -->
             </div>
         </div>   
     </a>  
