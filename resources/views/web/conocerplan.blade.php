@@ -228,7 +228,8 @@ Conocer Plan
                                         </div></div>   -->
                                 </div>
 
-                                <div class="col-md-6">
+                                <input type="hidden" name="plan" id="plan" value='superior' />
+                                <!--<div class="col-md-6">
                                     <div class="form-input mt-25">
                                      <label>Seleccione el plan </label>
                                         <div class="select-items select input-items default">
@@ -260,9 +261,10 @@ Conocer Plan
 
                                             </SELECT>
                                             <i class="lni lni-card"></i>
-                                        </div></div> <!-- form input -->
+                                        </div></div> 
                                 </div> 
                                 <div class="col-md-6"></div>
+                                 -->
                                 <div class="col-md-12">
                                 <p></p><br> <br>
                                 <h4 class="contact-title pb-10"><i class="lni lni-users"></i>  Grupo familiar</span></h4>
