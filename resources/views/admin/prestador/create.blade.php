@@ -203,163 +203,20 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="card card-info">
-
-          <div class="card-header">
-
-            <h3 class="card-title">Nueva especialidad</h3>
-
-          </div> 
-          <!-- /.card-header -->
-
-          <div class="card-body">
-
-            <div class="row">
-
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label>Matricula</label>
-                  <input v-model='matricula'  @change='eliminarimagen'  @focus='div_aparecer=false' class="form-control" type="text" id="matricula" name="matricula">
-                </div> 
-              </div> 
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label>Especialidad</label>
-                  <select name="especialidad_id" id="especialidad_id" class="form-control" style="width: 100%;" v-model='especialidad_id'>
-                    @foreach($especialidades as $especialidad)
-                      @if ($loop->first)
-                        <option value="{{ $especialidad->id }}" selected="selected">{{ $especialidad->nombre }}</option>
-                      @else
-                        <option value="{{ $especialidad->id }}">{{ $especialidad->nombre }}</option>
-                      @endif
-                    @endforeach
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="form-group">
-                <label>Tipo Prestador</label>
-                  <select name="tipoprestador" id="tipoprestador"  class="form-control" style="width: 100%;">
-                  @foreach($tiposprestadores as $tipoprestador)
-                     @if ($loop->first)
-                        <option value="{{ $tipoprestador->id }}" selected="selected">{{ $tipoprestador->nombre }}</option>
-                     @else
-                        <option value="{{ $tipoprestador->id }}">{{ $tipoprestador->nombre }}</option>
-                     @endif
-                  @endforeach
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="form-group">
-                
-                <label>&nbsp;</label>
-                <br>
-                  <a class="btn btn-primary"  @click='agregarespecialidad' style='width:100%;color:white;' >
-                  <i class="fas fa-plus-circle"></i>&nbsp;&nbsp; Agregar especialidad
-                  </a>
-                </div> 
-              </div>
-              <div class="col-md-12">
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="card card-info">
-
-          <div class="card-header">
-
-            <h3 class="card-title">Listado de Especialidades del Prestador</h3>
-
-          </div> 
-<p></p>
- <article v-for="item in items" class="col-md-11 col-md-offset-1 card" custom_attrib=atrrib_value>
  
-  <span><span v-html="item[0]"></span> - <span v-html="item[1]"></span></span> <span > <br/>
-   </span> </article> <div v-on:click="add" class="btn btn-theme btn-default btn-xs pull-left" @click="deleteItem" > <i class="fa fa-times inline"></i> Add new </button> </div> 
-
-          <p></p>
-              <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Matrícula</th>
-                  <th scope="col">Especialidad</th>
-                  <th scope="col">Tipo</th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-              <tbody>
+        @livewire('prestador') 
 
 
-              <div id="especialidades_prestadores" v-model="especialidades_prestadores">
-                <tr>
-                  <th scope="row"><input type='text' class='form-control' name='matriculas[1]' value='1548'/></th>
-                  <td> 
-                  
-                  
-                  <select name="especialidad_id" id="especialidad_id" class="form-control" style="width: 100%;" v-model='especialidad_id'>
-                    @foreach($especialidades as $especialidad)
-                      @if ($loop->first)
-                        <option value="{{ $especialidad->id }}" selected="selected">{{ $especialidad->nombre }}</option>
-                      @else
-                        <option value="{{ $especialidad->id }}">{{ $especialidad->nombre }}</option>
-                      @endif
-                    @endforeach
-                  </select>
-                  
-                  </td>
-                  <td>
-                  
-                  <select name="tipoprestadores[1]" id="tipoprestadores[1]"  class="form-control" style="width: 100%;">
-                  @foreach($tiposprestadores as $tipoprestador)
-                     @if ($loop->first)
-                        <option value="{{ $tipoprestador->id }}" selected="selected">{{ $tipoprestador->nombre }}</option>
-                     @else
-                        <option value="{{ $tipoprestador->id }}">{{ $tipoprestador->nombre }}</option>
-                     @endif
-                  @endforeach
-                  </select>
-                  
-                  </td>
-                  <td>
-                  <a href="">
-                  <i class="far fa-trash-alt"></i>
-                  </a>
-                  </td>
-                </tr>
-                
-                </div>
-              </tbody>
-            </table>
 
-            <input class="form-control" type="number" id="cantidad" name="cantidad" v-model='cantidad'> 
 
-  
-          <div class="card-footer">
 
-           
 
-        </div> 
+
+
+
+
+
+ 
       </div>
 
 

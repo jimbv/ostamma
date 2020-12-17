@@ -10,7 +10,17 @@ class Prestador extends Model
     protected $table = 'prestadores';
     use HasFactory;
 
+     
+
+    protected $fillable=['id','matricula','especialidad_id','tipo_prestadores_id','personas_id'];
+
+
+    public function tipo_prestadores(){
+        return $this ->belongsTo('App\tipoPrestador');
+    }
+
     public function especialidad(){
         return $this ->belongsTo('App\Especialidad');
     }
+    
 }

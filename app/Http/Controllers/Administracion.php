@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Prestador as Prestadores;
+
 class Administracion extends Controller
 {
     public function __construct(){
@@ -17,9 +19,11 @@ class Administracion extends Controller
 
     }
     function prueba(){
-    $user = auth()->user();    
-    $users = auth()->user();
-    return view('dashboard.admin.userEditForm',compact('users','user'));
+        /*$user = auth()->user();    
+        return view('dashboard.admin.userEditForm',compact('users','user'));*/
+        /*return Prestadores::all(); */
+
+        return Prestadores::FindorFail(7)->tipo_prestadores;
     }
 
 }

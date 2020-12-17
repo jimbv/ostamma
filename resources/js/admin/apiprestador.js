@@ -1,5 +1,5 @@
 
-
+/*
 const apiproduct = new Vue({
 
     el:"#apiprestador",
@@ -50,3 +50,4 @@ const apiproduct = new Vue({
     }
 
 });
+*/

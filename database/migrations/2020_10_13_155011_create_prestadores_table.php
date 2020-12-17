@@ -16,9 +16,9 @@ class CreatePrestadoresTable extends Migration
         Schema::create('prestadores', function (Blueprint $table) {
             $table->id();
             $table->string('matricula')->nullable(); 
-            $table->integer('especialidad_id'); 
-            $table->integer('personas_id');  
-            $table->integer('tipo_prestadores_id'); 
+            $table->unsignedBigInteger('especialidad_id'); 
+            $table->unsignedBigInteger('personas_id');  
+            $table->unsignedBigInteger('tipo_prestadores_id'); 
             $table->timestamps();
 
             $table->foreign('personas_id')->references('id')->on('personas');

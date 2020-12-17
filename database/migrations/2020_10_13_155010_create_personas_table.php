@@ -26,7 +26,7 @@ class CreatePersonasTable extends Migration
             $table->string('dpto',2)->nullable(); 
             $table->integer('localidad_id'); 
             $table->foreign('localidad_id')->references('id')->on('localidades'); 
-            $table->integer('user_id'); 
+            $table->unsignedBigInteger('user_id'); 
             $table->foreign('user_id')->references('id')->on('users'); 
         });
     }

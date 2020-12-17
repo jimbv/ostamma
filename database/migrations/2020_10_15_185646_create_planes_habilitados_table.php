@@ -16,10 +16,10 @@ class CreatePlanesHabilitadosTable extends Migration
         Schema::create('planes_habilitados', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer('plan_id');
+            $table->unsignedBigInteger('plan_id');
             
-            $table->integer('consultorio_id')->nullable();
-            $table->integer('establecimiento_id')->nullable();
+            $table->unsignedBigInteger('consultorio_id')->nullable();
+            $table->unsignedBigInteger('establecimiento_id')->nullable();
             
             $table->foreign('plan_id')->references('id')->on('planes');
             $table->foreign('consultorio_id')->references('id')->on('consultorios');
