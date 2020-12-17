@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Prestador;
-use App\especialidad;
-use App\tipoPrestador;
+use App\Especialidad;
+use App\TipoPrestador;
 
 class AdminPrestadorController extends Controller
 {
