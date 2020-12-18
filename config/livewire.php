@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'asset_url'  => '/vendor/livewire/livewire.js',
+    'asset_url'  => '/livewire/livewire.js',
 
     /*
     |--------------------------------------------------------------------------
