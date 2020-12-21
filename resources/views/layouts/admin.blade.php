@@ -32,14 +32,13 @@
 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
-  <livewire:styles />
+  @livewireStyles
 
 </head>
 
 <body class="hold-transition sidebar-mini">
 
- 
-<livewire:scripts />
+@livewireScripts
 
 <!-- Site wrapper -->
 
