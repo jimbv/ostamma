@@ -203,8 +203,9 @@
 
 
 
-  
-        <livewire:prestador />
+ 
+        @livewire('prestador') 
+
 
 
 
