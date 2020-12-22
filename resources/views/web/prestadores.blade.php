@@ -28,7 +28,7 @@ Prestadores
             <div class="col-md-12 pt-10 center">
             <br>
             <center>
-            <a href="/archivo/cartilla" rel="noopener noreferrer" download style='color:black;'>
+            <a href="/archivo/prestadoresplanilla" rel="noopener noreferrer" download style='color:black;'>
                 <img src="/img/pdf.ico" alt="Descargar Cartilla de Prestadores" style='width:100%;max-width:150px;'>
                 <br> <br>
 
