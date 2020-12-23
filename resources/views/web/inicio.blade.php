@@ -143,8 +143,8 @@ Inicio
     <style>
         .carousel-item div{
             position: absolute;
-            width: 50px;
-            height: 50px;
+            width: 36px;
+            height: 36px;
             border-radius: 100%;
             background-color: #B8E2F1;
         }
