@@ -171,7 +171,7 @@ Inicio
         }
     </style>
     <div class="container p-30">
-    <a href="https://www.facebook.com/ammasalud/" target="_blank" rel="noopener noreferrer">
+    <a href="/prestadores" target="_blank" rel="noopener noreferrer">
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner"  style='border-radius:20px;position:relative;'>
                 <div class="carousel-item active" data-interval="4000">
