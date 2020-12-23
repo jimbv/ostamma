@@ -148,6 +148,10 @@ Inicio
             border-radius: 100%;
             background-color: #B8E2F1;
         }
+        .top { top: -10px; }
+        .bottom { bottom: -10px; }
+        .left { left: -10px; }
+        .right { right: -10px; }
     </style>
     <div class="container p-30">
     <a href="https://www.facebook.com/ammasalud/" target="_blank" rel="noopener noreferrer">
