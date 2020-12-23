@@ -141,7 +141,7 @@ Inicio
     <section id="promociones" class="features-area m-100 " style='background:#B8E2F1;'>
     
     <style>
-        @media screen and (min-width: 800px) {
+        @media screen and (max-width: 800px) {
             .carousel-item div{
             position: absolute;
             width: 20px;
@@ -155,7 +155,7 @@ Inicio
             .right { right: -10px; }
 
         }
-        @media screen and (max-width: 800px) {
+        @media screen and (min-width: 800px) {
             .carousel-item div{
             position: absolute;
             width: 36px;
