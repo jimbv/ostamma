@@ -158,15 +158,15 @@ Inicio
         @media screen and (min-width: 800px) {
             .carousel-item div{
             position: absolute;
-            width: 40px;
-            height: 40px;
+            width: 43px;
+            height: 44px;
             border-radius: 100%;
             background-color: #B8E2F1;
             }
-            .top { top: -20px; }
-            .bottom { bottom: -20px; }
-            .left { left: -20px; }
-            .right { right: -20px; }
+            .top { top: -21px; }
+            .bottom { bottom: -21px; }
+            .left { left: -21px; }
+            .right { right: -21px; }
 
         }
     </style>
