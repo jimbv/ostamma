@@ -144,8 +144,8 @@ Inicio
         @media screen and (max-width: 800px) {
             .carousel-item div{
             position: absolute;
-            width: 25px;
-            height: 25px;
+            width: 24px;
+            height: 24px;
             border-radius: 100%;
             background-color: #B8E2F1;
             }
@@ -171,7 +171,7 @@ Inicio
         }
     </style>
     <div class="container p-30">
-    <a href="/prestadores" target="_blank" rel="noopener noreferrer">
+    <a href="/prestadores" rel="noopener noreferrer">
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner"  style='border-radius:20px;position:relative;'>
                 <div class="carousel-item active" data-interval="4000">
