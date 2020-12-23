@@ -141,7 +141,7 @@ Inicio
     <section id="promociones" class="features-area m-100 " style='background:#B8E2F1;'>
     
     <style>
-        .carousel_item{
+        .carousel_item div{
             position: absolute;
             width: 20px;
             height: 20px;
