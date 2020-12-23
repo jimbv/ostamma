@@ -144,8 +144,8 @@ Inicio
         @media screen and (max-width: 800px) {
             .carousel-item div{
             position: absolute;
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
             border-radius: 100%;
             background-color: #B8E2F1;
             }
@@ -158,15 +158,15 @@ Inicio
         @media screen and (min-width: 800px) {
             .carousel-item div{
             position: absolute;
-            width: 36px;
-            height: 36px;
+            width: 40px;
+            height: 40px;
             border-radius: 100%;
             background-color: #B8E2F1;
             }
-            .top { top: -15px; }
-            .bottom { bottom: -15px; }
-            .left { left: -15px; }
-            .right { right: -15px; }
+            .top { top: -20px; }
+            .bottom { bottom: -20px; }
+            .left { left: -20px; }
+            .right { right: -20px; }
 
         }
     </style>
