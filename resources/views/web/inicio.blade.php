@@ -141,17 +141,34 @@ Inicio
     <section id="promociones" class="features-area m-100 " style='background:#B8E2F1;'>
     
     <style>
-        .carousel-item div{
+        @media screen and (min-width: 800px) {
+            .carousel-item div{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background-color: #B8E2F1;
+            }
+            .top { top: -10px; }
+            .bottom { bottom: -10px; }
+            .left { left: -10px; }
+            .right { right: -10px; }
+
+        }
+        @media screen and (max-width: 800px) {
+            .carousel-item div{
             position: absolute;
             width: 36px;
             height: 36px;
             border-radius: 100%;
             background-color: #B8E2F1;
+            }
+            .top { top: -15px; }
+            .bottom { bottom: -15px; }
+            .left { left: -15px; }
+            .right { right: -15px; }
+
         }
-        .top { top: -10px; }
-        .bottom { bottom: -10px; }
-        .left { left: -10px; }
-        .right { right: -10px; }
     </style>
     <div class="container p-30">
     <a href="https://www.facebook.com/ammasalud/" target="_blank" rel="noopener noreferrer">
