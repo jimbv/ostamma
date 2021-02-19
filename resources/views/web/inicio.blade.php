@@ -142,7 +142,7 @@ Inicio
     
     <style>
         @media screen and (max-width: 800px) {
-            .carousel-item div{
+            .publicidad div{
             position: absolute;
             width: 24px;
             height: 24px;
@@ -156,7 +156,7 @@ Inicio
 
         }
         @media screen and (min-width: 800px) {
-            .carousel-item div{
+            .publicidad div{
             position: absolute;
             width: 43px;
             height: 44px;
@@ -174,14 +174,14 @@ Inicio
     <a href="/prestadores" rel="noopener noreferrer">
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner"  style='border-radius:20px;position:relative;'>
-                <div class="carousel-item active" data-interval="4000">
+                <div class="carousel-item publicidad active" data-interval="4000">
                     <div class="top left"></div>
                     <div class="top right"></div>
                     <img class="d-block w-100" src="imgs/banner3.jpg" alt="Consultá a tu odontólogo"  style='border-radius:20px;' />
                     <div class="bottom left"></div>
                     <div class="bottom right"></div>
                 </div>
-                <div class="carousel-item" data-interval="4000">
+                <div class="carousel-item publicidad" data-interval="4000">
                     <div class="top left"></div>
                     <div class="top right"></div>
                         <img class="d-block w-100" src="imgs/banner4.jpg" alt="Consultá a tu odontólogo"  style='border-radius:20px;' />

@@ -184,7 +184,7 @@
 
 
 
-          <!-- Categorias -->
+          <!--  
 
           <li class="nav-item has-treeview">
 
@@ -232,9 +232,10 @@
 
           </li>
 
-          <!-- Productos -->
 
-               <li class="nav-item has-treeview">
+
+
+          <li class="nav-item has-treeview">
 
             <a href="#" class="nav-link">
 
@@ -275,6 +276,43 @@
                 </a>
 
               </li> 
+
+            </ul>
+
+          </li>-->
+
+          <!-- Consultas y reclamos -->
+
+          <li class="nav-item has-treeview">
+
+            <a href="#" class="nav-link">
+
+              <i class="nav-icon fas fa-list-alt"></i>
+
+              <p>
+
+                Consultas 
+
+                <i class="right fas fa-angle-left"></i>
+
+              </p>
+
+            </a>
+
+            <ul class="nav nav-treeview">
+
+              <li class="nav-item">
+
+                <a href="{{route('admin.consulta.index')}}" class="nav-link">
+
+                  <i class="far fa-circle nav-icon"></i>
+
+                  <p>Listado</p>
+
+                </a>
+
+              </li>
+ 
 
             </ul>
 
@@ -428,7 +466,7 @@
 
     
 
-    <strong>&copy; <a href="http://www.bellnet.com.ar">Bellnet</a>.</strong>
+    <strong>&copy; <a href="http://www.gesta.com.ar">Dpto. Sistemas GESTA</a>.</strong>
 
   </footer>
 

@@ -1,6 +1,6 @@
 @extends ('layouts.admin')
 
-@section('titulo','Administración de Especialidades')
+@section('titulo','Administración de Consultas y Reclamos')
 
 @section('breadcrumb')
 
@@ -14,7 +14,7 @@
 
 <div class="row" id='confirmareliminar'>
 
-<span style='display:none;' id='URLbase'>{{route('admin.especialidad.index')}}</span>
+<span style='display:none;' id='URLbase'>{{route('admin.consulta.index')}}</span>
 
 @include('custom.modal_eliminar')
 
@@ -22,7 +22,7 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Sección de especialidades</h3>
+                <h3 class="card-title">Sección de consultas y reclamos</h3>
                 <div class="card-tools">
 
                  <form>
@@ -58,8 +58,8 @@
               <div class="card-body table-responsive p-0" style="height: 500px;">
 
                
-
-              <a class='m-2 float-right btn btn-primary' target="_blank" href="{{ route('admin.especialidad.create')}}">Nueva Especialidad</a>
+ 
+              <a class='m-2 float-right btn btn-primary' href="/exportar">Exportar a excel</a>
 
               
 
@@ -69,19 +69,15 @@
 
                     <tr>
 
-                      <th>ID</th>
-
-                      <th>Nombre</th>
-
-                      <th>Slug</th>
-
-                      <th>Descripción</th>
-
+                      <th>#</th>
+                      <th>Apellido y Nombre</th>
+                      <th>Nro. Documento</th>
+                      <th>Estado</th>
+                      <th>Área</th>
                       <th>Fecha creación</th>
-
                       <th>Fecha modificación</th>
 
-                      <th colspan="3"></th>
+                      <th colspan="2"></th>
 
                     </tr>
 
@@ -89,39 +85,26 @@
 
                   <tbody>
 
-                  @foreach ($especialidades as $especialidad)
-
-                   
+                  @foreach ($consultas as $consulta)
 
                     <tr>
+                      <td> {{$consulta->id}}</td>
+                      <td> {{$consulta->apellido}}, {{$consulta->nombres}}</td>
+                      <td> {{$consulta->nrodocumento}}</td>
+                      <td> {{$consulta->estado}}</td>
+                      <td> {{$consulta->area}}</td>
+                      <td> {{$consulta->created_at}}</td>
+                      <td> {{$consulta->updated_at}}</td>
 
-                      <td> {{$especialidad->id}}</td>
-
-                      <td> {{$especialidad->nombre}}</td>
-
-                      <td> {{$especialidad->slug}}</td>
-
-                      <td style ="max-width:300px;overflow:hidden;"> {{$especialidad->descripcion}}</td>
-
-                      <td> {{$especialidad->created_at}}</td>
-
-                      <td> {{$especialidad->updated_at}}</td>
-
-                      <td> <a class='btn btn-default' href="{{ route('admin.especialidad.show',$especialidad->slug)}}">
-
-                          <i class="fas fa-eye"></i>
-
-                          </a></td>
-
-                      <td> <a class='btn btn-info' href="{{ route('admin.especialidad.edit',$especialidad->slug)}}">
+                      <td> <a class='btn btn-info' href="{{ route('admin.consulta.edit',$consulta->id)}}">
 
                           <i class="fas fa-edit"></i>
 
                           </a></td>
 
-                      <td> <a class='btn btn-danger' href="{{ route('admin.especialidad.index')}}" 
+                      <td> <a class='btn btn-danger' href="{{ route('admin.consulta.index')}}" 
 
-                          v-on:click.prevent='deseas_eliminar({{ $especialidad->id }})'
+                          v-on:click.prevent='deseas_eliminar({{ $consulta->id }})'
 
                           >
 
@@ -141,25 +124,25 @@
  
 <ul class="pagination" style="padding-bottom:15px;width:200px;margin:auto;">
                   <li class="paginate_button page-item previous 
-                  @if ($especialidades->currentPage() === 1)
+                  @if ($consultas->currentPage() === 1)
                     disabled 
                   @endif
                   " id="anterior">
-                    <a href="{{$especialidades->previousPageUrl()}}" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">
+                    <a href="{{$consultas->previousPageUrl()}}" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">
                       Anterior
                     </a>
                   </li>
                   <li class="paginate_button page-item active">
                       <a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0" class="page-link">
-                      {{$especialidades->currentPage()}}
+                      {{$consultas->currentPage()}}
                       </a>
                   </li>
                   <li class="paginate_button page-item next
-                  @if ($especialidades->currentPage() === $especialidades->lastPage())
+                  @if ($consultas->currentPage() === $consultas->lastPage())
                     disabled 
                   @endif
                   " id="siguiente">
-                      <a href="{{$especialidades->nextPageUrl()}}" aria-controls="example2" data-dt-idx="7" 
+                      <a href="{{$consultas->nextPageUrl()}}" aria-controls="example2" data-dt-idx="7" 
                         tabindex="0" class="page-link">Siguiente
                       </a>
                   </li>

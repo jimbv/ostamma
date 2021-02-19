@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Provincia;
 use App\Localidad;
+use App\Consulta as Reclamo;
 use App\Mail\Consulta;
 use Illuminate\Support\Facades\Mail;  
 use Illuminate\Http\Request;
@@ -69,10 +70,28 @@ class ControladorPagina extends Controller
         ]); 
          
 
+ 
         $prov  =  new Provincia();
  
         $mensaje_enviar["nombre_localidad"]=$loc::find($localidad)->nombre;
         $mensaje_enviar["nombre_provincia"]=$prov::find($provincia)->nombre; 
+
+
+        $consulta_crear = $request->validate([
+            'nombres'=> 'required',
+            'apellido'=> 'required', 
+            'email'=> 'required|email',
+            'nrodocumento'=> 'required',
+            'prefijo'=> 'required',
+            'telefono'=> 'required',
+            'consulta'=> 'required',
+        ]);
+        $consulta_crear["localidad"]=$loc::find($localidad)->nombre;
+        $consulta_crear["estado"]='ABIERTO';
+        $consulta_crear["area"]='NINGUNA';
+
+        Reclamo::create($consulta_crear);
+
          
         
         /*
@@ -82,6 +101,7 @@ class ControladorPagina extends Controller
         // Enviar el email, el metodo send envia un MAILABLE que es una clase de laravel para armar un email
 
         Mail::to('info@ammasalud.com.ar')->send(new Consulta($mensaje_enviar));
+        //Mail::to('joseignaciomartin@gmail.com')->send(new Consulta($mensaje_enviar));
 
          
 

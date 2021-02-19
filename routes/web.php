@@ -61,10 +61,14 @@ Route::get('/archivo/{archivo}', function ($archivo) {
 Route::get('/prueba','Administracion@prueba'); 
  
 Route::get('/admin','Administracion@inicio'); 
+Route::get('/home','Administracion@inicio'); 
+
+Route::get('/exportar','ExportarConsultas@export');
 
 
 Route::resource('admin/category','Admin\AdminCategoryController')->names('admin.category');
 Route::resource('admin/especialidad','Admin\AdminEspecialidadController')->names('admin.especialidad');
+Route::resource('admin/consulta','Admin\AdminConsultaController')->names('admin.consulta');
 Route::resource('admin/prestador','Admin\AdminPrestadorController')->names('admin.prestador');
 
 

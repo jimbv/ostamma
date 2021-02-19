@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Argentina/Cordoba',
 
     /*
     |--------------------------------------------------------------------------
@@ -178,6 +178,8 @@ return [
 
         // Recaptcha
         Biscolab\ReCaptcha\ReCaptchaServiceProvider::class,
+        // Importar y exportar a excell
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
     ],
 
@@ -233,6 +235,10 @@ return [
 
         // Recaptcha
         'ReCaptcha' => Biscolab\ReCaptcha\Facades\ReCaptcha::class,
+
+        // Importar y exportar a excel
+
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ],
 
 ];
