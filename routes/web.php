@@ -98,7 +98,7 @@ Route::get('/productos', [App\Http\Controllers\ProductsController::class, 'index
 Route::post('/contacto/enviar', [App\Http\Controllers\ContactController::class, 'submit'])->name('contact.submit');
 Route::get('/send-mail', [App\Http\Controllers\SendMailController::class, 'contact']);
 
-Route::get('/novedades', [App\Http\Controllers\PostsController::class, 'index'])->name('novedades.index');
+Route::get('/novedades', [App\Http\Controllers\PostsController::class, 'index'])->name('novedades.index'); 
 Route::get('/novedad/{slug}',  [App\Http\Controllers\PostsController::class, 'mostrarPost'])->name('novedad');
 Route::get('/categorias/{slug}',  [App\Http\Controllers\ProductsController::class, 'mostrarCategoria'])->name('productos.categoria');
 Route::get('/productos/{slug}',  [App\Http\Controllers\ProductsController::class, 'mostrarProducto'])->name('productos.producto');

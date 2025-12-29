@@ -134,5 +134,6 @@
                 ['view', ['fullscreen', 'codeview']],
             ]
         }); 
+    });
 </script>
 @stop

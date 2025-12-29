@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click Comunicación & Publicidad</title>
+    <title>OSTAMMA Salud</title>
 
     <meta property="og:locale" content="es_AR" />
-    <meta property="og:title" content="Click Comunicación y Publicidad, Agencia Villa María, Córdoba, Argentina" />
+    <meta property="og:title" content="Obra Social OSTAMMA Salud" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://clickcomunicacion.com.ar/" />
-    <meta property="og:description" content="Click Comunicación agencia de publicidad" />
+    <meta property="og:url" content="https://ostamma.org.ar/" />
+    <meta property="og:description" content="Ostamma Salud" />
 
 
-    <link rel="icon" type="image/x-icon" href="/imgs/icono.png">
+    <link rel="icon" type="image/x-icon" href="/imgs/icono.png>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
@@ -26,6 +26,8 @@
 
     <link rel="stylesheet" href="/css/style_prueba.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
         @font-face {
@@ -61,62 +63,75 @@
 
 
 
-    <header class="w-full bg-white shadow-md z-10">
+    <!-- BARRA SUPERIOR -->
+<div class="w-full" style="background:#003a5d; position:fixed; top:0; left:0; width:100%; z-index:1050;">
+    <div class="container d-flex justify-content-end py-2">
+        <ul class="d-flex gap-4 m-0" style="list-style:none;">
+            <li><a href="#" class="text-white text-decoration-none">Prestadores</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Empresas</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Proveedores</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Trabajá con Nosotros</a></li>
+        </ul>
+    </div>
+</div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3" style="z-index:10;">
-            <div class="container">
-                <a class="navbar-brand" href="/">
-                    <img src="/imgs/logo.png" alt="Click comunicación" style="height:60px;">
-                </a>
+<!-- HEADER PRINCIPAL -->
+<header class="w-full bg-white shadow-md" style="position:fixed; top:40px;box-shadow: 0px 0px 2px black; left:0; width:100%; z-index:1040;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/imgs/logo.png" alt="OSTAMMA Salud" style="height:80px;">
+            </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars" style="color: black;font-size:22px;"></i>
-                </button>
+                <i class="fa-solid fa-bars" style="color:black; font-size:22px;"></i>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarNavDropdown" style="font-family:Cloudsters;">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link mx-2" href="/#productos">PRODUCTOS</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">SERVICIOS</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                @foreach($services as $service)
-                                <li><a class="dropdown-item" href="/servicio/{{$service->slug}}">{{$service->name}}</a></li> 
-                                @endforeach
-                            </ul>
-                        </li>
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">EMPRESA</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/page/nuestra-empresa">ACERCA DE NOSOTROS</a></li>
-                                <li><a class="dropdown-item" href="/novedades">NOTICIAS</a></li>
-                                <li><a class="dropdown-item" href="/page/preguntas-frecuentes">PREGUNTAS FRECUENTES</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link mx-2" href="/contacto">CONTACTO</a></li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto d-lg-inline-flex">
-                        <form action="{{ route('productosbuscar') }}" method="GET" class="mt-3">
-                            <div class="input-group">
-                                <input type="text"
-                                    name="q"
-                                    class="form-control rounded-start"
-                                    placeholder="Buscar productos"
-                                    style="font-family: 'Courier New', Courier, monospace;"
-                                    required>
-                                <button class="btn btn-primary rounded-end" type="submit" style="background-color: #f74e04; border-color:#f74e04">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" style="font-family:Nunito;">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">PLANES</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="/servicio/">PLAN CLÁSICO</a></li>
+                            <li><a class="dropdown-item" href="/servicio/">PLAN SUPERIOR</a></li>
+                            <li><a class="dropdown-item" href="/servicio/">PLAN JOVEN</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link mx-2" href="/#productos">CARTILLA</a></li> 
+                     <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">INSTITUCIONAL</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="/page/nuestra-historia/">NUESTRA HISTORIA</a></li>
+                            <li><a class="dropdown-item" href="/page/consejo-directivo/">CONSEJO DIRECTIVO</a></li>
+                            <li><a class="dropdown-item" href="/page/institucional/">MISION, VISIÓN Y VALORES</a></li>
+                            <li><a class="dropdown-item" href="/page/politica-de-calidad/">POLÍTICA DE CALIDAD</a></li>
+                            <li><a class="dropdown-item" href="/page/estatuto/">ESTATUTO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="/contacto">CONTACTO</a></li>
+                </ul>
+
+                <!-- BOTÓN ACCEDE A TU CUENTA -->
+                <a href="/login" class="btn btn-primary ms-3" 
+                   style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;">
+                    Accedé a tu cuenta
+                </a>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
+
+<!-- ESPACIADOR PARA QUE EL CONTENIDO NO SUBA BAJO EL HEADER -->
+<div style="height:140px;"></div>
+
 
     <main>
         @yield('contenido')
@@ -130,7 +145,7 @@
         <div class="max-w-screen-xl mx-auto px-5">
             <div class="pt-5">
                 <div class="flex flex-col sm:flex-row justify-center sm:justify-between items-center mb-10">
-                    <img src="/imgs/logoblanco.png" alt="Click comunicación" class="h-14 w-auto mb-5 sm:mb-0">
+                    <img src="/imgs/logoblanco.png" alt="OSTAMMA Salud" style="height: 100px;" class=" w-auto mb-5 sm:mb-0">
 
 
                     <form action="{{ route('subscribe') }}" method="POST" class="sm:w-50 max-w-md text-white">
@@ -161,25 +176,25 @@
 
                     <div class="flex justify-end items-center gap-5">
                         <div class="contacto" style=" text-align:left; ">
-                            <p style="color:#fff; font-size:18px; margin-bottom:15px;font-family:Cloudsters;">
-                                Agencia de Comunicación & Publicidad
+                            <p style="color:#fff; font-size:18px; margin-bottom:15px;font-family:Montserrat;">
+                                
                             </p>
 
                             <p>
-                                <a href="https://wa.me/5493534066579?text=Hola,%20acabo%20de%20visitar%20su%20pagina%20web%20y%20queria%20pedir%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios" target="_blank" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
-                                    <i class="fab fa-whatsapp"></i> 353 4066579
+                                <a href="https://wa.me/3534771099?text=Hola,%20acabo%20de%20visitar%20su%20pagina%20web%20y%20queria%20pedir%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios" target="_blank" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
+                                    <i class="fab fa-whatsapp"></i> 353 4771099
                                 </a>
                             </p>
 
                             <p>
-                                <a href="https://instagram.com/clickcomunicacionvm" target="_blank" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
-                                    <i class="fab fa-instagram"></i> @clickcomunicacionvm
+                                <a href="https://www.instagram.com/ostamma.salud" target="_blank" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
+                                    <i class="fab fa-instagram"></i> @ostamma.salud
                                 </a>
                             </p>
 
                             <p>
                                 <a href="mailto:info@clickcomunicacion.com.ar" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
-                                    <i class="fas fa-envelope"></i> info@clickcomunicacion.com.ar
+                                    <i class="fas fa-envelope"></i> info@ostamma.org.ar
                                 </a>
                             </p>
                             <p>
@@ -209,12 +224,12 @@
                     <a href="/institucional" style="color: white;text-decoration: none;">Nuestra empresa</a>
                     <a href="/novedades" style="color: white;text-decoration: none;">Noticias</a>
                     <a href="/contacto" style="color: white;text-decoration: none;">Preguntas frecuentes</a>
-                    <a target="_blank" href="https://www.instagram.com/clickcomunicacionvm/" style="color: white;text-decoration: none;">
-                        <i class="fab fa-instagram"></i> clickcomunicacionvm
+                    <a target="_blank" href="https://www.instagram.com/ostamma.salud/" style="color: white;text-decoration: none;">
+                        <i class="fab fa-instagram"></i> ostamma.salud
                     </a>
                 </div>
                 <div class="text-center pb-10 text-xs " style="color: white;text-decoration: none;">
-                    © {{ date('Y') }} Click comunicación & publicidad
+                    © {{ date('Y') }} OSTAMMA
                 </div>
 
             </div>
