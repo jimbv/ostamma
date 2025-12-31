@@ -97,13 +97,13 @@
                             data-bs-toggle="dropdown" aria-expanded="false">PLANES</a>
 
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="/servicio/">PLAN CLÁSICO</a></li>
-                            <li><a class="dropdown-item" href="/servicio/">PLAN SUPERIOR</a></li>
-                            <li><a class="dropdown-item" href="/servicio/">PLAN JOVEN</a></li>
+                            <li><a class="dropdown-item" href="/planclasico/">PLAN CLÁSICO</a></li>
+                            <li><a class="dropdown-item" href="/plansuperior/">PLAN SUPERIOR</a></li>
+                            <li><a class="dropdown-item" href="/planjoven/">PLAN JOVEN</a></li>
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link mx-2" href="/#productos">CARTILLA</a></li> 
+                    <li class="nav-item"><a class="nav-link mx-2" href="/cartilla">CARTILLA</a></li> 
                      <li class="nav-item dropdown">
                         <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">INSTITUCIONAL</a>

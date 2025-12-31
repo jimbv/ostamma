@@ -106,3 +106,10 @@ Route::get('/buscar', [App\Http\Controllers\ProductsController::class, 'buscar']
 Route::get('/servicio/{slug}',  [App\Http\Controllers\ServicesController::class, 'showService'])->name('servicios.servicio');
  
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/planjoven', [App\Http\Controllers\IndexController::class, 'planjoven'])->name('planjoven');
+Route::get('/planclasico', [App\Http\Controllers\IndexController::class, 'planclasico'])->name('planclasico');
+Route::get('/plansuperior', [App\Http\Controllers\IndexController::class, 'plansuperior'])->name('plansuperior');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/cartilla', [App\Http\Controllers\ProviderController::class, 'cartilla'])->name('cartilla');

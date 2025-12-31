@@ -32,4 +32,18 @@ class IndexController extends Controller
         $page = Page::where('slug', $slug)->first();
         return view('page', compact('page','services','categories'));
     }
+
+    public function planjoven()
+    {
+        return view('planjoven');
+    }
+    public function planclasico()
+    {
+        return view('planclasico');
+    }
+    public function plansuperior()
+    {
+        return view('plansuperior');    
+    }
+    
 }

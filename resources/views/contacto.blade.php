@@ -1,24 +1,49 @@
 @extends('layouts.plantilla')
 @section('contenido')
-<section class="position-relative w-100" style="min-height: 60vh; border-bottom: 10px solid #f74e04; overflow:hidden;">
-    <!-- Video de fondo -->
-    <video autoplay muted loop playsinline preload="none"
-        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-        poster="/static/images/anfi.bafe026b9054.png"
-        style="z-index:0;">
-        <source src="/videos/video.mp4" type="video/mp4">
-        <source src="/videos/video.webm" type="video/webm">
-    </video>
 
-    <!-- Overlay negro -->
-    <div class="position-absolute top-0 start-0 w-100 h-100"
-        style="background: rgba(0,0,0,0.6); z-index:1;">
-    </div>
+<section class="w-100" style="height:60vh; border-bottom:10px solid #a5a5a5ff;top:-45px; position:relative;">
+    <section class="w-100 map-section">
+        <section class="map-section">
+    <iframe
+        src="https://www.google.com/maps/d/embed?mid=1KKnS8SIeRZQruFkK1z0FGNNezitKn5g&ehbc=2E312F"
+        class="map-iframe map-no-interaction"
+        loading="lazy">
+    </iframe> 
+    </section>
+    </section>
+<style>
+.map-section {
+    position: relative;
+    height: 60vh;
+    border-bottom: 10px solid #00395c;
+    overflow: hidden;
+}
 
-    <div class="container py-5 position-relative" style="z-index:2;">
+/* El iframe NO participa del flujo */
+.map-iframe {
+    position: absolute;
+    top: -45px;      /* ocultás la barra */
+    left: 0;
+    width: 100%;
+    height: calc(100% + 45px);
+    border: 0;
+}
+
+.map-no-interaction {
+    pointer-events: none;
+}
+</style>
+
+
+</section>
+
+<section class="position-relative w-100" style="min-height: 60vh;  overflow:hidden;">
+    
+
+    <div class="container p-3 position-relative" style="z-index:2;">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
-                <div class="bg-white p-4 p-md-5 rounded shadow-lg">
+                <div class="bg-white  p-md-5 rounded shadow-lg">
                     <h3 class="mb-3">Dejanos tu consulta</h3>
                     <hr>
 

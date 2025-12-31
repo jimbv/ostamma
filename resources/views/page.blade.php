@@ -2,18 +2,20 @@
 @section('contenido')
 <section class="bg-white">
     <div class="max-w-screen-xl mx-auto px-5 py-10">
-        <h2 class="text-2xl md:text-3xl font-black text-primary uppercase text-center mb-10" style="color:#f74e04!important;font-family:Logomark;">
+        <h2 class="text-2xl md:text-3xl font-black text-primary uppercase text-center mb-10 pt-3" style="font-family:Nunito;">
             {{$page->name}}
         </h2>
         <div class="row">
-            <div class="col-md-6">
                 @if($page->image!='')
-                <img src="/{{$page->image}}" alt="{{$page->name}}" style="width:100%; border-radius:8px; box-shadow:0px 0px 8px #f74e04;">
-                @else
-                <img src="https://via.placeholder.com/600x400?text=Sin+Imagen" alt="{{$page->name}}" style="width:100%; border-radius:8px; box-shadow:0px 0px 8px #f74e04;">
-                @endif
-            </div>
+
             <div class="col-md-6">
+                <img src="/{{$page->image}}" alt="{{$page->name}}" style="width:100%; border-radius:8px;">
+            </div>
+
+            <div class="col-md-6">
+                @else
+            <div class="col-md-12">
+                @endif
                 <p style="text-align: justify;">{!! $page->description !!}</p>
             </div>
         </div>
