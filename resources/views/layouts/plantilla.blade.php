@@ -181,8 +181,8 @@
                             </p>
 
                             <p>
-                                <a href="https://wa.me/3534771099?text=Hola,%20acabo%20de%20visitar%20su%20pagina%20web%20y%20queria%20pedir%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios" target="_blank" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
-                                    <i class="fab fa-whatsapp"></i> 353 4771099
+                                <a href="https://wa.me/5493535629113?text=Hola,%20acabo%20de%20visitar%20su%20pagina%20web%20y%20queria%20pedir%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios" target="_blank" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
+                                    <i class="fab fa-whatsapp"></i> 549 353 5629113
                                 </a>
                             </p>
 
@@ -193,7 +193,7 @@
                             </p>
 
                             <p>
-                                <a href="mailto:info@clickcomunicacion.com.ar" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
+                                <a href="mailto:info@ostamma.org.ar" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
                                     <i class="fas fa-envelope"></i> info@ostamma.org.ar
                                 </a>
                             </p>
@@ -235,10 +235,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
 
 
 </body>

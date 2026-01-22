@@ -76,6 +76,24 @@ Route::get('/admin/posts/{id}',  [App\Http\Controllers\Admin\PostsController::cl
 Route::get('/admin/posts/{id}/edit',  [App\Http\Controllers\Admin\PostsController::class, 'edit'])->name('posts.edit');
 Route::put('/admin/posts', [App\Http\Controllers\Admin\PostsController::class, 'update'])->name('posts.update');
 
+
+Route::get('/admin/specialities/create', [App\Http\Controllers\Admin\SpecialitiesController::class, 'create'])->name('create-speciality');
+Route::post('/admin/specialities', [App\Http\Controllers\Admin\SpecialitiesController::class, 'save'])->name('specialities');
+Route::get('/admin/specialities', [App\Http\Controllers\Admin\SpecialitiesController::class, 'list'])->name('specialities');
+Route::get('/admin/specialities/{id}',  [App\Http\Controllers\Admin\SpecialitiesController::class, 'delete'])->name('specialities.delete');
+Route::get('/admin/specialities/{id}/edit',  [App\Http\Controllers\Admin\SpecialitiesController::class, 'edit'])->name('specialities.edit');
+Route::put('/admin/specialities', [App\Http\Controllers\Admin\SpecialitiesController::class, 'update'])->name('specialities.update');
+
+Route::get('/admin/providers/create', [App\Http\Controllers\Admin\ProvidersController::class, 'create'])->name('create-provider');
+Route::post('/admin/providers', [App\Http\Controllers\Admin\ProvidersController::class, 'save'])->name('providers');
+Route::get('/admin/providers', [App\Http\Controllers\Admin\ProvidersController::class, 'list'])->name('providers');
+Route::get('/admin/providers/{id}',  [App\Http\Controllers\Admin\ProvidersController::class, 'delete'])->name('providers.delete');
+Route::get('/admin/providers/{id}/edit',  [App\Http\Controllers\Admin\ProvidersController::class, 'edit'])->name('providers.edit');
+Route::put('/admin/providers/{provider}', [App\Http\Controllers\Admin\ProvidersController::class, 'update'])
+    ->name('providers.update');
+
+
+
 Route::get('/admin/configuration', [App\Http\Controllers\Admin\ConfigurationsController::class, 'index'])->name('admin.configuration.index');
 Route::put('/admin/configuration', [App\Http\Controllers\Admin\ConfigurationsController::class, 'update'])->name('admin.configuration.update');
 
@@ -110,6 +128,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/planjoven', [App\Http\Controllers\IndexController::class, 'planjoven'])->name('planjoven');
 Route::get('/planclasico', [App\Http\Controllers\IndexController::class, 'planclasico'])->name('planclasico');
 Route::get('/plansuperior', [App\Http\Controllers\IndexController::class, 'plansuperior'])->name('plansuperior');
+Route::get('/downloadapp', [App\Http\Controllers\IndexController::class, 'downloadapp'])->name('downloadapp');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/cartilla', [App\Http\Controllers\ProviderController::class, 'cartilla'])->name('cartilla');

@@ -15,22 +15,22 @@ class IndexController extends Controller
     public function index()
     {
         $categories = Category::orderBy('name')->get();
-        $services = Service::select('name', 'slug')->orderBy('name')->get(); 
-        $testimonials = Testimony::all();        
-        $work_images = WorkImages::all();        
+        $services = Service::select('name', 'slug')->orderBy('name')->get();
+        $testimonials = Testimony::all();
+        $work_images = WorkImages::all();
         $posts = Post::with('images')
-                 ->latest()
-                 ->take(9) // últimas 9
-                 ->get();
-        return view('index',compact('categories','testimonials','posts','services','work_images')); 
+            ->latest()
+            ->take(9) // últimas 9
+            ->get();
+        return view('index', compact('categories', 'testimonials', 'posts', 'services', 'work_images'));
     }
- 
+
     public function page($slug)
     {
         $services = Service::select('name', 'slug')->orderBy('name')->get();
         $categories = Category::orderBy('name')->get();
         $page = Page::where('slug', $slug)->first();
-        return view('page', compact('page','services','categories'));
+        return view('page', compact('page', 'services', 'categories'));
     }
 
     public function planjoven()
@@ -43,7 +43,10 @@ class IndexController extends Controller
     }
     public function plansuperior()
     {
-        return view('plansuperior');    
+        return view('plansuperior');
     }
-    
+    public function downloadapp()
+    {
+        return view('downloadapp');
+    }
 }

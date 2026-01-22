@@ -313,7 +313,42 @@ return [
             'url' => '/admin',
             'icon' => 'fa fa-home',     
         ],
-        
+         ['header' => 'CARTILLA'],
+        [
+            'text' => ' Especialidades',
+            'icon' => 'fa fa-cubes',
+            'submenu' => [
+                [
+                    'text' => 'Nueva especialidad',
+                    'icon' => 'fa fa-cube',
+                    'url' => '/admin/specialities/create',
+                ],
+                [
+                    'text' => 'Listado',
+                    'icon' => 'fa fa-list',
+                    'url' => '/admin/specialities',
+                ]
+            ],
+        ],
+
+        [
+            'text' => ' Proveedores',
+            'icon' => 'fa fa-cubes',
+            'submenu' => [
+                [
+                    'text' => 'Nuevo proveedor',
+                    'icon' => 'fa fa-cube',
+                    'url' => '/admin/providers/create',
+                ],
+                [
+                    'text' => 'Listado',
+                    'icon' => 'fa fa-list',
+                    'url' => '/admin/providers',
+                ]
+            ],
+        ],
+
+        /*
         ['header' => 'SHOP'],
         [
             'text' => ' Productos',
@@ -346,11 +381,11 @@ return [
                     'url' => '/admin/categories',
                 ]
             ],
-        ],
+        ],*/
         
 
         ['header' => 'WEB'],
-        [
+        /*[
             'text' => 'Testimonios',
             'icon' => 'fa fa-tags',
             'submenu' => [
@@ -365,7 +400,7 @@ return [
                     'url' => '/admin/testimonials',
                 ]
             ],
-        ],
+        ],*/
 
         [
             'text' => 'Servicios',
@@ -383,7 +418,7 @@ return [
                 ]
             ],
         ],
-        [
+        /*[
             'text' => 'Trabajos realizados',
             'icon' => 'fa fa-file-image',
             'submenu' => [
@@ -398,7 +433,7 @@ return [
                     'url' => '/admin/work_images',
                 ]
             ],
-        ],
+        ],*/
         [
             'text' => 'Páginas',
             'icon' => 'fa fa-file-image',
