@@ -20,6 +20,7 @@ class ProviderFilter extends Component
     public $lat = null;
     public $lng = null;
     public $planId = null;
+    public bool $searched = false;
 
     public function mount()
     {
@@ -84,6 +85,58 @@ class ProviderFilter extends Component
             : $city;
     }
 
+    public function search()
+    {
+
+        $this->searched = true;
+        $this->dispatch('update-markers', providers: $this->providersForMap);
+    }
+
+    protected function getProvidersQuery()
+    {
+        return Provider::query()
+            ->where('active', true)
+            ->with(['providerType', 'specialties', 'plans'])
+
+            ->when($this->providerType, function ($q) {
+                $q->where('provider_type_id', $this->providerType);
+            })
+
+            ->when($this->specialty, function ($q) {
+                $q->whereHas('specialties', function ($sq) {
+                    $sq->where('specialties.id', $this->specialty);
+                });
+            })
+
+            ->when($this->planId, function ($q) {
+                $q->whereHas('plans', function ($sq) {
+                    $sq->where('plans.id', $this->planId);
+                });
+            })
+
+            ->when($this->name, function ($q) {
+                $q->where('name', 'like', "%{$this->name}%");
+            })
+
+            ->when($this->lat && $this->lng, function ($q) {
+                $this->applyDistanceFilter($q);
+            });
+    }
+
+    public function getProvidersForMapProperty()
+    {
+        return $this->getProvidersQuery()
+            ->whereNotNull('lat')
+            ->whereNotNull('lng')
+            ->get()
+            ->map(fn($p) => [
+                'id' => $p->id,
+                'name' => $p->name,
+                'lat' => (float) $p->lat,
+                'lng' => (float) $p->lng,
+            ])
+            ->toArray();
+    }
 
     public function selectCity($lat, $lng, $label)
     {
@@ -96,53 +149,9 @@ class ProviderFilter extends Component
 
     public function render()
     {
-
-        $providers = Provider::query()
-            ->where('active', true)
-            ->with(['type', 'specialties'])
-
-            ->when(
-                $this->providerType,
-                fn($q) =>
-                $q->where('provider_type_id', $this->providerType)
-            )
-
-            ->when(
-                $this->specialty,
-                fn($q) =>
-                $q->whereHas(
-                    'specialties',
-                    fn($sq) =>
-                    $sq->where('specialties.id', $this->specialty)
-                )
-            )
-
-            ->when($this->planId, function ($q) {
-                $q->whereHas('plans', function ($sq) {
-                    $sq->where('plans.id', $this->planId);
-                });
-            })
-
-            ->when(
-                $this->name,
-                fn($q) =>
-                $q->where('name', 'like', "%{$this->name}%")
-            )
-
-
-            ->when($this->lat && $this->lng, function ($q) {
-                $this->applyDistanceFilter($q);
-            })
-
-            ->get();
-
-
-        $this->dispatch('update-markers', providers: $providers->map(fn($p) => [
-            'id' => $p->id,
-            'name' => $p->name,
-            'lat' => $p->lat,
-            'lng' => $p->lng,
-        ]));
+        $providers = $this->searched
+        ? $this->getProvidersQuery()->get()
+        : collect(); 
 
         return view('livewire.provider-filter', [
             'providers' => $providers,
@@ -151,7 +160,6 @@ class ProviderFilter extends Component
             'plans' => Plan::orderBy('name')->get(),
         ]);
     }
-
 
     protected function applyDistanceFilter($query)
     {

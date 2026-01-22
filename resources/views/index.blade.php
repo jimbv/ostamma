@@ -267,7 +267,7 @@
 
 @endsection
 
-
+<!---
 <div class="social-fixed d-flex flex-column">
     <a href="https://wa.me/5493535629113?text=Hola,%20acabo%20de%20visitar%20su%20pagina%20web%20y%20queria%20pedir%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios" target="_blank" class="btn btn-success mb-2">
         <i class="fab fa-whatsapp"></i>
@@ -300,4 +300,4 @@
         border-radius: 50%;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
-</style>
+</style>-->
