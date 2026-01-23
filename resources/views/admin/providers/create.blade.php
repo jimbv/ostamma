@@ -129,7 +129,7 @@
 
 @section('js')
 <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4VSFCpvON_mjZdV81Fk7MMYVSXxhDXA0&libraries=places">
+    src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY') }}&libraries=places">
 </script>
 
 <script>
