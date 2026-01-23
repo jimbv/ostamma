@@ -36,9 +36,9 @@
                 </div>
             @endif
 
-            <h1 class="fw-bold mb-3" style="color:#111;font-family:Logomark;">
+            <h1 class="fw-bold mb-3" style="color:#111;">
                 {{ $post->title }}
-            </h1>
+            </h1> 
 
             <div class="text-muted mb-4">
                 Publicado el {{ $post->created_at->format('d/m/Y') }}

@@ -67,10 +67,10 @@
 <div class="w-full" style="background:#003a5d; position:fixed; top:0; left:0; width:100%; z-index:1050;">
     <div class="container d-flex justify-content-end py-2">
         <ul class="d-flex gap-4 m-0" style="list-style:none;">
-            <li><a href="#" class="text-white text-decoration-none">Prestadores</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Empresas</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Proveedores</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Trabajá con Nosotros</a></li>
+            <li><a href="/page/prestadores" class="text-white text-decoration-none">Prestadores</a></li>
+            <li><a href="/page/empresas" class="text-white text-decoration-none">Empresas</a></li>
+            <li><a href="/page/proveedores" class="text-white text-decoration-none">Proveedores</a></li>
+            <li><a href="/page/trabajo" class="text-white text-decoration-none">Trabajá con Nosotros</a></li>
         </ul>
     </div>
 </div>
@@ -120,7 +120,7 @@
                 </ul>
 
                 <!-- BOTÓN ACCEDE A TU CUENTA -->
-                <a href="/login" class="btn btn-primary ms-3" 
+                <a href="https://autogestion.ostamma.org.ar/" class="btn btn-primary ms-3" 
                    style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;">
                     Accedé a tu cuenta
                 </a>

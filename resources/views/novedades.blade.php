@@ -2,7 +2,7 @@
 @section('contenido')
 <section class="bg-white py-5">
     <div class="container">
-        <h2 class="text-center fw-bold text-uppercase mb-5" style="color:#111;font-family:Logomark;">
+        <h2 class="text-center fw-bold text-uppercase mb-5" style="color:#111;">
             Novedades
         </h2>
 

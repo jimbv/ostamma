@@ -16,7 +16,7 @@
                 Descargar cartilla (Excel)
             </a>
 
-            <a href="/DI-2025-111698318-APN-GCP#SSS.pdf"
+            <a href="/SSS.pdf"
                 class="btn btn-primary ms-2"
                 style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;"
                 target="_blank">
