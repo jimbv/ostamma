@@ -13,7 +13,7 @@
     <meta property="og:description" content="Ostamma Salud" />
 
 
-    <link rel="icon" type="image/x-icon" href="/imgs/icono.png>
+    <link rel="icon" type="image/x-icon" href="/imgs/icono.png">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
