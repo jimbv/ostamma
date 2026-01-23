@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Click Comunicación</title>
+    <title>OSTAMMA</title>
     <link rel="icon" type="image/x-icon" href="/imgs/logo.png">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Click Comunicación') }}</title>
+    <title>{{ config('app.name', 'OSTAMMA') }}</title>
 
     <link href="/css/style.css?v=19" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,7 +28,7 @@
     @yield('header')
     <nav class="navbar navbar-expand-lg navbar-light p-3" style="z-index: 10;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/#inicio"> <img src="/imgs/logo.png" alt="Click comunicación"> </a>
+            <a class="navbar-brand" href="/#inicio"> <img src="/imgs/logo.png" alt="OSTAMMA"> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars" style="color: white;font-size:22px;box-shadow:1px solid black;"></i>
             </button>
