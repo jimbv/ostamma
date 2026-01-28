@@ -12,22 +12,21 @@
     <meta property="og:url" content="https://ostamma.org.ar/" />
     <meta property="og:description" content="Ostamma Salud" />
 
-
-    <link rel="icon" type="image/x-icon" href="/imgs/icono.png">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/x-icon" href="/imgs/icono.png?v=1.1">
     <meta name="apple-mobile-web-app-title" content="MVM" />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1.1" />
+    <link rel="manifest" href="/favicon/site.webmanifest?v=1.1" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/style_prueba.css" />
+    <link rel="stylesheet" href="/css/style_prueba.css?v=1.1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
         @font-face {
@@ -64,73 +63,73 @@
 
 
     <!-- BARRA SUPERIOR -->
-<div class="w-full" style="background:#003a5d; position:fixed; top:0; left:0; width:100%; z-index:1050;">
-    <div class="container d-flex justify-content-end py-2">
-        <ul class="d-flex gap-4 m-0" style="list-style:none;">
-            <li><a href="/page/prestadores" class="text-white text-decoration-none">Prestadores</a></li>
-            <li><a href="/page/empresas" class="text-white text-decoration-none">Empresas</a></li>
-            <li><a href="/page/proveedores" class="text-white text-decoration-none">Proveedores</a></li>
-            <li><a href="/page/trabajo" class="text-white text-decoration-none">Trabajá con Nosotros</a></li>
-        </ul>
+    <div class="w-full" style="background:#003a5d; position:fixed; top:0; left:0; width:100%; z-index:1050;">
+        <div class="container d-flex justify-content-end py-2">
+            <ul class="d-flex gap-4 m-0" style="list-style:none;">
+                <li><a href="/page/prestadores" class="text-white text-decoration-none">Prestadores</a></li>
+                <li><a href="/page/empresas" class="text-white text-decoration-none">Empresas</a></li>
+                <li><a href="/page/proveedores" class="text-white text-decoration-none">Proveedores</a></li>
+                <li><a href="/page/trabajo" class="text-white text-decoration-none">Trabajá con Nosotros</a></li>
+            </ul>
+        </div>
     </div>
-</div>
 
-<!-- HEADER PRINCIPAL -->
-<header class="w-full bg-white shadow-md" style="position:fixed; top:40px;box-shadow: 0px 0px 2px black; left:0; width:100%; z-index:1040;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="/imgs/logo.png?v=2" alt="OSTAMMA Salud" style="height:80px;">
-            </a>
+    <!-- HEADER PRINCIPAL -->
+    <header class="w-full bg-white shadow-md" style="position:fixed; top:40px;box-shadow: 0px 0px 2px black; left:0; width:100%; z-index:1040;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/imgs/logo.png?v=2" alt="OSTAMMA Salud" style="height:80px;">
+                </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars" style="color:black; font-size:22px;"></i>
-            </button>
+                    <i class="fa-solid fa-bars" style="color:black; font-size:22px;"></i>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarNavDropdown" style="font-family:Nunito;">
-                <ul class="navbar-nav ms-auto">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown" style="font-family:Nunito;">
+                    <ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">PLANES</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">PLANES</a>
 
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="/planclasico/">PLAN CLÁSICO</a></li>
-                            <li><a class="dropdown-item" href="/plansuperior/">PLAN SUPERIOR</a></li>
-                            <li><a class="dropdown-item" href="/planjoven/">PLAN JOVEN</a></li>
-                        </ul>
-                    </li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/planclasico/">PLAN CLÁSICO</a></li>
+                                <li><a class="dropdown-item" href="/plansuperior/">PLAN SUPERIOR</a></li>
+                                <li><a class="dropdown-item" href="/planjoven/">PLAN JOVEN</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="nav-item"><a class="nav-link mx-2" href="/cartilla">CARTILLA</a></li> 
-                     <li class="nav-item dropdown">
-                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">INSTITUCIONAL</a>
+                        <li class="nav-item"><a class="nav-link mx-2" href="/cartilla">CARTILLA</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">INSTITUCIONAL</a>
 
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="/page/nuestra-historia/">NUESTRA HISTORIA</a></li>
-                            <li><a class="dropdown-item" href="/page/consejo-directivo/">CONSEJO DIRECTIVO</a></li>
-                            <li><a class="dropdown-item" href="/page/institucional/">MISION, VISIÓN Y VALORES</a></li>
-                            <li><a class="dropdown-item" href="/page/politica-de-calidad/">POLÍTICA DE CALIDAD</a></li>
-                            <li><a class="dropdown-item" href="/page/estatuto/">ESTATUTO</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link mx-2" href="/contacto">CONTACTO</a></li>
-                </ul>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/page/nuestra-historia/">NUESTRA HISTORIA</a></li>
+                                <li><a class="dropdown-item" href="/page/consejo-directivo/">CONSEJO DIRECTIVO</a></li>
+                                <li><a class="dropdown-item" href="/page/institucional/">MISION, VISIÓN Y VALORES</a></li>
+                                <li><a class="dropdown-item" href="/page/politica-de-calidad/">POLÍTICA DE CALIDAD</a></li>
+                                <li><a class="dropdown-item" href="/page/estatuto/">ESTATUTO</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link mx-2" href="/contacto">CONTACTO</a></li>
+                    </ul>
 
-                <!-- BOTÓN ACCEDE A TU CUENTA -->
-                <a href="https://autogestion.ostamma.org.ar/" class="btn btn-primary ms-3" 
-                   style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;">
-                    Accedé a tu cuenta
-                </a>
+                    <!-- BOTÓN ACCEDE A TU CUENTA -->
+                    <a href="https://autogestion.ostamma.org.ar/" class="btn btn-primary ms-3"
+                        style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;">
+                        Accedé a tu cuenta
+                    </a>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
-<!-- ESPACIADOR PARA QUE EL CONTENIDO NO SUBA BAJO EL HEADER -->
-<div style="height:140px;"></div>
+    <!-- ESPACIADOR PARA QUE EL CONTENIDO NO SUBA BAJO EL HEADER -->
+    <div style="height:140px;"></div>
 
 
     <main>
@@ -166,10 +165,10 @@
                             </button>
                         </div>
 
-                            <div class="mb-1 mt-1">
-                                <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
-                                @error('g-recaptcha-response') <span class="text-danger">{{ $message }}</span> @enderror
-                            </div>
+                        <div class="mb-1 mt-1">
+                            <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
+                            @error('g-recaptcha-response') <span class="text-danger">{{ $message }}</span> @enderror
+                        </div>
                     </form>
 
 
@@ -177,7 +176,7 @@
                     <div class="flex justify-end items-center gap-5">
                         <div class="contacto" style=" text-align:left; ">
                             <p style="color:#fff; font-size:18px; margin-bottom:15px;font-family:Montserrat;">
-                                
+
                             </p>
 
                             <p>
