@@ -80,7 +80,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="/imgs/logo.png" alt="OSTAMMA Salud" style="height:80px;">
+                <img src="/imgs/logo.png?v=2" alt="OSTAMMA Salud" style="height:80px;">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
