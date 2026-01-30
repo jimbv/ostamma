@@ -64,13 +64,13 @@
 
 
     <!-- BARRA SUPERIOR -->
-    <div class="w-full" style="background:#003a5d; position:fixed; top:0; left:0; width:100%; z-index:1050;">
+    <div class="w-full" style="background:#003a5d; position:fixed; top:0; left:0; width:100%; z-index:1050;border-bottom:1px solid black;">
         <div class="container d-flex justify-content-end py-2">
             <ul class="d-flex gap-4 m-0" style="list-style:none;">
                 <li><a href="/page/prestadores" class="text-white text-decoration-none">Prestadores</a></li>
                 <li><a href="/page/empresas" class="text-white text-decoration-none">Empresas</a></li>
                 <li><a href="/page/proveedores" class="text-white text-decoration-none">Proveedores</a></li>
-                <li><a href="/page/trabajo" class="text-white text-decoration-none">Trabajá con Nosotros</a></li>
+                <li><a href="/page/trabajo" class="text-white text-decoration-none">Postulaciones</a></li>
             </ul>
         </div>
     </div>
