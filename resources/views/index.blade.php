@@ -38,45 +38,45 @@
         <a href="/page/virtual">
             <img src="SaludVirtual.jpg" alt="Amma Salud Virtual" style="width:100%;border-radius:15px;overflow:hidden;box-shadow:0px 0px 2px white;border:none;" class="img-fluid mx-auto d-block">
         </a>
-        
+
         <div id="plan" class="container my-5">
-    <div class="row">
-        <div class="col-12 text-center mb-4">
-            <div class="section-title">
-                <h1 id="titulop">PLANES</h1>
-                <h2 class="fs-5 fw-normal" style="font-family: 'Roboto', sans-serif;">
-                    Nuestros planes de salud brindan una amplia cobertura. Con tu aporte mensual o con un pago adicional fijo,
-                    ideales para grupos familiares o personas que buscan una buena cobertura social al mejor precio.
-                </h2>
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <div class="section-title">
+                        <h1 id="titulop">PLANES</h1>
+                        <h2 class="fs-5 fw-normal" style="font-family: 'Roboto', sans-serif;">
+                            Nuestros planes de salud brindan una amplia cobertura. Con tu aporte mensual o con un pago adicional fijo,
+                            ideales para grupos familiares o personas que buscan una buena cobertura social al mejor precio.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center bg-white rounded-4 py-4">
+
+                <!-- PLAN JOVEN -->
+                <div class="col-lg-4 col-md-6 col-sm-10 text-center mb-4">
+                    <a href="/planjoven" class="d-block">
+                        <img src="/imgs/joven.png" alt="Plan Joven" class="img-fluid mx-auto">
+                    </a>
+                </div>
+
+                <!-- PLAN CLASICO -->
+                <div class="col-lg-4 col-md-6 col-sm-10 text-center mb-4">
+                    <a href="/planclasico" class="d-block">
+                        <img src="/imgs/clasico.png" alt="Plan Clásico" class="img-fluid mx-auto">
+                    </a>
+                </div>
+
+                <!-- PLAN SUPERIOR -->
+                <div class="col-lg-4 col-md-6 col-sm-10 text-center mb-4">
+                    <a href="/plansuperior" class="d-block">
+                        <img src="/imgs/superior.png" alt="Plan Superior" class="img-fluid mx-auto">
+                    </a>
+                </div>
+
             </div>
         </div>
-    </div>
-
-    <div class="row justify-content-center bg-white rounded-4 py-4">
-
-        <!-- PLAN JOVEN -->
-        <div class="col-lg-4 col-md-6 col-sm-10 text-center mb-4">
-            <a href="/planjoven" class="d-block">
-                <img src="/imgs/joven.png" alt="Plan Joven" class="img-fluid mx-auto">
-            </a>
-        </div>
-
-        <!-- PLAN CLASICO -->
-        <div class="col-lg-4 col-md-6 col-sm-10 text-center mb-4">
-            <a href="/planclasico" class="d-block">
-                <img src="/imgs/clasico.png" alt="Plan Clásico" class="img-fluid mx-auto">
-            </a>
-        </div>
-
-        <!-- PLAN SUPERIOR -->
-        <div class="col-lg-4 col-md-6 col-sm-10 text-center mb-4">
-            <a href="/plansuperior" class="d-block">
-                <img src="/imgs/superior.png" alt="Plan Superior" class="img-fluid mx-auto">
-            </a>
-        </div>
-
-    </div>
-</div>
 
 </section>
 {{-- NOVEDADES --}}
@@ -94,57 +94,124 @@
                 <div class="carousel-item @if($loop->first) active @endif">
                     <div class="row g-4 justify-content-center">
 
-                        @foreach($chunk as $post)
-                        <div class="col-md-4">
-                            <div class="card h-100 shadow-sm border-0">
 
-                                {{-- Imagen destacada --}}
-                                <a href="/novedad/{{ $post->slug }}" class="text-decoration-none text-dark">
-                                    @if($post->images->isNotEmpty())
-                                    <img src="{{ asset($post->images->first()->image_path) }}"
-                                        class="card-img-top"
-                                        alt="{{ $post->images->first()->alt_text ?? $post->title }}">
-                                    @else
-                                    <img src="https://via.placeholder.com/600x400?text=Sin+Imagen"
-                                        class="card-img-top"
-                                        alt="{{ $post->title }}">
-                                    @endif
-                                </a>
+                        @if ($posts->count() <= 3)
 
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">{{ $post->title }}</h5>
-                                    <p class="card-text">
-                                        {!! Str::limit($post->short_text, 100) !!}
-                                    </p>
-
-                                    <a href="{{ url('/novedad/'.$post->slug) }}"
-                                       class="btn btn-primary btn-sm mt-auto align-self-start">
-                                        Leer más
+                            {{-- SIN CAROUSEL --}}
+                            <div class="row g-4 justify-content-center">
+                            @foreach($posts as $post)
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <a href="/novedad/{{ $post->slug }}" class="text-decoration-none text-dark">
+                                        @if($post->images->isNotEmpty())
+                                        <img src="{{ asset($post->images->first()->image_path) }}"
+                                            class="card-img-top"
+                                            alt="{{ $post->images->first()->alt_text ?? $post->title }}">
+                                        @else
+                                        <img src="https://via.placeholder.com/600x400?text=Sin+Imagen"
+                                            class="card-img-top"
+                                            alt="{{ $post->title }}">
+                                        @endif
                                     </a>
+
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">{{ $post->title }}</h5>
+                                        <p class="card-text">
+                                            {!! Str::limit($post->short_text, 100) !!}
+                                        </p>
+
+                                        <a href="{{ url('/novedad/'.$post->slug) }}"
+                                            class="btn btn-primary btn-sm mt-auto align-self-start">
+                                            Leer más
+                                        </a>
+                                    </div>
                                 </div>
 
                             </div>
-                        </div>
-                        @endforeach
-
+                            @endforeach
                     </div>
+
+                    @else
+
+                    {{-- CON CAROUSEL --}}
+                    <div id="postsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                            @foreach($posts->chunk(3) as $chunk)
+                            <div class="carousel-item @if($loop->first) active @endif">
+                                <div class="row g-4 justify-content-center">
+
+                                    @foreach($chunk as $post)
+                                    <div class="col-md-4">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <a href="/novedad/{{ $post->slug }}" class="text-decoration-none text-dark">
+                                                @if($post->images->isNotEmpty())
+                                                <img src="{{ asset($post->images->first()->image_path) }}"
+                                                    class="card-img-top"
+                                                    alt="{{ $post->images->first()->alt_text ?? $post->title }}">
+                                                @else
+                                                <img src="https://via.placeholder.com/600x400?text=Sin+Imagen"
+                                                    class="card-img-top"
+                                                    alt="{{ $post->title }}">
+                                                @endif
+                                            </a>
+
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">{{ $post->title }}</h5>
+                                                <p class="card-text">
+                                                    {!! Str::limit($post->short_text, 100) !!}
+                                                </p>
+
+                                                <a href="{{ url('/novedad/'.$post->slug) }}"
+                                                    class="btn btn-primary btn-sm mt-auto align-self-start">
+                                                    Leer más
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    @endforeach
+
+                                </div>
+                            </div>
+                            @endforeach
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#postsCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#postsCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                    @endif
+
+
+                     
+
                 </div>
-                @endforeach
-
             </div>
+            @endforeach
 
-            {{-- Controles --}}
-            @if($posts->count() > 3)
-            <button class="carousel-control-prev" type="button"
-                data-bs-target="#postsCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button"
-                data-bs-target="#postsCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-            @endif
         </div>
+
+        {{-- Controles --}}
+        @if($posts->count() > 3)
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#postsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#postsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        @endif
+    </div>
 
     </div>
 </section>
