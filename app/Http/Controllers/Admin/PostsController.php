@@ -46,8 +46,15 @@ class PostsController extends Controller
 
         $post = Post::create($validatedData);
 
-        PostImage::where('post_id_temporal', $id_temporal)
-            ->update(['post_id' => $post->id, 'post_id_temporal' => null]);
+        if ($request->hasFile('image')) {
+
+            $path = $request->file('image')->store('posts', 'public');
+
+            PostImage::create([
+                'post_id'    => $post->id,
+                'image_path' => 'storage/' . $path,
+            ]);
+        }
 
         return redirect()->back()->with('success', 'Post guardado correctamente.');
     }
