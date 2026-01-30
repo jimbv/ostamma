@@ -1,50 +1,14 @@
 @extends('layouts.plantilla')
 @section('contenido')
-
-<section class="w-100" style="height:60vh; border-bottom:10px solid #a5a5a5ff;top:-45px; position:relative;">
-    <section class="w-100 map-section">
-        <section class="map-section">
-    <iframe
-        src="https://www.google.com/maps/d/embed?mid=1KKnS8SIeRZQruFkK1z0FGNNezitKn5g&ehbc=2E312F"
-        class="map-iframe map-no-interaction"
-        loading="lazy">
-    </iframe> 
-    </section>
-    </section>
-<style>
-.map-section {
-    position: relative;
-    height: 60vh;
-    border-bottom: 10px solid #00395c;
-    overflow: hidden;
-}
-
-/* El iframe NO participa del flujo */
-.map-iframe {
-    position: absolute;
-    top: -45px;      /* ocultás la barra */
-    left: 0;
-    width: 100%;
-    height: calc(100% + 45px);
-    border: 0;
-}
-
-.map-no-interaction {
-    pointer-events: none;
-}
-</style>
-
-
-</section>
-
-<section class="position-relative w-100" style="min-height: 60vh;  overflow:hidden;">
+ 
+<section class="position-relative w-100" style="min-height: 60vh;  overflow:hidden;padding-top:80px; padding-bottom:80px; background: url('/imgs/contacto-fondo.jpg') no-repeat center center/cover;">
     
 
     <div class="container p-3 position-relative" style="z-index:2;">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
                 <div class="bg-white  p-md-5 rounded shadow-lg">
-                    <h3 class="mb-3">Dejanos tu consulta</h3>
+                    <h3 class="mb-3">DEJANOS TU CONSULTA</h3>
                     <hr>
 
                     @if(session('success'))
@@ -91,6 +55,44 @@
             </div>
         </div>
     </div>
+</section>
+
+<section class="w-100" style="height:60vh; border-bottom:10px solid #a5a5a5ff;top:-45px; position:relative;text-align:center; padding-top:40px; padding-bottom:40px;">
+
+<h3 class="mb-3">DÓNDE ESTAMOS</h3>
+    <section class="w-100 map-section">
+        <section class="map-section">
+    <iframe
+        src="https://www.google.com/maps/d/embed?mid=1KKnS8SIeRZQruFkK1z0FGNNezitKn5g&ehbc=2E312F"
+        class="map-iframe map-no-interaction"
+        loading="lazy">
+    </iframe> 
+    </section>
+    </section>
+<style>
+.map-section {
+    position: relative;
+    height: 60vh;
+    border-bottom: 10px solid #00395c;
+    overflow: hidden;
+}
+
+/* El iframe NO participa del flujo */
+.map-iframe {
+    position: absolute;
+    top: -45px;      
+    left: 0;
+    width: 100%;
+    height: calc(100% + 45px);
+    border: 0;
+}
+/*
+.map-no-interaction {
+    pointer-events: none;
+}*/
+</style>
+
+
 </section>
 
 @endsection

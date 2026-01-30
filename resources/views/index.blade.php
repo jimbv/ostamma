@@ -79,87 +79,105 @@
 </div>
 
 </section>
-<section class="mb-5 bg-gray-200 p-5">
-    <div id="postsCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <p></p>
-            <h2 class="pt-3 text-2xl md:text-3xl font-black text-primary uppercase text-center mb-10" style="color:#111!important;">
-                NOVEDADES</h2>
+{{-- NOVEDADES --}}
+<section class="mb-5 bg-light py-5">
+    <div class="container">
 
-            @foreach($posts->chunk(3) as $chunk)
-            <div class="carousel-item @if($loop->first) active @endif">
-                <div class="row g-4 justify-content-center">
+        <h2 class="pt-3 fs-2 fw-bold text-uppercase text-center mb-4" style="color:#111;">
+            NOVEDADES
+        </h2>
 
-                    @foreach($chunk as $post)
-                    <div class="col-md-4">
-                        <a href="/novedad/{{$post->slug}}" style="text-decoration:none; color:black;">
+        <div id="postsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                @foreach($posts->chunk(3) as $chunk)
+                <div class="carousel-item @if($loop->first) active @endif">
+                    <div class="row g-4 justify-content-center">
+
+                        @foreach($chunk as $post)
+                        <div class="col-md-4">
                             <div class="card h-100 shadow-sm border-0">
 
-                                {{-- Imagen destacada (primera del post) --}}
-                                @if($post->images->isNotEmpty())
-                                <img src="{{ asset($post->images->first()->image_path) }}"
-                                    class="card-img-top"
-                                    alt="{{ $post->images->first()->alt_text ?? $post->title }}">
-                                @else
-                                <img src="https://via.placeholder.com/600x400?text=Sin+Imagen"
-                                    class="card-img-top"
-                                    alt="{{ $post->title }}">
-                                @endif
+                                {{-- Imagen destacada --}}
+                                <a href="/novedad/{{ $post->slug }}" class="text-decoration-none text-dark">
+                                    @if($post->images->isNotEmpty())
+                                    <img src="{{ asset($post->images->first()->image_path) }}"
+                                        class="card-img-top"
+                                        alt="{{ $post->images->first()->alt_text ?? $post->title }}">
+                                    @else
+                                    <img src="https://via.placeholder.com/600x400?text=Sin+Imagen"
+                                        class="card-img-top"
+                                        alt="{{ $post->title }}">
+                                    @endif
+                                </a>
 
-                                <div class="card-body">
+                                <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">{{ $post->title }}</h5>
-                                    <p class="card-text">{!! Str::limit($post->short_text, 100) !!}</p>
-                                    <a href="{{ url('/novedad/'.$post->slug) }}" class="btn btn-primary btn-sm">
+                                    <p class="card-text">
+                                        {!! Str::limit($post->short_text, 100) !!}
+                                    </p>
+
+                                    <a href="{{ url('/novedad/'.$post->slug) }}"
+                                       class="btn btn-primary btn-sm mt-auto align-self-start">
                                         Leer más
                                     </a>
                                 </div>
+
                             </div>
-                        </a>
+                        </div>
+                        @endforeach
+
                     </div>
-                    @endforeach
-
                 </div>
-            </div>
-            @endforeach
+                @endforeach
 
+            </div>
+
+            {{-- Controles --}}
+            @if($posts->count() > 3)
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#postsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#postsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            @endif
         </div>
 
-        {{-- Controles del carrusel --}}
-        @if($posts->count() > 3)
-        <button class="carousel-control-prev" type="button" data-bs-target="#postsCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#postsCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-        @endif
     </div>
-
 </section>
 
-<section class="p-5">
+{{-- APP / AUTOGESTIÓN --}}
+<section class="py-5">
     <div class="container">
-    <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-7 col-sm-9 pt-10">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-6 col-md-7 col-sm-9 mb-4">
                 <a href="/downloadapp">
                     <img src="/app.png" class="img-fluid mx-auto d-block" alt="APP OSTAMMA">
                 </a>
             </div>
-            <div class="col-lg-6 col-md-7 col-sm-9 pt-10">
+
+            <div class="col-lg-6 col-md-7 col-sm-9 mb-4">
                 <a href="https://autogestion.ostamma.org.ar/">
                     <img src="/autogestionnew.png" class="img-fluid mx-auto d-block" alt="Autogestion OSTAMMA">
                 </a>
             </div>
-        </div>
-        </div>
-</section>
-<section class="contact-section">
-    <div class="container text-center">
 
-        <a href="https://ostamma.org.ar/" class="d-block mb-4">
+        </div>
+    </div>
+</section>
+
+{{-- CONTACTO --}}
+<section class="contact-section text-center">
+    <div class="container">
+
+        <a href="https://ostamma.org.ar/" class="d-block mb-4 text-decoration-none">
             <img src="/imgs/Blanco.png"
                 alt="OSTAMMA AMMA Salud"
-                class="logo-principal">
+                class="logo-principal img-fluid mx-auto d-block">
             <h1 class="rnos">RNOS 0-0270-9</h1>
         </a>
 
@@ -176,7 +194,7 @@
             0353-4536925 · 0353-155629113
         </p>
 
-        <div class="redes my-4">
+        <div class="my-4">
             <a href="https://www.facebook.com/OSTAMMA/" class="btn btn-primary rounded-circle mx-2">
                 <i class="fab fa-facebook-f"></i>
             </a>
@@ -188,17 +206,19 @@
             </a>
         </div>
 
-        <a href="http://www.gesta.org.ar" target="_blank" class="d-block my-4 gesta">
-            <img src="/imgs/gestablanco.png"
-                alt="Entidad perteneciente al Grupo GESTA">
+        <a href="http://www.gesta.org.ar" target="_blank" class="d-block my-4">
+            <img src="/imgs/gestablanco.png" style="height:80px;"
+                alt="Entidad perteneciente al Grupo GESTA"
+                class="img-fluid mx-auto d-block">
         </a>
 
         <img src="/imgs/sssbanner.jpg"
             alt="Superintendencia de Salud de la Nación"
-            class="img-fluid sss-banner" style="border-radius: 5px;">
+            class="img-fluid rounded mx-auto d-block">
 
     </div>
 </section>
+
 <style>
     .logo-principal,
     .gesta img,
