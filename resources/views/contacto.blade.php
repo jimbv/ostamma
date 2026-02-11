@@ -44,7 +44,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
+                            <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.key') }}"></div>
                             @error('g-recaptcha-response') <span class="text-danger">{{ $message }}</span> @enderror
                         </div>
 
