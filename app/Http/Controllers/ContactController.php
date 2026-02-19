@@ -15,11 +15,16 @@ class ContactController extends Controller
     public function showForm()
     {
         $services = Service::select('name', 'slug')->orderBy('name')->get();
-        return view('contacto',compact('services'));
+        return view('contacto', compact('services'));
     }
 
     public function submit(Request $request)
     {
+
+        if ($request->filled('website')) {
+            abort(403);
+        }
+
         $request->validate([
             'name' => 'required',
             'email' => 'required|email',

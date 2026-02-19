@@ -30,7 +30,7 @@
                             <input type="email" name="email" id="email" class="form-control" value="{{ old('email') }}" required>
                             @error('email') <span class="text-danger">{{ $message }}</span> @enderror
                         </div>
-
+                        <input type="text" name="website" style="display:none">
                         <div class="mb-3">
                             <label for="phone" class="form-label">Teléfono / Celular</label>
                             <input type="text" name="phone" id="phone" class="form-control" value="{{ old('phone') }}" required>
