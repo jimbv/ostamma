@@ -26,32 +26,33 @@ class PostsController extends Controller
 
     public function save(Request $request)
     {
-
         $validatedData = $request->validate([
             'title' => 'required|string',
-            'slug' => 'required|string',
+            'slug' => 'required|string|unique:posts,slug',
             'short_text' => 'required|string',
             'text' => 'required|string',
-            'post_id_temporal' => 'required'
+            'post_id_temporal' => 'required',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ], [
             'title.required' => 'El campo título es obligatorio.',
-            'slug.required' => 'El campo título es obligatorio.',
+            'slug.required' => 'El campo slug es obligatorio.',
             'short_text.required' => 'El campo texto corto es obligatorio.',
             'text.required' => 'El campo texto es obligatorio.',
         ]);
 
-
-        $id_temporal = $validatedData['post_id_temporal'];
+        $idTemporal = $validatedData['post_id_temporal'];
         unset($validatedData['post_id_temporal']);
 
+        // Crear post
         $post = Post::create($validatedData);
 
+        // Guardar imagen si existe
         if ($request->hasFile('image')) {
 
             $path = $request->file('image')->store('posts', 'public');
 
             PostImage::create([
-                'post_id'    => $post->id,
+                'post_id' => $post->id,
                 'image_path' => 'storage/' . $path,
             ]);
         }

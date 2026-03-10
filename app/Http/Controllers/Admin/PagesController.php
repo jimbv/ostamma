@@ -27,7 +27,7 @@ class PagesController extends Controller
             'name' => 'required|string',
             'slug' => 'required|string',
             'description' => 'required|string',
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ], [
             'name.required' => 'El campo Nombre es obligatorio.',
             'slug.required' => 'El campo Slug es obligatorio.',
@@ -37,14 +37,15 @@ class PagesController extends Controller
             'image.max' => 'La imagen no debe superar los 2048 KB.',
         ]);
 
-        $image = $request->file('image');
-
-        $page = Page::create($validatedData);
-
-        if ($image) {
-            $path = $image->store('imgs/page_images', 'publico');
-            $page->update(['image' => $path]);
+        // subir imagen si existe
+        if ($request->hasFile('image')) {
+            $validatedData['image'] = $request->file('image')
+                ->store('imgs/page_images', 'publico');
         }
+
+        // crear registro
+        Page::create($validatedData);
+
         return redirect()->back()->with('success', 'Página guardada correctamente.');
     }
 
