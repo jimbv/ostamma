@@ -63,7 +63,7 @@ class PagesController extends Controller
     }
 
     public function update(Request $request)
-    { 
+    {
 
         $validatedData = $request->validate([
             'name' => 'required|string',
@@ -78,21 +78,30 @@ class PagesController extends Controller
             'image.mimes' => 'El archivo debe ser de tipo: jpeg, png, jpg, gif, svg.',
             'image.max' => 'La imagen no debe superar los 2048 KB.',
         ]);
- 
+
         $image = $request->file('image');
         $id = $request->page_id;
-        $page = Page::findOrFail($id); 
+        $page = Page::findOrFail($id);
 
 
         if ($request->deleteImg == 1) {
             Storage::disk('publico')->delete($page->image);
             $page->update(['image' => '']);
         }
+        if ($request->hasFile('image')) {
 
-        if ($image) {
+            $image = $request->file('image');
+
+            // guardar imagen
             $path = $image->store('imgs/page_images', 'publico');
-            $page->update(['image' => $path]);
-            unset($validatedData['image']);
+
+            // eliminar imagen anterior si existe
+            if ($page->image && Storage::disk('publico')->exists($page->image)) {
+                Storage::disk('publico')->delete($page->image);
+            }
+
+            // guardar ruta en el modelo
+            $validatedData['image'] = $path;
         }
 
         $page->update($validatedData);
