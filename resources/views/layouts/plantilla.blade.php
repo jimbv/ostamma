@@ -67,7 +67,7 @@
 
 
     <!-- BARRA SUPERIOR -->
-    <div class="w-full" style="background:#003a5d; position:fixed; top:0; left:0; width:100%; z-index:1050;border-bottom:1px solid black;">
+    <div class="w-full" style="font-size: 0.80rem;background:#003a5d; position:fixed; top:0; left:0; width:100%; z-index:1050;border-bottom:1px solid black;padding-top:2px;">
         <div class="container d-flex justify-content-end py-2">
             <ul class="d-flex gap-4 m-0" style="list-style:none;">
                 <li><a href="/page/prestadores" class="text-white text-decoration-none">Prestadores</a></li>
