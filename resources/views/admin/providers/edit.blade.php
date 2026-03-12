@@ -7,7 +7,9 @@
 @stop
 
 @section('content')
-
+@php
+    $selectedSpecialties = $provider->specialties->pluck('id')->toArray();
+@endphp
 <div class="card">
     <div class="card-body">
 
@@ -19,7 +21,7 @@
             <div class="mb-3">
                 <label class="form-label">Nombre</label>
                 <input name="name" class="form-control"
-                       value="{{ old('name', $provider->name) }}" required>
+                    value="{{ old('name', $provider->name) }}" required>
             </div>
 
             {{-- Tipo --}}
@@ -27,10 +29,10 @@
                 <label class="form-label">Tipo de prestador</label>
                 <select name="provider_type_id" class="form-control" required>
                     @foreach($types as $type)
-                        <option value="{{ $type->id }}"
-                            @selected($provider->provider_type_id == $type->id)>
-                            {{ $type->name }}
-                        </option>
+                    <option value="{{ $type->id }}"
+                        @selected($provider->provider_type_id == $type->id)>
+                        {{ $type->name }}
+                    </option>
                     @endforeach
                 </select>
             </div>
@@ -59,19 +61,19 @@
                 <div class="col-md-6 mb-3">
                     <label>Dirección</label>
                     <input id="address" name="address" class="form-control"
-                           value="{{ old('address', $provider->address) }}">
+                        value="{{ old('address', $provider->address) }}">
                 </div>
 
                 <div class="col-md-3 mb-3">
                     <label>Ciudad</label>
                     <input id="city" name="city" class="form-control"
-                           value="{{ old('city', $provider->city) }}">
+                        value="{{ old('city', $provider->city) }}">
                 </div>
 
                 <div class="col-md-3 mb-3">
                     <label>Provincia</label>
                     <input id="province" name="province" class="form-control"
-                           value="{{ old('province', $provider->province) }}">
+                        value="{{ old('province', $provider->province) }}">
                 </div>
             </div>
 
@@ -86,12 +88,12 @@
                 <div class="col-md-6">
                     <label>Latitud</label>
                     <input id="lat" name="lat" class="form-control"
-                           value="{{ old('lat', $provider->lat) }}" readonly>
+                        value="{{ old('lat', $provider->lat) }}" readonly>
                 </div>
                 <div class="col-md-6">
                     <label>Longitud</label>
                     <input id="lng" name="lng" class="form-control"
-                           value="{{ old('lng', $provider->lng) }}" readonly>
+                        value="{{ old('lng', $provider->lng) }}" readonly>
                 </div>
             </div>
 
@@ -102,13 +104,70 @@
                 <div class="col-md-6">
                     <label>Teléfono</label>
                     <input name="phone" class="form-control"
-                           value="{{ old('phone', $provider->phone) }}">
+                        value="{{ old('phone', $provider->phone) }}">
                 </div>
                 <div class="col-md-6">
                     <label>Email</label>
                     <input name="email" type="email" class="form-control"
-                           value="{{ old('email', $provider->email) }}">
+                        value="{{ old('email', $provider->email) }}">
                 </div>
+            </div>
+
+            <div class="row mt-4">
+
+                {{-- DISPONIBLES --}}
+                <div class="col-md-5">
+                    <label class="form-label">Especialidades disponibles</label>
+
+                    <select id="available" class="form-control" multiple size="10">
+
+                        @foreach($specialties as $specialty)
+
+                        @if(!in_array($specialty->id, $selectedSpecialties))
+
+                        <option value="{{ $specialty->id }}">
+                            {{ $specialty->name }}
+                        </option>
+
+                        @endif
+
+                        @endforeach
+
+                    </select>
+                </div>
+
+                {{-- BOTONES --}}
+                <div class="col-md-2 d-flex flex-column justify-content-center align-items-center">
+
+                    <button type="button" class="btn btn-success mb-2" onclick="addSpecialty()">→</button>
+
+                    <button type="button" class="btn btn-danger" onclick="removeSpecialty()">←</button>
+
+                </div>
+
+                {{-- SELECCIONADAS --}}
+                <div class="col-md-5">
+
+                    <label class="form-label">Especialidades del prestador</label>
+
+                    <select id="selected" name="specialties[]" class="form-control" multiple size="10">
+
+                        @foreach($specialties as $specialty)
+
+                        @if(in_array($specialty->id, $selectedSpecialties))
+
+                        <option value="{{ $specialty->id }}">
+                            {{ $specialty->name }}
+                        </option>
+
+                        @endif
+
+                        @endforeach
+
+                    </select>
+
+                </div>
+
             </div>
 
             <div class="mt-4">
@@ -120,7 +179,7 @@
         </form>
     </div>
 </div>
- 
+
 
 @stop
 
@@ -131,67 +190,106 @@
 
 @section('js')
 <script
-  src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY') }}">
+    src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY') }}">
 </script>
 
 <script>
-let map;
-let marker;
-let geocoder;
+    let map;
+    let marker;
+    let geocoder;
 
-function initMap() {
+    function initMap() {
 
-    const lat = {{ $provider->lat ?? -34.6037 }};
-    const lng = {{ $provider->lng ?? -58.3816 }};
-    const center = { lat: lat, lng: lng };
+        const lat = {{ $provider->lat ?? -34.6037 }};
+        const lng = {{ $provider->lng ?? -58.3816 }};
+        const center = { lat: lat, lng: lng };
 
-    map = new google.maps.Map(document.getElementById("map"), {
-        zoom: {{ $provider->lat ? 14 : 6 }},
-        center
-    });
+        map = new google.maps.Map(document.getElementById("map"), {
+            zoom: {{ $provider->lat ? 14 : 6 }},
+            center
+        });
 
-    geocoder = new google.maps.Geocoder();
+        geocoder = new google.maps.Geocoder();
 
-    if (lat && lng) {
-        placeMarker(center);
+        if (lat && lng) {
+            placeMarker(center);
+        }
+
+        map.addListener("click", (e) => {
+            placeMarker(e.latLng);
+        });
     }
 
-    map.addListener("click", (e) => {
-        placeMarker(e.latLng);
+    function placeMarker(location) {
+        if (marker) marker.setMap(null);
+
+        marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+
+        document.getElementById('lat').value = location.lat();
+        document.getElementById('lng').value = location.lng();
+    }
+
+    function searchAddress() {
+        const address = [
+            document.getElementById('address').value,
+            document.getElementById('city').value,
+            document.getElementById('province').value,
+            'Argentina'
+        ].join(', ');
+
+        geocoder.geocode({
+            address
+        }, (results, status) => {
+            if (status === 'OK') {
+                map.setCenter(results[0].geometry.location);
+                map.setZoom(15);
+                placeMarker(results[0].geometry.location);
+            } else {
+                alert('No se pudo encontrar la dirección');
+            }
+        });
+    }
+
+    window.onload = initMap;
+</script>
+
+
+<script>
+
+function addSpecialty() {
+
+    let available = document.getElementById('available');
+    let selected = document.getElementById('selected');
+
+    Array.from(available.selectedOptions).forEach(option => {
+        selected.appendChild(option);
     });
+
 }
 
-function placeMarker(location) {
-    if (marker) marker.setMap(null);
+function removeSpecialty() {
 
-    marker = new google.maps.Marker({
-        position: location,
-        map: map
+    let available = document.getElementById('available');
+    let selected = document.getElementById('selected');
+
+    Array.from(selected.selectedOptions).forEach(option => {
+        available.appendChild(option);
     });
 
-    document.getElementById('lat').value = location.lat();
-    document.getElementById('lng').value = location.lng();
 }
 
-function searchAddress() {
-    const address = [
-        document.getElementById('address').value,
-        document.getElementById('city').value,
-        document.getElementById('province').value,
-        'Argentina'
-    ].join(', ');
+document.querySelector("form").addEventListener("submit", function() {
 
-    geocoder.geocode({ address }, (results, status) => {
-        if (status === 'OK') {
-            map.setCenter(results[0].geometry.location);
-            map.setZoom(15);
-            placeMarker(results[0].geometry.location);
-        } else {
-            alert('No se pudo encontrar la dirección');
-        }
+    let selected = document.getElementById('selected');
+
+    Array.from(selected.options).forEach(option => {
+        option.selected = true;
     });
-}
 
-window.onload = initMap;
+});
+
 </script>
 @stop

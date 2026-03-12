@@ -110,6 +110,36 @@
                 </div>
             </div>
 
+
+            <div class="row mt-4">
+
+                <div class="col-md-5">
+                    <label class="form-label">Especialidades disponibles</label>
+                    <select id="available" class="form-control" multiple size="10">
+                        @foreach($specialties as $specialty)
+                        <option value="{{ $specialty->id }}">
+                            {{ $specialty->name }}
+                        </option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div class="col-md-2 d-flex flex-column justify-content-center align-items-center">
+
+                    <button type="button" class="btn btn-success mb-2" onclick="addSpecialty()">→</button>
+
+                    <button type="button" class="btn btn-danger" onclick="removeSpecialty()">←</button>
+
+                </div>
+
+                <div class="col-md-5">
+                    <label class="form-label">Especialidades del prestador</label>
+                    <select id="selected" name="specialties[]" class="form-control" multiple size="10">
+                    </select>
+                </div>
+
+            </div>
+
             <div class="mt-4">
                 <button class="btn btn-primary">
                     Guardar Prestador
@@ -188,5 +218,44 @@
     }
 
     window.onload = initMap;
+</script>
+
+<script>
+
+function addSpecialty() {
+
+    let available = document.getElementById('available');
+    let selected = document.getElementById('selected');
+
+    Array.from(available.selectedOptions).forEach(option => {
+        selected.appendChild(option);
+    });
+
+}
+
+function removeSpecialty() {
+
+    let available = document.getElementById('available');
+    let selected = document.getElementById('selected');
+
+    Array.from(selected.selectedOptions).forEach(option => {
+        available.appendChild(option);
+    });
+
+}
+
+</script>
+<script>
+
+document.querySelector("form").addEventListener("submit", function() {
+
+    let selected = document.getElementById('selected');
+
+    Array.from(selected.options).forEach(option => {
+        option.selected = true;
+    });
+
+});
+
 </script>
 @stop

@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Plan;
+use App\Models\Specialty;
 
 class ProvidersController extends Controller
 {
@@ -23,7 +24,8 @@ class ProvidersController extends Controller
     {
         $types = ProviderType::all();
         $plans = Plan::all();
-        return view('admin.providers.create', compact('types', 'plans'));
+        $specialties = Specialty::all();
+        return view('admin.providers.create', compact('types', 'plans', 'specialties'));
     }
 
     public function save(Request $request)
@@ -44,8 +46,9 @@ class ProvidersController extends Controller
                 'plans' => 'array',
                 'plans.*' => 'exists:plans,id'
             ]));
+ 
 
-
+            $provider->specialties()->sync($request->specialties ?? []);
             $provider->plans()->sync($request->plans ?? []);
             return redirect()->back()->with('success', 'Proveedor guardado correctamente.');
         } catch (ValidationException $e) {
@@ -66,9 +69,10 @@ class ProvidersController extends Controller
     {
 
         $types = ProviderType::all();
-        $provider = Provider::find($id);
-        $plans = Plan::all();
-        return view('admin.providers.edit', compact('provider', 'types', 'plans'));
+        $provider = Provider::with(['specialties', 'plans', 'type'])->find($id);
+        $specialties = Specialty::all();
+        $plans = Plan::all(); 
+        return view('admin.providers.edit', compact('provider', 'types', 'plans', 'specialties'));
     }
 
     public function update(Request $request, Provider $provider)
@@ -88,6 +92,7 @@ class ProvidersController extends Controller
         ]);
 
         $provider->update($validated); 
+        $provider->specialties()->sync($request->specialties ?? []);
         $provider->plans()->sync($request->plans ?? []);
 
         return redirect()
