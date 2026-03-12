@@ -73,7 +73,6 @@
                 <li><a href="/page/prestadores" class="text-white text-decoration-none">Prestadores</a></li>
                 <li><a href="/page/empresas" class="text-white text-decoration-none">Empresas</a></li>
                 <li><a href="/page/proveedores" class="text-white text-decoration-none">Proveedores</a></li>
-                <li><a href="/page/trabajo" class="text-white text-decoration-none">Postulaciones</a></li>
             </ul>
         </div>
     </div>
