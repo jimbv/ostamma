@@ -43,8 +43,13 @@ class PostsController extends Controller
         $idTemporal = $validatedData['post_id_temporal'];
         unset($validatedData['post_id_temporal']);
 
-        // Crear post
         $post = Post::create($validatedData);
+ 
+        PostImage::where('post_id_temporal', $idTemporal)
+            ->update([
+                'post_id' => $post->id,
+                'post_id_temporal' => null
+            ]);
 
         // Guardar imagen si existe
         if ($request->hasFile('images')) {
