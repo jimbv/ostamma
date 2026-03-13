@@ -49,7 +49,7 @@ class PostsController extends Controller
         // Guardar imagen si existe
         if ($request->hasFile('image')) {
 
-            $path = $request->file('image')->store('posts', 'public');
+            $path = $request->file('image')->store('posts', 'publico');
 
             PostImage::create([
                 'post_id' => $post->id,
