@@ -84,35 +84,37 @@
 
         {{-- LISTADO --}}
         <div class="col-md-4" style="max-height: 75vh; overflow-y: auto">
-            @forelse($providers as $provider)
-            <div class="card mb-2 shadow-sm">
-                <div class="card-body p-2">
-                    <h6 class="mb-1 fw-bold">
-                        {{ $provider->name }}
-                    </h6>
+            @if($searched)
+                @forelse($providers as $provider)
+                <div class="card mb-2 shadow-sm">
+                    <div class="card-body p-2">
+                        <h6 class="mb-1 fw-bold">
+                            {{ $provider->name }}
+                        </h6>
 
-                    <div class="small text-muted">
-                        {{ $provider->address }}<br>
-                        {{ $provider->city }} - {{ $provider->province }}
+                        <div class="small text-muted">
+                            {{ $provider->address }}<br>
+                            {{ $provider->city }} - {{ $provider->province }}
+                        </div>
+
+                        <div class="mt-1 small">
+                            📞 {{ $provider->phone ?? '—' }}<br>
+                            ✉️ {{ $provider->email ?? '—' }}
+                        </div>
+
+                        <button
+                            class="btn btn-sm btn-outline-primary mt-2"
+                            onclick="focusMarker({{ $provider->id }})">
+                            Ver en mapa
+                        </button>
                     </div>
-
-                    <div class="mt-1 small">
-                        📞 {{ $provider->phone ?? '—' }}<br>
-                        ✉️ {{ $provider->email ?? '—' }}
-                    </div>
-
-                    <button
-                        class="btn btn-sm btn-outline-primary mt-2"
-                        onclick="focusMarker({{ $provider->id }})">
-                        Ver en mapa
-                    </button>
                 </div>
-            </div>
-            @empty
-            <div class="alert alert-info">
-                No se encontraron profesionales
-            </div>
-            @endforelse
+                @empty
+                <div class="alert alert-info">
+                    No se encontraron profesionales
+                </div>
+                @endforelse
+            @endif
         </div>
 
         {{-- MAPA --}}
