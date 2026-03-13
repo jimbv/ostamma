@@ -114,6 +114,10 @@
                     No se encontraron profesionales
                 </div>
                 @endforelse
+            @else
+                <div class="alert alert-secondary">
+                    🔎 Usá los filtros y presioná buscar para ver profesionales
+                </div> 
             @endif
         </div>
 
