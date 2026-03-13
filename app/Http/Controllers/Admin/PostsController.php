@@ -47,14 +47,15 @@ class PostsController extends Controller
         $post = Post::create($validatedData);
 
         // Guardar imagen si existe
-        if ($request->hasFile('image')) {
-
-            $path = $request->file('image')->store('posts', 'publico');
-
-            PostImage::create([
-                'post_id' => $post->id,
-                'image_path' => 'storage/' . $path,
-            ]);
+        if ($request->hasFile('images')) {
+            foreach ($request->file('images') as $index => $image) {
+                $path = $image->store('imgs/post_images', 'publico');
+                $post->images()->create([
+                    'image_path' => 'storage/' . $path,
+                    'alt_text'   => $post->title,
+                    'order'      => $index,
+                ]);
+            }
         }
 
         return redirect()->back()->with('success', 'Post guardado correctamente.');
