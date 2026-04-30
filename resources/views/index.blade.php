@@ -1,5 +1,59 @@
 @extends('layouts.plantilla')
 @section('contenido')
+
+
+<!-- Modal -->
+ 
+<div class="modal fade" id="modalInicio" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0">
+
+      <!-- Botón cerrar (cruz) -->
+      <button type="button"
+              class="btn-close position-absolute top-0 end-0 m-2 z-3"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar" style="background-color: white;box-shadow: 0 2px 6px rgba(0,0,0,0.5);">
+      </button>
+
+      <!-- Imagen -->
+      <div class="modal-body p-0 text-center">
+        <img src="/imgs/app-sisalud.jpeg" class="img-fluid w-100 rounded-top" alt="Promo">
+      </div>
+
+      <!-- Botón centrado -->
+      <div class="p-3 d-flex flex-column gap-2 align-items-center">
+
+        <!-- Google Play -->
+        <a href="https://play.google.com/store/apps/details?id=com.sisalud.app&pcampaignid=web_share"
+           target="_blank"
+           class="btn btn-dark w-75 d-flex align-items-center justify-content-center gap-2">
+
+          <i class="bi bi-google-play"></i>
+          Descargar en Google Play
+        </a>
+
+        <!-- App Store -->
+        <a href="https://apps.apple.com/ar/app/sisalud/id6677057185"
+           target="_blank"
+           class="btn btn-dark w-75 d-flex align-items-center justify-content-center gap-2">
+
+          <i class="bi bi-apple"></i>
+          Descargar en App Store
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var modal = new bootstrap.Modal(document.getElementById('modalInicio'));
+    modal.show();
+});
+</script>
+
 <section class="position-relative w-100"
     style="height: 100vh; border-bottom: 10px solid #0097ce; overflow:hidden;">
 
