@@ -78,6 +78,8 @@
     </div>
 
     <!-- HEADER PRINCIPAL -->
+    <!-- Opción CDN para probar rápido -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <header class="w-full bg-white shadow-md" style="position:fixed; top:40px;box-shadow: 0px 0px 2px black; left:0; width:100%; z-index:1040;">
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
             <div class="container">
