@@ -91,7 +91,7 @@
                             5493535629113</a> <br> 
                         <a href="https://wa.me/5493535629113?text=Hola,%20acabo%20de%20visitar%20su%20pagina%20web%20y%20queria%20pedir%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios" style="color:white;text-decoration:none;"><i class="fab fa-whatsapp"></i> &nbsp;&nbsp;
                             5493535629113</a> <br>
-                        <a href="mailto:info@ostamma.org.ar" style="color:white;text-decoration:none;"><i class="fa fa-envelope"></i> &nbsp;&nbsp;info@ostamma.org.ar</a>
+                        <a href="mailto:ostamma@amma.org.ar" style="color:white;text-decoration:none;"><i class="fa fa-envelope"></i> &nbsp;&nbsp;ostamma@amma.org.ar</a>
 
                     </div>
                 </div>

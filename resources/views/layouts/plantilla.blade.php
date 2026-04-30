@@ -195,8 +195,8 @@
                             </p>
 
                             <p>
-                                <a href="mailto:info@ostamma.org.ar" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
-                                    <i class="fas fa-envelope"></i> info@ostamma.org.ar
+                                <a href="mailto:ostamma@amma.org.ar" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
+                                    <i class="fas fa-envelope"></i> ostamma@amma.org.ar
                                 </a>
                             </p>
                             <p>

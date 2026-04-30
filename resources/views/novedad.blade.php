@@ -59,7 +59,7 @@
     <a href="https://www.instagram.com/ostamma.salud" target="_blank" class="btn btn-light mb-2" style="background-color:#E1306C; color:white;border-color:#E1306C;">
         <i class="fa-brands fa-instagram"></i>
     </a>
-    <a href="mailto:info@ostamma.org.ar" target="_blank" class="  mb-2 btn btn-primary">
+    <a href="mailto:ostamma@amma.org.ar" target="_blank" class="  mb-2 btn btn-primary">
         <i class="fa-solid fa-envelope"></i>
     </a>
     <a href="/contacto" class="btn btn-light">
