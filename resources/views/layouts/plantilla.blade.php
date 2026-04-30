@@ -95,10 +95,10 @@
                     <ul class="navbar-nav ms-auto">
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="dropdownPlanes" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">PLANES</a>
 
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul class="dropdown-menu" aria-labelledby="dropdownPlanes">
                                 <li><a class="dropdown-item" href="/planclasico/">PLAN CLÁSICO</a></li>
                                 <li><a class="dropdown-item" href="/plansuperior/">PLAN SUPERIOR</a></li>
                                 <li><a class="dropdown-item" href="/planjoven/">PLAN JOVEN</a></li>
