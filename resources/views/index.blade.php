@@ -273,21 +273,41 @@ document.addEventListener('DOMContentLoaded', function () {
 {{-- APP / AUTOGESTIÓN --}}
 <section class="py-5">
     <div class="container">
+
         <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-10 text-center">
 
-            <div class="col-lg-6 col-md-7 col-sm-9 mb-4">
-                <a href="/downloadapp">
-                    <img src="/app.png" class="img-fluid mx-auto d-block" alt="APP OSTAMMA">
-                </a>
+                <!-- Imagen -->
+                <img src="/imgs/appsisalud.jpeg"
+                     class="img-fluid rounded shadow mb-4"
+                     alt="APP OSTAMMA">
+
+                <!-- Botones -->
+                <div class="d-flex flex-column gap-3 align-items-center">
+
+                    <!-- Google Play -->
+                    <a href="https://play.google.com/store/apps/details?id=com.sisalud.app&pcampaignid=web_share"
+                       target="_blank"
+                       class="btn btn-dark w-75 d-flex align-items-center justify-content-center gap-2">
+
+                        <i class="bi bi-google-play"></i>
+                        Descargar en Google Play
+                    </a>
+
+                    <!-- App Store -->
+                    <a href="https://apps.apple.com/ar/app/sisalud/id6677057185"
+                       target="_blank"
+                       class="btn btn-dark w-75 d-flex align-items-center justify-content-center gap-2">
+
+                        <i class="bi bi-apple"></i>
+                        Descargar en App Store
+                    </a>
+
+                </div>
+
             </div>
-
-            <div class="col-lg-6 col-md-7 col-sm-9 mb-4">
-                <a href="https://autogestion.ostamma.org.ar/">
-                    <img src="/autogestionnew.png" class="img-fluid mx-auto d-block" alt="Autogestion OSTAMMA">
-                </a>
-            </div>
-
         </div>
+
     </div>
 </section>
 
