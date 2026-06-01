@@ -124,9 +124,9 @@
                     </ul>
 
                     <!-- BOTÓN ACCEDE A TU CUENTA -->
-                    <a href="https://autogestion.ostamma.org.ar/" class="btn btn-primary ms-3"
+                    <a href="/#app" class="btn btn-primary ms-3"
                         style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;">
-                        Accedé a tu cuenta
+                        Descargá la APP
                     </a>
                 </div>
             </div>

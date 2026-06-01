@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </section>
 
 {{-- APP / AUTOGESTIÓN --}}
-<section class="py-5">
+<section class="py-5" id="app">
     <div class="container">
 
         <div class="row justify-content-center">
