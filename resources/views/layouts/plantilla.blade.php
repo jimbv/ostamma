@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-  
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -79,7 +79,7 @@
 
     <!-- HEADER PRINCIPAL -->
     <!-- Opción CDN para probar rápido -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <header class="w-full bg-white shadow-md" style="position:fixed; top:40px;box-shadow: 0px 0px 2px black; left:0; width:100%; z-index:1040;">
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
             <div class="container">
@@ -123,8 +123,12 @@
                         <li class="nav-item"><a class="nav-link mx-2" href="/contacto">CONTACTO</a></li>
                     </ul>
 
-                    <!-- BOTÓN ACCEDE A TU CUENTA -->
-                    <a href="/#app" class="btn btn-primary ms-3"
+                    <a href="https://www.maradonasalud.com.ar/turnos/login.php" class="btn btn-info ms-3 text-white" target="_blank"
+                        style="background:#0098d3; border:none; padding:8px 18px; border-radius:6px; display: inline-flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-calendar-alt"></i> Turnos
+                    </a>
+
+                    <a href="/#app" class="btn btn-primary ms-2"
                         style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;">
                         Descargá la APP
                     </a>
