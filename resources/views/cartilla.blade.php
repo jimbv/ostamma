@@ -7,24 +7,31 @@
             Cartilla de prestadores
         </h2>
 
-        <div class="text-center mb-5">
+        <div class="text-center mb-5 d-flex flex-wrap justify-content-center gap-3">
             <a href="/prestadores.xls"
-                class="btn btn-primary me-2"
+                class="btn btn-primary"
                 style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;"
                 target="_blank">
                 <i class="fa-solid fa-file-excel me-1"></i>
                 Descargar cartilla (Excel)
             </a>
 
+            <a href="/coseguros_vigentes.pdf"
+                class="btn btn-primary"
+                style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;"
+                target="_blank">
+                <i class="fa-solid fa-file-invoice-dollar me-1"></i>
+                Coseguros vigentes
+            </a>
+
             <a href="/SSS.pdf"
-                class="btn btn-primary ms-2"
+                class="btn btn-primary"
                 style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;"
                 target="_blank">
                 <i class="fa-solid fa-file-pdf me-1"></i>
                 Disposición DI-2025-111698318-APN-GCP#SSS
             </a>
         </div>
-
 
         <div class="row">
             <div class="col-12">
@@ -34,8 +41,8 @@
         </div>
 </section>
 @endsection
- 
-@section('scripts') 
+
+@section('scripts')
 @livewireScripts
 @stop
 @section('styles')
