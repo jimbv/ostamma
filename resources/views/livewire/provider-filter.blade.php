@@ -195,7 +195,7 @@
 
 
     <script
-        src="https://maps.googleapis.com/maps/api/js?key={{ config('services.google.maps_api_key') }}&callback=initMap"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4VSFCpvON_mjZdV81Fk7MMYVSXxhDXA0&callback=initMap"
         async
         defer>
     </script>
