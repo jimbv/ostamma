@@ -1,5 +1,9 @@
 @extends('layouts.plantilla')
 
+@section('styles')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+@endsection
+
 @section('contenido')
 
 <!-- Modal Inicio -->
@@ -7,7 +11,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content border-0">
 
-      <!-- Botón cerrar (cruz) -->
+      <!-- Botón cerrar -->
       <button type="button"
               class="btn-close position-absolute top-0 end-0 m-2 z-3 bg-white shadow-sm"
               data-bs-dismiss="modal"
@@ -22,7 +26,6 @@
       <!-- Botones Tiendas -->
       <div class="p-3 d-flex flex-column gap-2 align-items-center bg-white rounded-bottom">
 
-        <!-- Google Play -->
         <a href="https://play.google.com/store/apps/details?id=com.sisalud.app&pcampaignid=web_share"
            target="_blank"
            class="btn btn-dark w-75 d-flex align-items-center justify-content-center gap-2">
@@ -30,7 +33,6 @@
           Descargar en Google Play
         </a>
 
-        <!-- App Store -->
         <a href="https://apps.apple.com/ar/app/sisalud/id6677057185"
            target="_blank"
            class="btn btn-dark w-75 d-flex align-items-center justify-content-center gap-2">
@@ -43,8 +45,6 @@
     </div>
   </div>
 </div>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
 {{-- Banner Principal --}}
 <section class="position-relative w-100" style="height: 100vh; border-bottom: 10px solid #0097ce; overflow:hidden;">
@@ -125,7 +125,6 @@
         </h2>
 
         @if($posts->count() <= 3)
-            {{-- Muestra estática si hay 3 o menos --}}
             <div class="row g-4 justify-content-center">
                 @foreach($posts as $post)
                     <div class="col-md-4">
@@ -151,7 +150,6 @@
                 @endforeach
             </div>
         @else
-            {{-- Carrusel de Bootstrap si hay más de 3 --}}
             <div id="postsCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     @foreach($posts->chunk(3) as $chunk)
@@ -257,35 +255,25 @@
     .direccion { color: #dce9f1; font-size: 1rem; }
 </style>
 
-{{-- Script seguro para inicializar el Modal --}}
+@endsection
+
+@section('scripts')
 <script>
-  (function () {
-    // Función para intentar abrir el modal
-    function lanzarModal() {
-      var modalEl = document.getElementById('modalInicio');
-      
-      // Mover el modal al <body> para evitar recortes por z-index o contenedores padres
-      if (modalEl && modalEl.parentNode !== document.body) {
-        document.body.appendChild(modalEl);
-      }
-
-      // Si Bootstrap está cargado, instanciamos y mostramos
-      if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
-        var myModal = new bootstrap.Modal(modalEl);
-        myModal.show();
-      } else {
-        // Si aún no cargó Bootstrap, reintentamos en 100ms
-        setTimeout(lanzarModal, 100);
-      }
-    }
-
-    // Arrancamos el intento cuando el DOM esté listo
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', lanzarModal);
-    } else {
-      lanzarModal();
-    }
-  })();
+    window.addEventListener('load', function () {
+        var modalEl = document.getElementById('modalInicio');
+        if (modalEl) {
+            // Mover al body para que no bloquee elementos ni modifique el DOM interno del layout
+            document.body.appendChild(modalEl);
+            
+            // Reintenta hasta asegurar que Bootstrap esté cargado globalmente
+            var checkBootstrap = setInterval(function () {
+                if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+                    clearInterval(checkBootstrap);
+                    var modal = new bootstrap.Modal(modalEl);
+                    modal.show();
+                }
+            }, 100);
+        }
+    });
 </script>
-
 @endsection
