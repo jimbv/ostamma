@@ -2,12 +2,12 @@
 
 @section('contenido')
 
-<!-- Modal -->
-<div class="modal fade" id="modalInicio" tabindex="-1" aria-hidden="true">
+<!-- Modal Inicio -->
+<div class="modal fade" id="modalInicio" tabindex="-1" aria-labelledby="modalInicioLabel" aria-hidden="true" style="z-index: 1060;">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content border-0">
 
-      <!-- Botón cerrar -->
+      <!-- Botón cerrar (cruz) -->
       <button type="button"
               class="btn-close position-absolute top-0 end-0 m-2 z-3 bg-white shadow-sm"
               data-bs-dismiss="modal"
@@ -16,11 +16,13 @@
 
       <!-- Imagen -->
       <div class="modal-body p-0 text-center">
-        <img src="/imgs/app-sisalud.jpeg" class="img-fluid w-100 rounded-top" alt="Promo">
+        <img src="/imgs/app-sisalud.jpeg" class="img-fluid w-100 rounded-top" alt="Promo SISALUD">
       </div>
 
       <!-- Botones Tiendas -->
-      <div class="p-3 d-flex flex-column gap-2 align-items-center">
+      <div class="p-3 d-flex flex-column gap-2 align-items-center bg-white rounded-bottom">
+
+        <!-- Google Play -->
         <a href="https://play.google.com/store/apps/details?id=com.sisalud.app&pcampaignid=web_share"
            target="_blank"
            class="btn btn-dark w-75 d-flex align-items-center justify-content-center gap-2">
@@ -28,12 +30,14 @@
           Descargar en Google Play
         </a>
 
+        <!-- App Store -->
         <a href="https://apps.apple.com/ar/app/sisalud/id6677057185"
            target="_blank"
            class="btn btn-dark w-75 d-flex align-items-center justify-content-center gap-2">
           <i class="bi bi-apple"></i>
           Descargar en App Store
         </a>
+
       </div>
 
     </div>
@@ -255,13 +259,33 @@
 
 {{-- Script seguro para inicializar el Modal --}}
 <script>
-    window.addEventListener('load', function () {
-        var modalEl = document.getElementById('modalInicio');
-        if (modalEl && typeof bootstrap !== 'undefined') {
-            var modal = new bootstrap.Modal(modalEl);
-            modal.show();
-        }
-    });
+  (function () {
+    // Función para intentar abrir el modal
+    function lanzarModal() {
+      var modalEl = document.getElementById('modalInicio');
+      
+      // Mover el modal al <body> para evitar recortes por z-index o contenedores padres
+      if (modalEl && modalEl.parentNode !== document.body) {
+        document.body.appendChild(modalEl);
+      }
+
+      // Si Bootstrap está cargado, instanciamos y mostramos
+      if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+        var myModal = new bootstrap.Modal(modalEl);
+        myModal.show();
+      } else {
+        // Si aún no cargó Bootstrap, reintentamos en 100ms
+        setTimeout(lanzarModal, 100);
+      }
+    }
+
+    // Arrancamos el intento cuando el DOM esté listo
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', lanzarModal);
+    } else {
+      lanzarModal();
+    }
+  })();
 </script>
 
 @endsection
