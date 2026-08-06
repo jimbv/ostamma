@@ -1,9 +1,5 @@
 @extends('layouts.plantilla')
 
-@section('styles')
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-@endsection
-
 @section('contenido')
 
 <!-- Modal Inicio -->
@@ -11,21 +7,17 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content border-0">
 
-      <!-- Botón cerrar -->
       <button type="button"
               class="btn-close position-absolute top-0 end-0 m-2 z-3 bg-white shadow-sm"
               data-bs-dismiss="modal"
               aria-label="Cerrar">
       </button>
 
-      <!-- Imagen -->
       <div class="modal-body p-0 text-center">
         <img src="/imgs/app-sisalud.jpeg" class="img-fluid w-100 rounded-top" alt="Promo SISALUD">
       </div>
 
-      <!-- Botones Tiendas -->
       <div class="p-3 d-flex flex-column gap-2 align-items-center bg-white rounded-bottom">
-
         <a href="https://play.google.com/store/apps/details?id=com.sisalud.app&pcampaignid=web_share"
            target="_blank"
            class="btn btn-dark w-75 d-flex align-items-center justify-content-center gap-2">
@@ -39,7 +31,6 @@
           <i class="bi bi-apple"></i>
           Descargar en App Store
         </a>
-
       </div>
 
     </div>
@@ -124,71 +115,73 @@
             NOVEDADES
         </h2>
 
-        @if($posts->count() <= 3)
-            <div class="row g-4 justify-content-center">
-                @foreach($posts as $post)
-                    <div class="col-md-4">
-                        <div class="card h-100 shadow-sm border-0">
-                            <a href="/novedad/{{ $post->slug }}" class="text-decoration-none text-dark">
-                                @if($post->images->isNotEmpty())
-                                    <img src="{{ asset($post->images->first()->image_path) }}" class="card-img-top" alt="{{ $post->images->first()->alt_text ?? $post->title }}">
-                                @else
-                                    <img src="https://via.placeholder.com/600x400?text=Sin+Imagen" class="card-img-top" alt="{{ $post->title }}">
-                                @endif
-                            </a>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">{{ $post->title }}</h5>
-                                <p class="card-text">
-                                    {!! Str::limit($post->short_text, 100) !!}
-                                </p>
-                                <a href="{{ url('/novedad/'.$post->slug) }}" class="btn btn-primary btn-sm mt-auto align-self-start">
-                                    Leer más
+        @if(isset($posts) && $posts->count() > 0)
+            @if($posts->count() <= 3)
+                <div class="row g-4 justify-content-center">
+                    @foreach($posts as $post)
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <a href="/novedad/{{ $post->slug }}" class="text-decoration-none text-dark">
+                                    @if($post->images && $post->images->isNotEmpty())
+                                        <img src="{{ asset($post->images->first()->image_path) }}" class="card-img-top" alt="{{ $post->images->first()->alt_text ?? $post->title }}">
+                                    @else
+                                        <img src="https://via.placeholder.com/600x400?text=Sin+Imagen" class="card-img-top" alt="{{ $post->title }}">
+                                    @endif
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        @else
-            <div id="postsCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    @foreach($posts->chunk(3) as $chunk)
-                        <div class="carousel-item @if($loop->first) active @endif">
-                            <div class="row g-4 justify-content-center">
-                                @foreach($chunk as $post)
-                                    <div class="col-md-4">
-                                        <div class="card h-100 shadow-sm border-0">
-                                            <a href="/novedad/{{ $post->slug }}" class="text-decoration-none text-dark">
-                                                @if($post->images->isNotEmpty())
-                                                    <img src="{{ asset($post->images->first()->image_path) }}" class="card-img-top" alt="{{ $post->images->first()->alt_text ?? $post->title }}">
-                                                @else
-                                                    <img src="https://via.placeholder.com/600x400?text=Sin+Imagen" class="card-img-top" alt="{{ $post->title }}">
-                                                @endif
-                                            </a>
-                                            <div class="card-body d-flex flex-column">
-                                                <h5 class="card-title">{{ $post->title }}</h5>
-                                                <p class="card-text">
-                                                    {!! Str::limit($post->short_text, 100) !!}
-                                                </p>
-                                                <a href="{{ url('/novedad/'.$post->slug) }}" class="btn btn-primary btn-sm mt-auto align-self-start">
-                                                    Leer más
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                @endforeach
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">{{ $post->title }}</h5>
+                                    <p class="card-text">
+                                        {!! Str::limit($post->short_text, 100) !!}
+                                    </p>
+                                    <a href="{{ url('/novedad/'.$post->slug) }}" class="btn btn-primary btn-sm mt-auto align-self-start">
+                                        Leer más
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     @endforeach
                 </div>
+            @else
+                <div id="postsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        @foreach($posts->chunk(3) as $chunk)
+                            <div class="carousel-item @if($loop->first) active @endif">
+                                <div class="row g-4 justify-content-center">
+                                    @foreach($chunk as $post)
+                                        <div class="col-md-4">
+                                            <div class="card h-100 shadow-sm border-0">
+                                                <a href="/novedad/{{ $post->slug }}" class="text-decoration-none text-dark">
+                                                    @if($post->images && $post->images->isNotEmpty())
+                                                        <img src="{{ asset($post->images->first()->image_path) }}" class="card-img-top" alt="{{ $post->images->first()->alt_text ?? $post->title }}">
+                                                    @else
+                                                        <img src="https://via.placeholder.com/600x400?text=Sin+Imagen" class="card-img-top" alt="{{ $post->title }}">
+                                                    @endif
+                                                </a>
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="card-title">{{ $post->title }}</h5>
+                                                    <p class="card-text">
+                                                        {!! Str::limit($post->short_text, 100) !!}
+                                                    </p>
+                                                    <a href="{{ url('/novedad/'.$post->slug) }}" class="btn btn-primary btn-sm mt-auto align-self-start">
+                                                        Leer más
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#postsCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#postsCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                </button>
-            </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#postsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#postsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                    </button>
+                </div>
+            @endif
         @endif
     </div>
 </section>
@@ -259,20 +252,11 @@
 
 @section('scripts')
 <script>
-    window.addEventListener('load', function () {
+    document.addEventListener('DOMContentLoaded', function () {
         var modalEl = document.getElementById('modalInicio');
-        if (modalEl) {
-            // Mover al body para que no bloquee elementos ni modifique el DOM interno del layout
-            document.body.appendChild(modalEl);
-            
-            // Reintenta hasta asegurar que Bootstrap esté cargado globalmente
-            var checkBootstrap = setInterval(function () {
-                if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
-                    clearInterval(checkBootstrap);
-                    var modal = new bootstrap.Modal(modalEl);
-                    modal.show();
-                }
-            }, 100);
+        if (modalEl && typeof bootstrap !== 'undefined') {
+            var modal = new bootstrap.Modal(modalEl);
+            modal.show();
         }
     });
 </script>
