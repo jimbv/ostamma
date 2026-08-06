@@ -15,20 +15,16 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="icon" type="image/x-icon" href="/imgs/icono.png?v=1.1">
-    <meta name="apple-mobile-web-app-title" content="MVM" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1.1" />
     <link rel="manifest" href="/favicon/site.webmanifest?v=1.1" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
-
+    <!-- CSS de Bootstrap y Fuentes -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/style_prueba.css?v=1.1" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -40,34 +36,25 @@
             font-weight: normal;
             font-style: normal;
         }
-
         @font-face {
             font-family: "Cloudsters";
-            src: url("/fonts/Cloudsters.otf") format("opentype"),
-                font-weight: normal;
+            src: url("/fonts/Cloudsters.otf") format("opentype");
+            font-weight: normal;
             font-style: normal;
         }
     </style>
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Scripts -->
+
+    <!-- Scripts de Vite -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
-    @yield('scripts')
     @yield('styles')
-
-
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
 </head>
 
-<body class="bg-white flex flex-col min-h-screen justify-start">
-
-
+<body class="bg-white d-flex flex-column min-vh-100">
 
     <!-- BARRA SUPERIOR -->
-    <div class="w-full" style="font-size: 0.80rem;background:#003a5d; position:fixed; top:0; left:0; width:100%; z-index:1050;border-bottom:1px solid black;padding-top:2px;">
+    <div class="w-100" style="font-size: 0.80rem; background:#003a5d; position:fixed; top:0; left:0; z-index:1050; border-bottom:1px solid black; padding-top:2px;">
         <div class="container d-flex justify-content-end py-2">
             <ul class="d-flex gap-4 m-0" style="list-style:none;">
                 <li><a href="/page/prestadores" class="text-white text-decoration-none">Prestadores</a></li>
@@ -78,27 +65,22 @@
     </div>
 
     <!-- HEADER PRINCIPAL -->
-    <!-- Opción CDN para probar rápido --> 
-    <header class="w-full bg-white shadow-md" style="position:fixed; top:40px;box-shadow: 0px 0px 2px black; left:0; width:100%; z-index:1040;">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
+    <header class="w-100 bg-white shadow-sm" style="position:fixed; top:36px; left:0; z-index:1040;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3">
             <div class="container">
                 <a class="navbar-brand" href="/">
-                    <img src="/imgs/logo.png?v=2" alt="OSTAMMA Salud" style="height:80px;">
+                    <img src="/imgs/logo.png?v=2" alt="OSTAMMA Salud" style="height:70px;">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars" style="color:black; font-size:22px;"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown" style="font-family:Nunito;">
                     <ul class="navbar-nav ms-auto">
-
                         <li class="nav-item dropdown">
-                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="dropdownPlanes" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">PLANES</a>
-
+                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="dropdownPlanes" role="button" data-bs-toggle="dropdown" aria-expanded="false">PLANES</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownPlanes">
                                 <li><a class="dropdown-item" href="/planclasico/">PLAN CLÁSICO</a></li>
                                 <li><a class="dropdown-item" href="/plansuperior/">PLAN SUPERIOR</a></li>
@@ -108,9 +90,7 @@
 
                         <li class="nav-item"><a class="nav-link mx-2" href="/cartilla">CARTILLA</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">INSTITUCIONAL</a>
-
+                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">INSTITUCIONAL</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="/page/nuestra-historia/">NUESTRA HISTORIA</a></li>
                                 <li><a class="dropdown-item" href="/page/consejo-directivo/">CONSEJO DIRECTIVO</a></li>
@@ -122,12 +102,12 @@
                         <li class="nav-item"><a class="nav-link mx-2" href="/contacto">CONTACTO</a></li>
                     </ul>
 
-                    <a href="https://www.maradonasalud.com.ar/turnos/login.php" class="btn btn-info ms-3 text-white" target="_blank"
+                    <a href="https://www.maradonasalud.com.ar/turnos/login.php" class="btn text-white ms-3" target="_blank"
                         style="background:#0098d3; border:none; padding:8px 18px; border-radius:6px; display: inline-flex; align-items: center; gap: 8px;">
                         <i class="fas fa-calendar-alt"></i> Turnos
                     </a>
 
-                    <a href="/#app" class="btn btn-primary ms-2"
+                    <a href="/#app" class="btn text-white ms-2"
                         style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;">
                         Descargá la APP
                     </a>
@@ -136,114 +116,59 @@
         </nav>
     </header>
 
-    <!-- ESPACIADOR PARA QUE EL CONTENIDO NO SUBA BAJO EL HEADER -->
-    <div style="height:140px;"></div>
+    <!-- ESPACIADOR -->
+    <div style="height:130px;"></div>
 
-
-    <main>
+    <main class="flex-grow-1">
         @yield('contenido')
     </main>
 
+    <!-- FOOTER -->
+    <footer class="w-100 mt-auto" style="background-color: #111e26;" id="pie">
+        <div class="container py-5">
+            <div class="row align-items-center mb-4">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <img src="/imgs/logoblanco.png" alt="OSTAMMA Salud" style="height: 90px;" class="img-fluid">
+                </div>
 
-
-
-
-    <footer class="w-full mt-auto" style="background-color: #111e26;" id="pie">
-        <div class="max-w-screen-xl mx-auto px-5">
-            <div class="pt-5">
-                <div class="flex flex-col sm:flex-row justify-center sm:justify-between items-center mb-10">
-                    <img src="/imgs/logoblanco.png" alt="OSTAMMA Salud" style="height: 100px;" class=" w-auto mb-5 sm:mb-0">
-
-
-                    <form action="{{ route('subscribe') }}" method="POST" class="sm:w-50 max-w-md text-white">
+                <div class="col-md-4 text-white mb-3 mb-md-0">
+                    <form action="{{ route('subscribe') }}" method="POST">
                         @csrf
-                        <label for="email" class="form-label mb-2">
-                            Sumate a nuestra lista y recibí novedades
-                        </label>
-
-                        <div class="input-group">
-                            <input type="email"
-                                id="email"
-                                name="email"
-                                placeholder="Ingresá tu email"
-                                class="form-control rounded-start"
-                                required>
-                            <button type="submit" class="btn btn-danger rounded-end">
-                                Suscribirme
-                            </button>
+                        <label for="email" class="form-label mb-2">Sumate a nuestra lista y recibí novedades</label>
+                        <div class="input-group mb-2">
+                            <input type="email" id="email" name="email" placeholder="Ingresá tu email" class="form-control" required>
+                            <button type="submit" class="btn btn-danger">Suscribirme</button>
                         </div>
-
-                        <div class="mb-1 mt-1">
-                            <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
-                            @error('g-recaptcha-response') <span class="text-danger">{{ $message }}</span> @enderror
-                        </div>
+                        <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
+                        @error('g-recaptcha-response') <span class="text-danger small">{{ $message }}</span> @enderror
                     </form>
-
-
-
-                    <div class="flex justify-end items-center gap-5">
-                        <div class="contacto" style=" text-align:left; ">
-                            <p style="color:#fff; font-size:18px; margin-bottom:15px;font-family:Montserrat;">
-
-                            </p>
-
-                            <p>
-                                <a href="https://wa.me/5493535629113?text=Hola,%20acabo%20de%20visitar%20su%20pagina%20web%20y%20queria%20pedir%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios" target="_blank" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
-                                    <i class="fab fa-whatsapp"></i> 549 353 5629113
-                                </a>
-                            </p>
-
-                            <p>
-                                <a href="https://www.instagram.com/ostamma.salud" target="_blank" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
-                                    <i class="fab fa-instagram"></i> @ostamma.salud
-                                </a>
-                            </p>
-
-                            <p>
-                                <a href="mailto:ostamma@amma.org.ar" style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
-                                    <i class="fas fa-envelope"></i> ostamma@amma.org.ar
-                                </a>
-                            </p>
-                            <p>
-                                <a href="https://www.google.com/maps/place/Villa+María,+Córdoba" target="_blank"
-                                    style="color:#fff; text-decoration:none; margin:0 10px; font-size:16px;">
-                                    <i class="fas fa-map-marker-alt"></i> Villa María, Córdoba
-                                </a>
-                            </p>
-
-                        </div>
-
-                        <!-- Hover con estilo -->
-                        <style>
-                            .contacto a:hover {
-                                color: #f74e04;
-                            }
-
-                            .contacto i {
-                                margin-right: 8px;
-                            }
-                        </style>
-
-
-                    </div>
-                </div>
-                <div class=" text-sm flex flex-col sm:flex-row justify-center items-center gap-5 pb-10" style="color: white;">
-                    <a href="/page/consejo-directivo/" style="color: white;text-decoration: none;">Nuestra empresa</a>
-                    <a href="/novedades" style="color: white;text-decoration: none;">Noticias</a>
-                    <a href="/contacto" style="color: white;text-decoration: none;">Preguntas frecuentes</a>
-                    <a target="_blank" href="https://www.instagram.com/ostamma.salud/" style="color: white;text-decoration: none;">
-                        <i class="fab fa-instagram"></i> ostamma.salud
-                    </a>
-                </div>
-                <div class="text-center pb-10 text-xs " style="color: white;text-decoration: none;">
-                    © {{ date('Y') }} OSTAMMA
                 </div>
 
+                <div class="col-md-4 text-white text-md-end text-center">
+                    <p class="mb-2"><a href="https://wa.me/5493535629113" target="_blank" class="text-white text-decoration-none"><i class="fab fa-whatsapp me-2"></i> 549 353 5629113</a></p>
+                    <p class="mb-2"><a href="https://www.instagram.com/ostamma.salud" target="_blank" class="text-white text-decoration-none"><i class="fab fa-instagram me-2"></i> @ostamma.salud</a></p>
+                    <p class="mb-2"><a href="mailto:ostamma@amma.org.ar" class="text-white text-decoration-none"><i class="fas fa-envelope me-2"></i> ostamma@amma.org.ar</a></p>
+                    <p class="mb-0"><i class="fas fa-map-marker-alt me-2"></i> Villa María, Córdoba</p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-4 py-3 border-top border-secondary text-white small flex-wrap">
+                <a href="/page/consejo-directivo/" class="text-white text-decoration-none">Nuestra empresa</a>
+                <a href="/novedades" class="text-white text-decoration-none">Noticias</a>
+                <a href="/contacto" class="text-white text-decoration-none">Preguntas frecuentes</a>
+            </div>
+            
+            <div class="text-center pt-3 text-white-50 small">
+                © {{ date('Y') }} OSTAMMA
             </div>
         </div>
     </footer>
 
+    <!-- Bootstrap JS (Al final del body para no bloquear la renderización) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    @stack('scripts')
+    @yield('scripts')
 
 </body>
-
-</html
+</html>
