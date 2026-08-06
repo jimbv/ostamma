@@ -257,3 +257,23 @@
 
 @endsection
 
+@section('scripts')
+<script>
+    window.addEventListener('load', function () {
+        var modalEl = document.getElementById('modalInicio');
+        if (modalEl) {
+            // Mover al body para que no bloquee elementos ni modifique el DOM interno del layout
+            document.body.appendChild(modalEl);
+            
+            // Reintenta hasta asegurar que Bootstrap esté cargado globalmente
+            var checkBootstrap = setInterval(function () {
+                if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+                    clearInterval(checkBootstrap);
+                    var modal = new bootstrap.Modal(modalEl);
+                    modal.show();
+                }
+            }, 100);
+        }
+    });
+</script>
+@endsection
