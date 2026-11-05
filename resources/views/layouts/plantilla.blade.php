@@ -88,7 +88,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">PLANES</a>
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownPlanes">
-                                <li><a class="dropdown-item" href="/planclasico/">PLAN CLÁSICO</a></li>
                                 <li><a class="dropdown-item" href="/plansuperior/">PLAN SUPERIOR</a></li>
                                 <li><a class="dropdown-item" href="/planjoven/">PLAN JOVEN</a></li>
                             </ul>

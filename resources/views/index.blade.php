@@ -92,12 +92,6 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-10 text-center mb-4">
-                    <a href="/planclasico" class="d-block">
-                        <img src="/imgs/clasico.png" alt="Plan Clásico" class="img-fluid mx-auto">
-                    </a>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-10 text-center mb-4">
                     <a href="/plansuperior" class="d-block">
                         <img src="/imgs/superior.png" alt="Plan Superior" class="img-fluid mx-auto">
                     </a>
