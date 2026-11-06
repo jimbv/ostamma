@@ -93,7 +93,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item"><a class="nav-link mx-2" href="/cartilla">CARTILLA</a></li>
+                        <li class="nav-item"><a class="nav-link mx-2" href="/cartilla">CARTILLA Y VADEMÉCUM</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">INSTITUCIONAL</a>

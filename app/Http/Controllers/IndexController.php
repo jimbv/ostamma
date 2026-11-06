@@ -39,7 +39,7 @@ class IndexController extends Controller
     }
     public function planclasico()
     {
-        return view('planclasico');
+        return redirect('/', 301);
     }
     public function plansuperior()
     {

@@ -4,7 +4,7 @@
     <div class="max-w-screen-xl mx-auto px-5 py-10">
         <h2 class="text-2xl md:text-3xl font-black text-primary uppercase text-center mb-4 pt-3"
             style="font-family: Nunito;">
-            Cartilla de prestadores
+            Cartilla de prestadores y vademécum
         </h2>
 
         <div class="text-center mb-5 d-flex flex-wrap justify-content-center gap-3">
@@ -16,11 +16,11 @@
                 Descargar cartilla (Excel)
             </a>
 
-            <a href="/coseguros_vigentes.pdf"
+            <a href="/coseguros_vigentes.xlsx" download
                 class="btn btn-primary"
                 style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;"
                 target="_blank">
-                <i class="fa-solid fa-file-invoice-dollar me-1"></i>
+                <i class="fa-solid fa-file-excel me-1"></i>
                 Coseguros vigentes
             </a>
 
@@ -35,9 +35,9 @@
 
         @php
             $vademecums = [
-                ['titulo' => 'Ambulatorio', 'plan' => 'Plan Clásico / PMO', 'archivo' => 'Vademecum_Ambulatorio_Clasico-PMO_A5.pdf', 'icono' => 'fa-pills', 'superior' => false],
+                ['titulo' => 'Ambulatorio', 'plan' => 'PMO', 'archivo' => 'Vademecum_Ambulatorio_PMO_A5.pdf', 'icono' => 'fa-pills', 'superior' => false],
                 ['titulo' => 'Ambulatorio', 'plan' => 'Plan Superior', 'archivo' => 'Vademecum_Ambulatorio_Superior_A5.pdf', 'icono' => 'fa-pills', 'superior' => true],
-                ['titulo' => 'Crónicos', 'plan' => 'Plan Clásico / PMO', 'archivo' => 'Vademecum_Cronicos_Clasico-PMO_A5.pdf', 'icono' => 'fa-heart-pulse', 'superior' => false],
+                ['titulo' => 'Crónicos', 'plan' => 'PMO', 'archivo' => 'Vademecum_Cronicos_PMO_A5.pdf', 'icono' => 'fa-heart-pulse', 'superior' => false],
                 ['titulo' => 'Crónicos', 'plan' => 'Plan Superior', 'archivo' => 'Vademecum_Cronicos_Superior_A5.pdf', 'icono' => 'fa-heart-pulse', 'superior' => true],
             ];
         @endphp
