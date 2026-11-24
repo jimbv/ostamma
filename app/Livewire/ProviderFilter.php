@@ -157,7 +157,7 @@ class ProviderFilter extends Component
             'providers' => $providers,
             'types' => ProviderType::orderBy('name')->get(),
             'specialties' => Specialty::orderBy('name')->get(),
-            'plans' => Plan::orderBy('name')->get(),
+            'plans' => Plan::where('name', 'not like', '%Cl_sico%')->orderBy('name')->get(),
         ]);
     }
 

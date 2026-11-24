@@ -24,12 +24,12 @@
                 Coseguros vigentes
             </a>
 
-            <a href="/SSS.pdf"
+            <a href="/DI-2026-111392553-APN-GCP-SSS.pdf"
                 class="btn btn-primary"
                 style="background:#003a5d; border:none; padding:8px 18px; border-radius:6px;"
                 target="_blank">
                 <i class="fa-solid fa-file-pdf me-1"></i>
-                Disposición DI-2025-111698318-APN-GCP#SSS
+                Disposición DI-2026-111392553-APN-GCP#SSS - Aprobación Cartilla 2027
             </a>
         </div>
 
